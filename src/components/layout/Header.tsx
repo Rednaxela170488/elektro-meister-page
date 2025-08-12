@@ -17,6 +17,7 @@ const Header = () => {
     { to: "/ueber-mich", label: "Über mich" },
     { to: "/referenzen", label: "Referenzen" },
     { to: "/leistungen", label: "Leistungen" },
+    { to: "/kontakt", label: "Kontakt" },
     { to: "/impressum", label: "Impressum" },
     { to: "/agb", label: "AGB" },
   ];

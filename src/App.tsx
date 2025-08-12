@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import About from "./pages/About";
 import References from "./pages/References";
 import Services from "./pages/Services";
+import Contact from "./pages/Contact";
 import Impressum from "./pages/Impressum";
 import Terms from "./pages/Terms";
 import SiteLayout from "./layouts/SiteLayout";
@@ -28,6 +29,7 @@ const App = () => (
               <Route path="/ueber-mich" element={<About />} />
               <Route path="/referenzen" element={<References />} />
               <Route path="/leistungen" element={<Services />} />
+              <Route path="/kontakt" element={<Contact />} />
               <Route path="/impressum" element={<Impressum />} />
               <Route path="/agb" element={<Terms />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
