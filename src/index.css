@@ -108,6 +108,24 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Ensure proper support for different browsers */
+  @supports (backdrop-filter: blur(20px)) {
+    .supports-backdrop-blur\:bg-background\/60 {
+      background-color: hsl(var(--background) / 0.6);
+    }
+  }
+  
+  /* Better mobile touch targets */
+  @media (max-width: 768px) {
+    button, a, [role="button"] {
+      min-height: 44px;
+      min-width: 44px;
+    }
   }
 }
 

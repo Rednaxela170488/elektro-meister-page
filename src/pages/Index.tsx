@@ -48,6 +48,38 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Was wir NICHT machen */}
+      <section className="mb-12">
+        <div className="rounded-lg border border-amber-200 bg-amber-50 dark:border-amber-800 dark:bg-amber-950/20 p-6">
+          <h2 className="text-2xl font-semibold mb-4 text-amber-800 dark:text-amber-200">Was wir bewusst nicht anbieten</h2>
+          <p className="text-amber-700 dark:text-amber-300 mb-4">
+            Als spezialisierter Elektrokleinbetrieb konzentrieren wir uns auf unsere Kernkompetenzen. 
+            Folgende Bereiche bieten wir bewusst nicht an:
+          </p>
+          <ul className="text-amber-700 dark:text-amber-300 space-y-2">
+            <li className="flex items-start gap-2">
+              <span className="text-amber-600 dark:text-amber-400 mt-0.5">•</span>
+              <span><strong>Komplette Hausinstallationen:</strong> Neubau-Elektroinstallationen für ganze Häuser übersteigen unsere Kapazitäten</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-amber-600 dark:text-amber-400 mt-0.5">•</span>
+              <span><strong>Photovoltaik-Anlagen:</strong> Planung und Installation von Solaranlagen erfordern spezielle Zertifizierungen</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-amber-600 dark:text-amber-400 mt-0.5">•</span>
+              <span><strong>Industrielle Elektrotechnik:</strong> Großanlagen und Industrieinstallationen</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-amber-600 dark:text-amber-400 mt-0.5">•</span>
+              <span><strong>24/7-Notdienst:</strong> Als Nebentätigkeit können wir keinen Rund-um-die-Uhr-Service anbieten</span>
+            </li>
+          </ul>
+          <p className="text-amber-700 dark:text-amber-300 mt-4 text-sm">
+            So können wir Ihnen in unseren Spezialgebieten die beste Qualität und persönliche Betreuung garantieren.
+          </p>
+        </div>
+      </section>
+
       {/* Structured Data for LocalBusiness */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{
         __html: JSON.stringify({
