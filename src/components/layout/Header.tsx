@@ -1,8 +1,9 @@
 import { Link, NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Building2 } from "lucide-react";
+import { Menu } from "lucide-react";
 import { useState } from "react";
+import logoTemplate from "@/assets/logo-template.png";
 
 const navLinkClass = ({ isActive }: { isActive: boolean }) =>
   `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
@@ -27,9 +28,11 @@ const Header = () => {
       <nav className="container mx-auto flex h-16 items-center justify-between px-4">
         {/* Logo Section */}
         <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-          <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-            <Building2 className="w-5 h-5 text-primary-foreground" />
-          </div>
+          <img 
+            src={logoTemplate} 
+            alt="Elektrofachbetrieb Logo" 
+            className="w-8 h-8 object-contain"
+          />
           <span className="text-lg font-semibold text-foreground">Elektrofachbetrieb</span>
         </Link>
 
