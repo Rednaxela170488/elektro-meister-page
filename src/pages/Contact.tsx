@@ -2,7 +2,7 @@ import SEO from "@/components/SEO";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, Clock, MessageSquare } from "lucide-react";
-import logoRectangular from "@/assets/logo-rectangular.png";
+
 
 const Contact = () => {
   return (
@@ -11,21 +11,6 @@ const Contact = () => {
         title="Kontakt – Elektrofachbetrieb für Ihre Region"
         description="Kontaktieren Sie uns für Ihre Elektroinstallation, Smart Home oder Wallbox. Telefon, E-Mail und Anfahrt."
       />
-      
-      {/* Logo Hero Section */}
-      <section className="py-12 mb-8">
-        <div className="relative max-w-lg mx-auto">
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/15 via-primary/8 to-primary/15 rounded-2xl blur-2xl"></div>
-          <div className="relative bg-card/70 backdrop-blur-sm border border-border/30 rounded-xl p-8 shadow-lg animate-fade-in">
-            <img 
-              src={logoRectangular} 
-              alt="Elektrofachbetrieb Logo" 
-              className="h-20 w-auto mx-auto object-contain hover-scale"
-            />
-          </div>
-        </div>
-      </section>
-
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl font-bold mb-2">Kontakt</h1>
         <p className="text-muted-foreground mb-8">
