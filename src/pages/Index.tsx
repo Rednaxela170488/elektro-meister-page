@@ -2,6 +2,7 @@ import SEO from "@/components/SEO";
 import Hero from "@/components/Hero";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Zap, Home, Car } from "lucide-react";
+import logoRectangular from "@/assets/logo-rectangular.png";
 
 const Index = () => {
   return (
@@ -10,6 +11,16 @@ const Index = () => {
         title="Elektrofachbetrieb – Elektroinstallation, Smart Home, Wallbox"
         description="Ihr regionaler Elektrofachbetrieb: Zimmer- & Wohnungselektroinstallation, Smart Home, Wallbox-Installation."
       />
+      
+      {/* Logo Section */}
+      <section className="py-8 text-center">
+        <img 
+          src={logoRectangular} 
+          alt="Elektrofachbetrieb Logo" 
+          className="h-16 w-auto mx-auto object-contain"
+        />
+      </section>
+
       <Hero />
 
       <section className="grid md:grid-cols-3 gap-6 mb-12">

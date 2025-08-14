@@ -2,6 +2,7 @@ import SEO from "@/components/SEO";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, Clock, MessageSquare } from "lucide-react";
+import logoRectangular from "@/assets/logo-rectangular.png";
 
 const Contact = () => {
   return (
@@ -11,6 +12,15 @@ const Contact = () => {
         description="Kontaktieren Sie uns für Ihre Elektroinstallation, Smart Home oder Wallbox. Telefon, E-Mail und Anfahrt."
       />
       
+      {/* Logo Section */}
+      <section className="py-8 text-center">
+        <img 
+          src={logoRectangular} 
+          alt="Elektrofachbetrieb Logo" 
+          className="h-16 w-auto mx-auto object-contain"
+        />
+      </section>
+
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl font-bold mb-2">Kontakt</h1>
         <p className="text-muted-foreground mb-8">

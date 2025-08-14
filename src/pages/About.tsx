@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Briefcase, Heart, Lightbulb, Target, Calendar, User } from "lucide-react";
 import portraitTemplate from "@/assets/portrait-template.jpg";
 import workTemplate from "@/assets/work-template.jpg";
+import logoRectangular from "@/assets/logo-rectangular.png";
 
 const About = () => {
   return (
@@ -13,6 +14,15 @@ const About = () => {
         description="Erfahren Sie mehr über mich als Ihren Elektrofachmann: Meine Motivation, mein Werdegang und warum ich Elektroinstallation als Nebentätigkeit ausübe."
       />
       
+      {/* Logo Section */}
+      <section className="py-8 text-center">
+        <img 
+          src={logoRectangular} 
+          alt="Elektrofachbetrieb Logo" 
+          className="h-16 w-auto mx-auto object-contain"
+        />
+      </section>
+
       <div className="max-w-4xl mx-auto">
         {/* Hero Section */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">

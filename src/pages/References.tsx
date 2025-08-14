@@ -1,5 +1,6 @@
 import SEO from "@/components/SEO";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import logoRectangular from "@/assets/logo-rectangular.png";
 
 const References = () => {
   return (
@@ -8,6 +9,16 @@ const References = () => {
         title="Referenzen – Elektrofachbetrieb"
         description="Ausgewählte Projekte: Smart-Home-Umrüstung, Wallbox-Installationen, Wohnungsmodernisierungen."
       />
+      
+      {/* Logo Section */}
+      <section className="py-8 text-center">
+        <img 
+          src={logoRectangular} 
+          alt="Elektrofachbetrieb Logo" 
+          className="h-16 w-auto mx-auto object-contain"
+        />
+      </section>
+
       <h1 className="text-3xl font-bold mb-6">Referenzen</h1>
       <div className="grid md:grid-cols-3 gap-6">
         {["Smart-Home-Umrüstung", "Wallbox Doppelgarage", "Wohnung Kernsanierung"].map((title, i) => (

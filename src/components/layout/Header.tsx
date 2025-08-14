@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import { useState } from "react";
-import logoTemplate from "@/assets/logo-rectangular.png";
+
 
 const navLinkClass = ({ isActive }: { isActive: boolean }) =>
   `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
@@ -26,14 +26,8 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur supports-backdrop-blur:bg-background/60">
       <nav className="container mx-auto flex h-16 items-center justify-between px-4">
-        {/* Logo Section */}
-        <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
-          <img 
-            src={logoTemplate} 
-            alt="Elektrofachbetrieb Logo" 
-            className="h-8 w-auto object-contain"
-          />
-        </Link>
+        {/* Logo Section - Removed, now on individual pages */}
+        <div></div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-1">
