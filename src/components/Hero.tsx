@@ -25,28 +25,20 @@ const Hero = () => {
         }}
         aria-hidden
       />
-      <div className="relative grid md:grid-cols-2 gap-6">
-        <div className="p-8 md:p-12 flex flex-col justify-center">
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
+      <div className="relative flex flex-col lg:grid lg:grid-cols-2 gap-6">
+        <div className="p-6 sm:p-8 md:p-12 flex flex-col justify-center order-2 lg:order-1">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-4">
             Elektroinstallationen, Smart Home & Wallbox aus einer Hand
           </h1>
-          <p className="text-lg text-muted-foreground mb-6">
+          <p className="text-base sm:text-lg text-muted-foreground mb-6">
             Regional, zuverlässig und fachgerecht: Komplettlösungen für Wohnung und Haus – von der Planung bis zur Abnahme.
           </p>
-          <div className="flex gap-3">
-            <Button asChild variant="hero">
-              <a href="/leistungen">Leistungen ansehen</a>
-            </Button>
-            <Button asChild variant="outline">
-              <a href="mailto:kontakt@elektrofachbetrieb.de">Kostenlose Beratung</a>
-            </Button>
-          </div>
         </div>
-        <div className="relative min-h-[280px]">
+        <div className="relative min-h-[200px] sm:min-h-[280px] order-1 lg:order-2">
           <img
             src={heroImage}
             alt="Elektriker montiert Smart-Home-Elektroverteilung"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover rounded-lg lg:rounded-none"
             loading="eager"
           />
         </div>

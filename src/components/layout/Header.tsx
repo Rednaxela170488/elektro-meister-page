@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import { useState } from "react";
-import logoTemplate from "@/assets/logo-template.png";
+import logoTemplate from "@/assets/logo-rectangular.png";
 
 const navLinkClass = ({ isActive }: { isActive: boolean }) =>
   `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
@@ -27,13 +27,12 @@ const Header = () => {
     <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur supports-backdrop-blur:bg-background/60">
       <nav className="container mx-auto flex h-16 items-center justify-between px-4">
         {/* Logo Section */}
-        <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+        <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
           <img 
             src={logoTemplate} 
             alt="Elektrofachbetrieb Logo" 
-            className="w-8 h-8 object-contain"
+            className="h-8 w-auto object-contain"
           />
-          <span className="text-lg font-semibold text-foreground">Elektrofachbetrieb</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -50,18 +49,8 @@ const Header = () => {
           ))}
         </div>
 
-        {/* Desktop CTA & Mobile Menu */}
+        {/* Mobile Menu */}
         <div className="flex items-center gap-2">
-          <Button 
-            asChild 
-            variant="default" 
-            size="sm"
-            className="hidden sm:inline-flex bg-primary hover:bg-primary/90 text-primary-foreground"
-          >
-            <a href="mailto:kontakt@elektrofachbetrieb.de" aria-label="Angebot anfragen">
-              Angebot anfragen
-            </a>
-          </Button>
 
           {/* Mobile Menu */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -95,13 +84,6 @@ const Header = () => {
                   </NavLink>
                 ))}
                 
-                <div className="pt-4 border-t border-border">
-                  <Button asChild className="w-full" variant="default">
-                    <a href="mailto:kontakt@elektrofachbetrieb.de" onClick={() => setIsOpen(false)}>
-                      Angebot anfragen
-                    </a>
-                  </Button>
-                </div>
               </nav>
             </SheetContent>
           </Sheet>
