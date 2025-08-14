@@ -12,13 +12,18 @@ const Index = () => {
         description="Ihr regionaler Elektrofachbetrieb: Zimmer- & Wohnungselektroinstallation, Smart Home, Wallbox-Installation."
       />
       
-      {/* Logo Section */}
-      <section className="py-8 text-center">
-        <img 
-          src={logoRectangular} 
-          alt="Elektrofachbetrieb Logo" 
-          className="h-16 w-auto mx-auto object-contain"
-        />
+      {/* Logo Hero Section */}
+      <section className="py-16 mb-8">
+        <div className="relative max-w-2xl mx-auto">
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-primary/10 to-primary/20 rounded-3xl blur-3xl"></div>
+          <div className="relative bg-card/80 backdrop-blur-sm border border-border/50 rounded-2xl p-12 shadow-xl animate-fade-in">
+            <img 
+              src={logoRectangular} 
+              alt="Elektrofachbetrieb Logo" 
+              className="h-32 w-auto mx-auto object-contain hover-scale"
+            />
+          </div>
+        </div>
       </section>
 
       <Hero />
