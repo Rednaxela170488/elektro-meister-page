@@ -27,17 +27,16 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur supports-backdrop-blur:bg-background/60">
       <nav className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6 lg:px-8 max-w-7xl">
-        {/* Logo Section */}
-        <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
-          <img 
-            src={logoTemplate} 
-            alt="Elektrofachbetrieb Logo" 
-            className="h-12 w-auto object-contain scale-x-[2]"
-          />
-        </Link>
-
-        {/* Desktop Navigation */}
+        
+        {/* Desktop Navigation with Logo */}
         <div className="hidden md:flex items-center gap-1">
+          <Link to="/" className="flex items-center hover:opacity-80 transition-opacity mr-4">
+            <img 
+              src={logoTemplate} 
+              alt="Elektrofachbetrieb Logo" 
+              className="h-12 w-auto object-contain scale-x-[2]"
+            />
+          </Link>
           {navigationItems.map((item) => (
             <NavLink
               key={item.to}
@@ -49,6 +48,15 @@ const Header = () => {
             </NavLink>
           ))}
         </div>
+
+        {/* Mobile Logo (visible only on mobile) */}
+        <Link to="/" className="flex items-center hover:opacity-80 transition-opacity md:hidden">
+          <img 
+            src={logoTemplate} 
+            alt="Elektrofachbetrieb Logo" 
+            className="h-12 w-auto object-contain scale-x-[2]"
+          />
+        </Link>
 
         {/* Mobile Menu */}
         <div className="flex items-center gap-2">
