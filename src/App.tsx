@@ -12,6 +12,7 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Impressum from "./pages/Impressum";
 import Terms from "./pages/Terms";
+import ScrollToTop from "./components/ScrollToTop";
 import SiteLayout from "./layouts/SiteLayout";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <ScrollToTop />
           <SiteLayout>
             <Routes>
               <Route path="/" element={<Index />} />
