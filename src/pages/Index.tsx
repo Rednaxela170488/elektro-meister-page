@@ -6,7 +6,7 @@ import { Zap, Home, Car } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="py-6">
+    <div className="pb-6">
       <SEO
         title="Elektrofachbetrieb – Elektroinstallation, Smart Home, Wallbox"
         description="Ihr regionaler Elektrofachbetrieb: Zimmer- & Wohnungselektroinstallation, Smart Home, Wallbox-Installation."

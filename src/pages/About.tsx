@@ -8,7 +8,7 @@ import workTemplate from "@/assets/work-template.jpg";
 
 const About = () => {
   return (
-    <section className="py-10">
+    <section className="pb-10">
       <SEO
         title="Über mich – Ihr Elektrofachmann mit Leidenschaft"
         description="Erfahren Sie mehr über mich als Ihren Elektrofachmann: Meine Motivation, mein Werdegang und warum ich Elektroinstallation als Nebentätigkeit ausübe."

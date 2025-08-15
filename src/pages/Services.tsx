@@ -5,7 +5,7 @@ import { Home, Zap, Car } from "lucide-react";
 
 const Services = () => {
   return (
-    <section className="py-10">
+    <section className="pb-10">
       <SEO
         title="Leistungen – Elektroinstallation, Smart Home, Wallbox"
         description="Zimmer- und Wohnungselektroinstallation, Smart-Home-Lösungen und fachgerechte Wallbox-Montage."

@@ -2,7 +2,7 @@ import SEO from "@/components/SEO";
 
 const Impressum = () => {
   return (
-    <section className="py-10">
+    <section className="pb-10">
       <SEO title="Impressum – Elektrofachbetrieb" description="Impressum des Elektrofachbetriebs." />
       <h1 className="text-3xl font-bold mb-4">Impressum</h1>
       <p className="text-muted-foreground mb-2">Angaben gemäß § 5 TMG</p>

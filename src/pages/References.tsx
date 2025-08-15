@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const References = () => {
   return (
-    <section className="py-10">
+    <section className="pb-10">
       <SEO
         title="Referenzen – Elektrofachbetrieb"
         description="Ausgewählte Projekte: Smart-Home-Umrüstung, Wallbox-Installationen, Wohnungsmodernisierungen."

@@ -2,7 +2,7 @@ import SEO from "@/components/SEO";
 
 const Terms = () => {
   return (
-    <article className="py-10">
+    <article className="pb-10">
       <SEO title="AGB – Elektrofachbetrieb" description="Allgemeine Geschäftsbedingungen (AGB) des Elektrofachbetriebs." />
       <h1 className="text-3xl font-bold mb-4">Allgemeine Geschäftsbedingungen</h1>
       <h2 className="text-xl font-semibold mt-6 mb-2">1. Geltungsbereich</h2>

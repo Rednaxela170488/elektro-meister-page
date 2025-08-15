@@ -6,7 +6,7 @@ import { Phone, Mail, MapPin, Clock, MessageSquare } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section className="py-10">
+    <section className="pb-10">
       <SEO
         title="Kontakt – Elektrofachbetrieb für Ihre Region"
         description="Kontaktieren Sie uns für Ihre Elektroinstallation, Smart Home oder Wallbox. Telefon, E-Mail und Anfahrt."
