@@ -32,7 +32,7 @@ const Header = () => {
           <img 
             src={logoTemplate} 
             alt="Elektrofachbetrieb Logo" 
-            className="h-20 w-auto object-contain"
+            className="h-12 w-auto object-contain scale-x-[2]"
           />
         </Link>
 
