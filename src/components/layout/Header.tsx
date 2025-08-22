@@ -50,7 +50,7 @@ const Header = () => {
         </div>
 
         {/* Mobile Logo (visible only on mobile) */}
-        <Link to="/" className="flex items-center hover:opacity-80 transition-opacity md:hidden">
+        <Link to="/" className="flex items-center hover:opacity-80 transition-opacity md:hidden ml-4">
           <img 
             src={logoTemplate} 
             alt="Elektrofachbetrieb Logo" 
