@@ -1,3 +1,4 @@
+
 import { Link, NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -25,7 +26,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur supports-backdrop-blur:bg-background/60">
+    <header className="sticky top-0 z-40 w-full border-b bg-background">
       <nav className="container mx-auto flex h-16 items-center justify-between md:justify-center px-4 md:px-6 lg:px-8 max-w-7xl">
         
         {/* Desktop Navigation with Logo */}
