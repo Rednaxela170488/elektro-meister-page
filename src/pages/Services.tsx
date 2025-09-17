@@ -12,7 +12,6 @@ import {
   XCircle, 
   Info, 
   Wrench,
-  Shield,
   Lightbulb,
   Settings,
   Battery
@@ -96,7 +95,7 @@ const Services = () => {
       {/* Hauptleistungen */}
       <div className="mb-8">
         <h2 className="text-2xl font-semibold mb-6">Meine Leistungen im Überblick</h2>
-        <div className="grid md:grid-cols-3 gap-6 mb-8">
+        <div className="grid md:grid-cols-2 gap-6 mb-8">
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
@@ -130,24 +129,6 @@ const Services = () => {
               </ul>
               <div className="mt-4">
                 <Badge variant="secondary">Wohnungen & kleine Gewerbe</Badge>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Shield />
-                Sicherheit
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-1 text-sm">
-                <li>• DGUV3-Messung (geplant)</li>
-                <li>• Isolationsprüfung bei jeder Abnahme</li>
-              </ul>
-              <div className="mt-4">
-                <Badge variant="outline">In Entwicklung</Badge>
               </div>
             </CardContent>
           </Card>
@@ -202,9 +183,9 @@ const Services = () => {
           <XCircle className="text-red-600" />
           Leistungen, die ich nicht anbiete
         </h2>
-        <div className="grid md:grid-cols-2 gap-4">
-          <Card className="border-red-200">
-            <CardContent className="pt-4">
+        <Card className="border-red-200">
+          <CardContent className="pt-4">
+            <div className="grid md:grid-cols-2 gap-4">
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start gap-2">
                   <XCircle className="w-4 h-4 mt-0.5 text-red-600 shrink-0" />
@@ -227,11 +208,6 @@ const Services = () => {
                   <span><strong>Klassische IT-/Netzwerkinstallation</strong></span>
                 </li>
               </ul>
-            </CardContent>
-          </Card>
-          
-          <Card className="border-red-200">
-            <CardContent className="pt-4">
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start gap-2">
                   <XCircle className="w-4 h-4 mt-0.5 text-red-600 shrink-0" />
@@ -249,14 +225,10 @@ const Services = () => {
                   <XCircle className="w-4 h-4 mt-0.5 text-red-600 shrink-0" />
                   <span><strong>Größere Gewerbebetriebe</strong> mit KNX oder BACnet</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <XCircle className="w-4 h-4 mt-0.5 text-red-600 shrink-0" />
-                  <span><strong>Sicherheitsprüfungen</strong> (keine DGUV3-Prüfungen)</span>
-                </li>
               </ul>
-            </CardContent>
-          </Card>
-        </div>
+            </div>
+          </CardContent>
+        </Card>
       </div>
 
       {/* Abschluss */}

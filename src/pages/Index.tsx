@@ -16,10 +16,10 @@ const Index = () => {
       <section className="grid md:grid-cols-3 gap-6 mb-12">
         <Card>
           <CardHeader>
-            <CardTitle className="flex items-center gap-2"><Home /> Installation</CardTitle>
+            <CardTitle className="flex items-center gap-2"><Home /> Wohnungselektro</CardTitle>
           </CardHeader>
           <CardContent>
-            Komplette Zimmer- und Wohnungselektroinstallation inklusive Planung, Sicherungskasten und Abnahme.
+            Basis-Dienstleistungen und Installationen für Wohnungen – von Schalteraustausch bis komplette Renovierung.
           </CardContent>
         </Card>
         <Card>
@@ -27,15 +27,15 @@ const Index = () => {
             <CardTitle className="flex items-center gap-2"><Zap /> Smart Home</CardTitle>
           </CardHeader>
           <CardContent>
-            Intelligente Steuerung für Licht, Heizung und Sicherheit – komfortabel bedienbar per App.
+            HomeMatic und Home Assistant – lokale Smart-Home-Lösungen ohne Cloud-Zwang für mehr Komfort und Sicherheit.
           </CardContent>
         </Card>
         <Card>
           <CardHeader>
-            <CardTitle className="flex items-center gap-2"><Car /> Wallbox</CardTitle>
+            <CardTitle className="flex items-center gap-2"><Car /> Balkonkraftwerke</CardTitle>
           </CardHeader>
           <CardContent>
-            Beratung, Montage und Inbetriebnahme Ihrer Wallbox – inklusive Anmeldung beim Netzbetreiber.
+            Beratung und Installation von Balkonkraftwerken bis 800W – inklusive Anmeldung und optionalem Speicher.
           </CardContent>
         </Card>
       </section>
@@ -54,25 +54,25 @@ const Index = () => {
         <div className="rounded-lg border border-amber-200 bg-amber-50 dark:border-amber-800 dark:bg-amber-950/20 p-6">
           <h2 className="text-2xl font-semibold mb-4 text-amber-800 dark:text-amber-200">Was wir bewusst nicht anbieten</h2>
           <p className="text-amber-700 dark:text-amber-300 mb-4">
-            Als spezialisierter Elektrokleinbetrieb konzentrieren wir uns auf unsere Kernkompetenzen. 
+            Als spezialisierter Elektroservice konzentrieren wir uns auf unsere Kernkompetenzen. 
             Folgende Bereiche bieten wir bewusst nicht an:
           </p>
           <ul className="text-amber-700 dark:text-amber-300 space-y-2">
             <li className="flex items-start gap-2">
               <span className="text-amber-600 dark:text-amber-400 mt-0.5">•</span>
-              <span><strong>Komplette Hausinstallationen:</strong> Neubau-Elektroinstallationen für ganze Häuser übersteigen unsere Kapazitäten</span>
+              <span><strong>Arbeiten am Netzanschluss:</strong> Zählerplatz und Hausanschlusskasten sind Sache des eingetragenen Fachbetriebs</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-amber-600 dark:text-amber-400 mt-0.5">•</span>
-              <span><strong>Photovoltaik-Anlagen:</strong> Planung und Installation von Solaranlagen erfordern spezielle Zertifizierungen</span>
+              <span><strong>Große PV-Anlagen:</strong> Nur Balkonkraftwerke bis 800W, keine kompletten Photovoltaik-Anlagen</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-amber-600 dark:text-amber-400 mt-0.5">•</span>
-              <span><strong>Industrielle Elektrotechnik:</strong> Großanlagen und Industrieinstallationen</span>
+              <span><strong>Industrielle Elektrotechnik:</strong> Großanlagen und komplexe Gewerbetechnik</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-amber-600 dark:text-amber-400 mt-0.5">•</span>
-              <span><strong>24/7-Notdienst:</strong> Als Nebentätigkeit können wir keinen Rund-um-die-Uhr-Service anbieten</span>
+              <span><strong>24/7-Notdienst:</strong> Als Nebengewerbe können wir keinen Rund-um-die-Uhr-Service anbieten</span>
             </li>
           </ul>
           <p className="text-amber-700 dark:text-amber-300 mt-4 text-sm">
