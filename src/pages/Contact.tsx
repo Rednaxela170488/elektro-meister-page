@@ -27,19 +27,6 @@ const Contact = () => {
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="flex items-center gap-3">
-              <Phone className="w-4 h-4 text-muted-foreground" />
-              <div>
-                <p className="font-medium">Telefon</p>
-                <a 
-                  href="tel:+4917596042880" 
-                  className="text-primary hover:underline"
-                >
-                  +49 175 96 04 28 0
-                </a>
-              </div>
-            </div>
-            
-            <div className="flex items-center gap-3">
               <Mail className="w-4 h-4 text-muted-foreground" />
               <div>
                 <p className="font-medium">E-Mail</p>

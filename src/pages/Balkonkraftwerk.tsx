@@ -258,7 +258,7 @@ const Balkonkraftwerk = () => {
       
       <div>
         <Button asChild variant="outline">
-          <a href="/services">← Zurück zu den Leistungen</a>
+          <a href="/leistungen">← Zurück zu den Leistungen</a>
         </Button>
       </div>
     </section>

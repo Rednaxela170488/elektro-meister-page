@@ -1,7 +1,7 @@
 import SEO from "@/components/SEO";
 import Hero from "@/components/Hero";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Zap, Home, Car } from "lucide-react";
+import { Zap, Home, Sun } from "lucide-react";
 
 
 const Index = () => {
@@ -32,7 +32,7 @@ const Index = () => {
         </Card>
         <Card>
           <CardHeader>
-            <CardTitle className="flex items-center gap-2"><Car /> Balkonkraftwerke</CardTitle>
+            <CardTitle className="flex items-center gap-2"><Sun /> Balkonkraftwerke</CardTitle>
           </CardHeader>
           <CardContent>
             Beratung und Installation von Balkonkraftwerken bis 800W – inklusive Anmeldung und optionalem Speicher.
