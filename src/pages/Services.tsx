@@ -76,7 +76,7 @@ const Services = () => {
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
                   <XCircle className="w-4 h-4 mt-0.5 text-red-600" />
-                  <span><strong>Keine Arbeiten am Stromnetz</strong> oder Hausanschluss – dafür sind Fachbetriebe im Installateurverzeichnis zuständig.</span>
+                  <span><strong>Keine Arbeiten am Stromnetz</strong> <strong>oder Hausanschluss</strong> – dafür sind Fachbetriebe im Installateurverzeichnis zuständig.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <XCircle className="w-4 h-4 mt-0.5 text-red-600" />
@@ -231,15 +231,6 @@ const Services = () => {
         </Card>
       </div>
 
-      {/* Abschluss */}
-      <Card className="bg-primary/5 border-primary/20">
-        <CardContent className="pt-6">
-          <p className="text-muted-foreground">
-            So stelle ich sicher, dass Ihre Aufträge in meinem Kernbereich liegen – und Sie eine sichere, 
-            fachgerechte und langlebige Installation bekommen.
-          </p>
-        </CardContent>
-      </Card>
     </section>
   );
 };

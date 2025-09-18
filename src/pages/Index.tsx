@@ -40,14 +40,6 @@ const Index = () => {
         </Card>
       </section>
 
-      <section className="mb-12">
-        <div className="rounded-lg border p-6">
-          <h2 className="text-2xl font-semibold mb-2">Warum wir?</h2>
-          <p className="text-muted-foreground">
-            Persönlicher Service, transparente Preise und saubere Ausführung. Termine nach Absprache – wir richten uns nach Ihnen.
-          </p>
-        </div>
-      </section>
 
       {/* Was wir NICHT machen */}
       <section className="mb-12">

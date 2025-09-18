@@ -2,6 +2,7 @@ import SEO from "@/components/SEO";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Button } from "@/components/ui/button";
 import { 
   Sun, 
   Zap, 
@@ -112,8 +113,7 @@ const Balkonkraftwerk = () => {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground text-sm">
-                Auf Wunsch kann ich einen Solarstromspeicher wie den SUNLIT Balkonkraftwerkspeicher 
-                installieren. So nutzen Sie Ihren Strom auch ohne Sonne effizienter.
+                Auf Wunsch kann ich einen Solarstromspeicher installieren. So nutzen Sie Ihren Strom auch ohne Sonne effizienter.
               </p>
             </CardContent>
           </Card>
@@ -200,7 +200,7 @@ const Balkonkraftwerk = () => {
       <div className="mb-8">
         <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2">
           <CheckCircle className="text-green-600" />
-          🔌 Ihre Vorteile
+          Ihre Vorteile
         </h2>
         
         <div className="grid md:grid-cols-2 gap-6">
@@ -231,7 +231,7 @@ const Balkonkraftwerk = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Info className="text-primary" />
-                💡 Für wen ist das interessant?
+                Für wen ist das interessant?
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -255,29 +255,12 @@ const Balkonkraftwerk = () => {
           </Card>
         </div>
       </div>
-
-      {/* Technische Details */}
-      <Card className="bg-muted/30">
-        <CardHeader>
-          <CardTitle>Technische Eckdaten</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-primary mb-2">bis 800W</div>
-              <p className="text-sm text-muted-foreground">Maximale Anlagenleistung</p>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-primary mb-2">Plug & Play</div>
-              <p className="text-sm text-muted-foreground">Einfache Inbetriebnahme</p>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-primary mb-2">Smart</div>
-              <p className="text-sm text-muted-foreground">Home Assistant Integration</p>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
+      
+      <div>
+        <Button asChild variant="outline">
+          <a href="/services">← Zurück zu den Leistungen</a>
+        </Button>
+      </div>
     </section>
   );
 };

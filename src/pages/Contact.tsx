@@ -31,10 +31,10 @@ const Contact = () => {
               <div>
                 <p className="font-medium">Telefon</p>
                 <a 
-                  href="tel:+491234567890" 
+                  href="tel:+4917596042880" 
                   className="text-primary hover:underline"
                 >
-                  +49 1234 567890
+                  +49 175 96 04 28 0
                 </a>
               </div>
             </div>
@@ -44,10 +44,10 @@ const Contact = () => {
               <div>
                 <p className="font-medium">E-Mail</p>
                 <a 
-                  href="mailto:kontakt@elektrofachbetrieb.de" 
+                  href="mailto:info@elektrotechnik-stanzel.de" 
                   className="text-primary hover:underline"
                 >
-                  kontakt@elektrofachbetrieb.de
+                  info@elektrotechnik-stanzel.de
                 </a>
               </div>
             </div>
@@ -55,14 +55,14 @@ const Contact = () => {
             <div className="flex items-center gap-3">
               <MessageSquare className="w-4 h-4 text-muted-foreground" />
               <div>
-                <p className="font-medium">WhatsApp</p>
+                <p className="font-medium">Telefon & WhatsApp</p>
                 <a 
-                  href="https://wa.me/491234567890" 
+                  href="https://wa.me/4917596042880" 
                   className="text-primary hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  +49 1234 567890
+                  +49 175 96 04 28 0
                 </a>
               </div>
             </div>
@@ -83,8 +83,6 @@ const Contact = () => {
               <div>
                 <p className="font-medium mb-1">Termine nach Vereinbarung</p>
                 <p className="text-sm text-muted-foreground">
-                  Mo-Fr: 18:00 - 21:00 Uhr<br />
-                  Sa: 09:00 - 16:00 Uhr<br />
                   <span className="text-amber-600 dark:text-amber-400">
                     (Nebentätigkeit - flexible Terminabsprache)
                   </span>
@@ -97,7 +95,7 @@ const Contact = () => {
               <div>
                 <p className="font-medium mb-1">Einsatzgebiet</p>
                 <p className="text-sm text-muted-foreground">
-                  [Ihre Stadt] und Umgebung<br />
+                  Hilpoltstein und Umgebung<br />
                   Anfahrt innerhalb 30 km kostenfrei
                 </p>
               </div>
@@ -109,13 +107,13 @@ const Contact = () => {
       {/* Kontakt-Buttons */}
       <div className="grid sm:grid-cols-2 gap-4 mb-8">
         <Button asChild size="lg" className="h-12">
-          <a href="tel:+491234567890">
+          <a href="tel:+4917596042880">
             <Phone className="w-4 h-4 mr-2" />
             Jetzt anrufen
           </a>
         </Button>
         <Button asChild variant="outline" size="lg" className="h-12">
-          <a href="mailto:kontakt@elektrofachbetrieb.de">
+          <a href="mailto:info@elektrotechnik-stanzel.de">
             <Mail className="w-4 h-4 mr-2" />
             E-Mail schreiben
           </a>
@@ -137,7 +135,7 @@ const Contact = () => {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-primary mt-0.5">•</span>
-              <span><strong>Rückruf gewünscht?</strong> Hinterlassen Sie Ihre Nummer, wir melden uns zeitnah</span>
+              <span><strong>Rückruf gewünscht?</strong> Hinterlassen Sie Ihre Nummer, ich melde mich zeitnah</span>
             </li>
           </ul>
         </CardContent>

@@ -194,6 +194,10 @@ const SmartHome = () => {
               Dadurch behalten Sie die Kontrolle über Ihre Daten und Ihre Automatisierungen. Manche 
               Schnittstellen erfordern zwar eine Cloud-Verbindung, doch viele Funktionen lassen sich 
               vollständig lokal realisieren. Auch lässt sich HomeMatic in das System einbinden.
+              <br />
+              <a href="https://www.home-assistant.io/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                Mehr Informationen zu Home Assistant
+              </a>
             </p>
             
             <p className="text-muted-foreground mb-4">
@@ -320,6 +324,12 @@ const SmartHome = () => {
           </Alert>
         </CardContent>
       </Card>
+      
+      <div className="mt-8">
+        <Button asChild variant="outline">
+          <a href="/services">← Zurück zu den Leistungen</a>
+        </Button>
+      </div>
     </section>
   );
 };
