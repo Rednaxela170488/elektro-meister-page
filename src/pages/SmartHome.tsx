@@ -41,10 +41,6 @@ const SmartHome = () => {
           Einfamilienhäuser oft überdimensioniert und mit hohen Kosten verbunden.
         </p>
         
-        <p className="text-lg text-muted-foreground mb-6">
-          Darum biete ich bewusst eine einfache, unabhängige und bezahlbare Alternative an:
-        </p>
-
         {/* Meine Philosophie */}
         <Card className="mb-8 bg-primary/5 border-primary/20">
           <CardHeader>
@@ -62,6 +58,10 @@ const SmartHome = () => {
             </p>
           </CardContent>
         </Card>
+
+        <p className="text-lg text-muted-foreground mb-6">
+          Darum biete ich bewusst eine einfache, unabhängige und bezahlbare Alternative an:
+        </p>
       </div>
 
       {/* Hauptsysteme */}

@@ -118,29 +118,18 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-6">
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="font-semibold text-lg">Heute</h3>
-              <p className="text-primary font-medium">Produktmanager Smart Buildings</p>
+              <h3 className="font-semibold text-lg">2011 - 2025</h3>
+              <p className="text-primary font-medium">Angestellter bei SIEMENS AG</p>
               <p className="text-sm text-muted-foreground">
-                Hauptberuflich verantwortlich für innovative Gebäudetechnik-Lösungen. 
-                Nebentätig als Elektrofachkraft für private Kunden.
+                Industrielle Elektrotechnik und Gebäudetechnik
               </p>
             </div>
             
             <div className="border-l-2 border-muted pl-4">
-              <h3 className="font-semibold">2018-2023</h3>
-              <p className="font-medium">Berufserfahrung & Weiterbildung</p>
+              <h3 className="font-semibold">2004 - 2011</h3>
+              <p className="font-medium">Ausbildung und Studium</p>
               <p className="text-sm text-muted-foreground">
-                Sammlung von Erfahrungen in der Elektrotechnik, 
-                Spezialisierung auf Smart Home Systeme und Gebäudeautomation.
-              </p>
-            </div>
-            
-            <div className="border-l-2 border-muted pl-4">
-              <h3 className="font-semibold">2015-2018</h3>
-              <p className="font-medium">Ausbildung Elektrofachkraft</p>
-              <p className="text-sm text-muted-foreground">
-                Fundierte Ausbildung in allen Bereichen der Elektroinstallation 
-                mit Schwerpunkt auf Sicherheit und Normen.
+                Elektroniker für Geräte und Systeme + Diplom-Wirtschaftsingenieur Fachrichtung Elektrotechnik
               </p>
             </div>
           </div>
