@@ -29,67 +29,6 @@ const Services = () => {
       <div className="mb-8">
         <h1 className="text-3xl font-bold mb-4">Leistungen Elektro</h1>
         
-        {/* Hinweis zum Leistungsangebot */}
-        <Alert className="mb-6">
-          <Info className="h-4 w-4" />
-          <AlertDescription>
-            <strong>Hinweis zu meinem Leistungsangebot</strong><br />
-            Mein Elektroservice ist bewusst überschaubar und spezialisiert.
-            Da ich den Betrieb eigenständig im Nebengewerbe führe, biete ich genau die Arbeiten an, die ich zuverlässig und mit hoher Qualität erledigen kann.
-          </AlertDescription>
-        </Alert>
-
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
-          <Card className="border-green-200 bg-green-50">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-green-800">
-                <CheckCircle className="text-green-600" />
-                Das bedeutet für Sie
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="text-green-700">
-              <ul className="space-y-2">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 mt-0.5 text-green-600" />
-                  <span><strong>Ehrlichkeit von Anfang an:</strong> Sie sehen sofort, welche Arbeiten ich übernehmen kann und welche nicht.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 mt-0.5 text-green-600" />
-                  <span><strong>Saubere Arbeit:</strong> Ich konzentriere mich auf Installationen in Wohnungen, kleinen Gewerben und auf einfache Smart-Home-Lösungen.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 mt-0.5 text-green-600" />
-                  <span><strong>Kurze Wege:</strong> Kleinere und mittlere Projekte lassen sich unkompliziert umsetzen.</span>
-                </li>
-              </ul>
-            </CardContent>
-          </Card>
-
-          <Card className="border-red-200 bg-red-50">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-red-800">
-                <XCircle className="text-red-600" />
-                Was ich nicht mache
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="text-red-700">
-              <ul className="space-y-2">
-                <li className="flex items-start gap-2">
-                  <XCircle className="w-4 h-4 mt-0.5 text-red-600" />
-                  <span><strong>Keine Arbeiten am Stromnetz</strong> <strong>oder Hausanschluss</strong> – dafür sind Fachbetriebe im Installateurverzeichnis zuständig.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <XCircle className="w-4 h-4 mt-0.5 text-red-600" />
-                  <span><strong>Keine Reparaturen von Geräten</strong> – wie Waschmaschinen, Trockner oder Kaffeemaschinen.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <XCircle className="w-4 h-4 mt-0.5 text-red-600" />
-                  <span><strong>Keine Notdienste oder Großprojekte</strong> – da ich alleine arbeite.</span>
-                </li>
-              </ul>
-            </CardContent>
-          </Card>
-        </div>
       </div>
 
       {/* Hauptleistungen */}

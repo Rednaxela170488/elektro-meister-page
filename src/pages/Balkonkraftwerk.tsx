@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { 
   Sun, 
   Zap, 
@@ -258,7 +259,7 @@ const Balkonkraftwerk = () => {
       
       <div>
         <Button asChild variant="outline">
-          <a href="/leistungen">← Zurück zu den Leistungen</a>
+          <Link to="/leistungen">← Zurück zu den Leistungen</Link>
         </Button>
       </div>
     </section>

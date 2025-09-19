@@ -41,34 +41,13 @@ const Index = () => {
       </section>
 
 
-      {/* Was wir NICHT machen */}
+      {/* Hinweis zu meinem Leistungsangebot */}
       <section className="mb-12">
         <div className="rounded-lg border border-amber-200 bg-amber-50 dark:border-amber-800 dark:bg-amber-950/20 p-6">
-          <h2 className="text-2xl font-semibold mb-4 text-amber-800 dark:text-amber-200">Was wir bewusst nicht anbieten</h2>
-          <p className="text-amber-700 dark:text-amber-300 mb-4">
-            Als spezialisierter Elektroservice konzentrieren wir uns auf unsere Kernkompetenzen. 
-            Folgende Bereiche bieten wir bewusst nicht an:
-          </p>
-          <ul className="text-amber-700 dark:text-amber-300 space-y-2">
-            <li className="flex items-start gap-2">
-              <span className="text-amber-600 dark:text-amber-400 mt-0.5">•</span>
-              <span><strong>Arbeiten am Netzanschluss:</strong> Zählerplatz und Hausanschlusskasten sind Sache des eingetragenen Fachbetriebs</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-amber-600 dark:text-amber-400 mt-0.5">•</span>
-              <span><strong>Große PV-Anlagen:</strong> Nur Balkonkraftwerke bis 800W, keine kompletten Photovoltaik-Anlagen</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-amber-600 dark:text-amber-400 mt-0.5">•</span>
-              <span><strong>Industrielle Elektrotechnik:</strong> Großanlagen und komplexe Gewerbetechnik</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-amber-600 dark:text-amber-400 mt-0.5">•</span>
-              <span><strong>24/7-Notdienst:</strong> Als Nebengewerbe können wir keinen Rund-um-die-Uhr-Service anbieten</span>
-            </li>
-          </ul>
-          <p className="text-amber-700 dark:text-amber-300 mt-4 text-sm">
-            So können wir Ihnen in unseren Spezialgebieten die beste Qualität und persönliche Betreuung garantieren.
+          <h2 className="text-2xl font-semibold mb-4 text-amber-800 dark:text-amber-200">Hinweis zu meinem Leistungsangebot</h2>
+          <p className="text-amber-700 dark:text-amber-300">
+            Mein Elektroservice ist bewusst überschaubar und spezialisiert.
+            Da ich den Betrieb eigenständig im Nebengewerbe führe, biete ich genau die Arbeiten an, die ich zuverlässig und mit hoher Qualität erledigen kann.
           </p>
         </div>
       </section>

@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { 
   Home, 
   Zap, 
@@ -33,19 +34,34 @@ const SmartHome = () => {
       <div className="mb-8">
         <h1 className="text-3xl font-bold mb-4">Smart Home – mein Ansatz</h1>
         
-        <Alert className="mb-6">
-          <AlertTriangle className="h-4 w-4" />
-          <AlertDescription>
-            Viele Smart-Home-Systeme wirken auf den ersten Blick praktisch, haben aber Nachteile: 
-            sie hängen stark an Cloud-Diensten, sind abhängig von Internet und Herstellern und können 
-            dadurch unsicher oder teuer werden. Außerdem sind große Systeme wie KNX oder Loxone für 
-            Einfamilienhäuser oft überdimensioniert und mit hohen Kosten verbunden.
-          </AlertDescription>
-        </Alert>
-
+        <p className="text-lg text-muted-foreground mb-6">
+          Viele Smart-Home-Systeme wirken auf den ersten Blick praktisch, haben aber Nachteile: 
+          sie hängen stark an Cloud-Diensten, sind abhängig von Internet und Herstellern und können 
+          dadurch unsicher oder teuer werden. Außerdem sind große Systeme wie KNX oder Loxone für 
+          Einfamilienhäuser oft überdimensioniert und mit hohen Kosten verbunden.
+        </p>
+        
         <p className="text-lg text-muted-foreground mb-6">
           Darum biete ich bewusst eine einfache, unabhängige und bezahlbare Alternative an:
         </p>
+
+        {/* Meine Philosophie */}
+        <Card className="mb-8 bg-primary/5 border-primary/20">
+          <CardHeader>
+            <CardTitle>Meine Philosophie</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-muted-foreground mb-4">
+              Durch die Kombination aus HomeMatic und Home Assistant kann ich sowohl einfach bedienbare 
+              Standardlösungen als auch hochgradig individuelle Automatisierungen anbieten. So profitieren 
+              Sie von Komfort, Sicherheit und Effizienz, ohne auf Flexibilität verzichten zu müssen.
+            </p>
+            <p className="text-muted-foreground">
+              Bei jeder Smart Home Installation erstelle ich eine Dokumentation mit Systemtopologie, 
+              Passwörtern, Software-Versionsständen und einer Backup-Sicherung, damit alles nachvollziehbar ist.
+            </p>
+          </CardContent>
+        </Card>
       </div>
 
       {/* Hauptsysteme */}
@@ -243,23 +259,6 @@ const SmartHome = () => {
         </Card>
       </div>
 
-      {/* Meine Philosophie */}
-      <Card className="mb-8 bg-primary/5 border-primary/20">
-        <CardHeader>
-          <CardTitle>Meine Philosophie</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <p className="text-muted-foreground mb-4">
-            Durch die Kombination aus HomeMatic und Home Assistant kann ich sowohl einfach bedienbare 
-            Standardlösungen als auch hochgradig individuelle Automatisierungen anbieten. So profitieren 
-            Sie von Komfort, Sicherheit und Effizienz, ohne auf Flexibilität verzichten zu müssen.
-          </p>
-          <p className="text-muted-foreground">
-            Bei jeder Smart Home Installation erstelle ich eine Dokumentation mit Systemtopologie, 
-            Passwörtern, Software-Versionsständen und einer Backup-Sicherung, damit alles nachvollziehbar ist.
-          </p>
-        </CardContent>
-      </Card>
 
       {/* Service-Paket */}
       <Card className="border-primary">
@@ -329,7 +328,7 @@ const SmartHome = () => {
       
       <div className="mt-8">
         <Button asChild variant="outline">
-          <a href="/leistungen">← Zurück zu den Leistungen</a>
+          <Link to="/leistungen">← Zurück zu den Leistungen</Link>
         </Button>
       </div>
     </section>
