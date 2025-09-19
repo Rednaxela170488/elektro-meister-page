@@ -118,10 +118,18 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-6">
             <div className="border-l-2 border-primary pl-4">
-              <h3 className="font-semibold text-lg">2011 - 2025</h3>
-              <p className="text-primary font-medium">Angestellter bei SIEMENS AG</p>
+              <h3 className="font-semibold text-lg">2025 - HEUTE</h3>
+              <p className="text-primary font-medium">Selbständigkeit Elektrotechnik Stanzel</p>
               <p className="text-sm text-muted-foreground">
-                Industrielle Elektrotechnik und Gebäudetechnik
+                Elektro-Dienstleistung
+              </p>
+            </div>
+            
+            <div className="border-l-2 border-muted pl-4">
+              <h3 className="font-semibold">2011 - HEUTE</h3>
+              <p className="font-medium">Angestellter bei SIEMENS AG</p>
+              <p className="text-sm text-muted-foreground">
+                Technischer Vertrieb für Industrielle Elektrotechnik und Gebäudetechnik
               </p>
             </div>
             
