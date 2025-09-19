@@ -126,7 +126,7 @@ const About = () => {
             </div>
             
             <div className="border-l-2 border-muted pl-4">
-              <h3 className="font-semibold">2011 - HEUTE</h3>
+              <h3 className="font-semibold text-lg">2011 - HEUTE</h3>
               <p className="font-medium">Angestellter bei SIEMENS AG</p>
               <p className="text-sm text-muted-foreground">
                 Technischer Vertrieb für Industrielle Elektrotechnik und Gebäudetechnik
@@ -134,7 +134,7 @@ const About = () => {
             </div>
             
             <div className="border-l-2 border-muted pl-4">
-              <h3 className="font-semibold">2004 - 2011</h3>
+              <h3 className="font-semibold text-lg">2004 - 2011</h3>
               <p className="font-medium">Ausbildung und Studium</p>
               <p className="text-sm text-muted-foreground">
                 Elektroniker für Geräte und Systeme + Diplom-Wirtschaftsingenieur Fachrichtung Elektrotechnik
