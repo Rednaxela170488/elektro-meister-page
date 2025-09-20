@@ -202,26 +202,15 @@ const Balkonkraftwerk = () => {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div>
-              <p className="text-muted-foreground mb-4">
-                Ich analysiere, in welchen Stromkreisen in Ihrer Wohnung der Solarstrom tatsächlich 
-                genutzt wird. So sehen Sie, wie viel Eigenverbrauch möglich ist und wo sich Ihr 
-                Balkonkraftwerk am meisten lohnt.
-              </p>
-              <p className="text-muted-foreground text-sm">
-                Mit modernen Wechselrichtern und Monitoring-Apps behalten Sie jederzeit den Überblick 
-                über Ihre Stromproduktion und Ihren Eigenverbrauch.
-              </p>
-            </div>
-            <div className="relative">
-              <img
-                src={solarMonitoring}
-                alt="Solar Monitoring App zeigt Stromproduktion und Verbrauchsdaten"
-                className="rounded-lg shadow-lg w-full h-auto object-cover"
-              />
-            </div>
-          </div>
+          <p className="text-muted-foreground mb-4">
+            Ich analysiere, in welchen Stromkreisen in Ihrer Wohnung der Solarstrom tatsächlich 
+            genutzt wird. So sehen Sie, wie viel Eigenverbrauch möglich ist und wo sich Ihr 
+            Balkonkraftwerk am meisten lohnt.
+          </p>
+          <p className="text-muted-foreground text-sm">
+            Mit modernen Wechselrichtern und Monitoring-Apps behalten Sie jederzeit den Überblick 
+            über Ihre Stromproduktion und Ihren Eigenverbrauch.
+          </p>
         </CardContent>
       </Card>
 

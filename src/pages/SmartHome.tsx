@@ -94,24 +94,35 @@ const SmartHome = () => {
               </div>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-2 text-sm mb-4">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 mt-0.5 text-green-600 shrink-0" />
-                  <span>Ein bewährtes Smart-Home-System, das lokal im Haus läuft</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 mt-0.5 text-green-600 shrink-0" />
-                  <span>Ideal für Licht, Heizung, Rollläden oder Sicherheit</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 mt-0.5 text-green-600 shrink-0" />
-                  <span>Großes Produktportfolio</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 mt-0.5 text-green-600 shrink-0" />
-                  <span>Auch für Einsteiger geeignet, ohne komplizierte Technik</span>
-                </li>
-              </ul>
+              <div className="grid md:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 mt-0.5 text-green-600 shrink-0" />
+                      <span>Ein bewährtes Smart-Home-System, das lokal im Haus läuft</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 mt-0.5 text-green-600 shrink-0" />
+                      <span>Ideal für Licht, Heizung, Rollläden oder Sicherheit</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 mt-0.5 text-green-600 shrink-0" />
+                      <span>Großes Produktportfolio</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 mt-0.5 text-green-600 shrink-0" />
+                      <span>Auch für Einsteiger geeignet, ohne komplizierte Technik</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="relative">
+                  <img
+                    src={homematicDevices}
+                    alt="HomeMatic Smart Home Geräte und Schalter"
+                    className="rounded-lg shadow-lg w-full h-auto object-cover"
+                  />
+                </div>
+              </div>
               <Button variant="outline" className="w-full" asChild>
                 <a href="https://homematic-ip.com/de" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                   Mehr auf homematic-ip.com
