@@ -94,35 +94,24 @@ const SmartHome = () => {
               </div>
             </CardHeader>
             <CardContent>
-              <div className="grid md:grid-cols-2 gap-4 mb-4">
-                <div>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 mt-0.5 text-green-600 shrink-0" />
-                      <span>Ein bewährtes Smart-Home-System, das lokal im Haus läuft</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 mt-0.5 text-green-600 shrink-0" />
-                      <span>Ideal für Licht, Heizung, Rollläden oder Sicherheit</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 mt-0.5 text-green-600 shrink-0" />
-                      <span>Großes Produktportfolio</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 mt-0.5 text-green-600 shrink-0" />
-                      <span>Auch für Einsteiger geeignet, ohne komplizierte Technik</span>
-                    </li>
-                  </ul>
-                </div>
-                <div className="relative">
-                  <img
-                    src={homematicDevices}
-                    alt="HomeMatic Smart Home Geräte und Schalter"
-                    className="rounded-lg shadow-lg w-full h-auto object-cover"
-                  />
-                </div>
-              </div>
+              <ul className="space-y-2 text-sm mb-4">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 mt-0.5 text-green-600 shrink-0" />
+                  <span>Ein bewährtes Smart-Home-System, das lokal im Haus läuft</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 mt-0.5 text-green-600 shrink-0" />
+                  <span>Ideal für Licht, Heizung, Rollläden oder Sicherheit</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 mt-0.5 text-green-600 shrink-0" />
+                  <span>Großes Produktportfolio</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 mt-0.5 text-green-600 shrink-0" />
+                  <span>Auch für Einsteiger geeignet, ohne komplizierte Technik</span>
+                </li>
+              </ul>
               <Button variant="outline" className="w-full" asChild>
                 <a href="https://homematic-ip.com/de" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                   Mehr auf homematic-ip.com
@@ -244,17 +233,28 @@ const SmartHome = () => {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground mb-4">
-              Home Assistant ist ein offenes Open-Source-System, das ebenfalls lokal betrieben werden kann. 
-              Dadurch behalten Sie die Kontrolle über Ihre Daten und Ihre Automatisierungen. Manche 
-              Schnittstellen erfordern zwar eine Cloud-Verbindung, doch viele Funktionen lassen sich 
-              vollständig lokal realisieren. Auch lässt sich HomeMatic in das System einbinden.
-            </p>
-            
-            <p className="text-muted-foreground mb-4">
-              Mit Home Assistant sind besonders individuelle und komplexe Automatisierungen möglich, 
-              die über klassische Smart-Home-Szenarien hinausgehen:
-            </p>
+            <div className="grid md:grid-cols-2 gap-6 mb-4">
+              <div>
+                <p className="text-muted-foreground mb-4">
+                  Home Assistant ist ein offenes Open-Source-System, das ebenfalls lokal betrieben werden kann. 
+                  Dadurch behalten Sie die Kontrolle über Ihre Daten und Ihre Automatisierungen. Manche 
+                  Schnittstellen erfordern zwar eine Cloud-Verbindung, doch viele Funktionen lassen sich 
+                  vollständig lokal realisieren. Auch lässt sich HomeMatic in das System einbinden.
+                </p>
+                
+                <p className="text-muted-foreground mb-4">
+                  Mit Home Assistant sind besonders individuelle und komplexe Automatisierungen möglich, 
+                  die über klassische Smart-Home-Szenarien hinausgehen:
+                </p>
+              </div>
+              <div className="relative">
+                <img
+                  src={smartHomeDashboard}
+                  alt="Home Assistant Dashboard mit verschiedenen Smart Home Steuerungen"
+                  className="rounded-lg shadow-lg w-full h-auto object-cover"
+                />
+              </div>
+            </div>
 
             <div className="grid md:grid-cols-2 gap-4">
               <div className="space-y-3">
