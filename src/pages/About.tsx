@@ -158,7 +158,7 @@ const About = () => {
           <h3 className="text-xl font-semibold mb-4">Mein persönlicher Ansatz</h3>
           <p className="text-muted-foreground mb-4">
             Bei mir bekommen Sie keine Massenabfertigung, sondern individuelle Betreuung. 
-            Jeder Auftrag wird mit derselben Sorgfalt behandelt – egal ob kleine Reparatur 
+            Jeder Auftrag wird mit derselben Sorgfalt behandelt – egal ob einfach Steckdosenerweiterung 
             oder komplexe Smart Home Installation.
           </p>
           <p className="text-muted-foreground">
