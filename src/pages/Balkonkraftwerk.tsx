@@ -17,6 +17,8 @@ import {
   Wrench,
   Info
 } from "lucide-react";
+import balkonkraftwerkInstallation from "@/assets/balkonkraftwerk-installation.jpg";
+import solarMonitoring from "@/assets/solar-monitoring.jpg";
 
 const Balkonkraftwerk = () => {
   return (
@@ -28,13 +30,24 @@ const Balkonkraftwerk = () => {
       
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold mb-4">🌞 Mein Service für Ihr Balkonkraftwerk – einfach, sicher, persönlich</h1>
-        
-        <p className="text-lg text-muted-foreground mb-6">
-          Sie möchten Stromkosten sparen und mit einem Balkonkraftwerk bis 800 Watt eigenen Solarstrom erzeugen?
-          Ich begleite Sie von der Idee bis zum ersten Sonnenstrahl im eigenen Stromnetz – fachgerecht, 
-          unkompliziert und individuell.
-        </p>
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div>
+            <h1 className="text-3xl font-bold mb-4">🌞 Mein Service für Ihr Balkonkraftwerk – einfach, sicher, persönlich</h1>
+            
+            <p className="text-lg text-muted-foreground mb-6">
+              Sie möchten Stromkosten sparen und mit einem Balkonkraftwerk bis 800 Watt eigenen Solarstrom erzeugen?
+              Ich begleite Sie von der Idee bis zum ersten Sonnenstrahl im eigenen Stromnetz – fachgerecht, 
+              unkompliziert und individuell.
+            </p>
+          </div>
+          <div className="relative">
+            <img
+              src={balkonkraftwerkInstallation}
+              alt="Balkonkraftwerk Installation mit Solarpanelen am Balkongeländer"
+              className="rounded-lg shadow-lg w-full h-auto object-cover"
+            />
+          </div>
+        </div>
       </div>
 
       {/* Leistungsangebot */}
@@ -189,11 +202,26 @@ const Balkonkraftwerk = () => {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <p className="text-muted-foreground">
-            Ich analysiere, in welchen Stromkreisen in Ihrer Wohnung der Solarstrom tatsächlich 
-            genutzt wird. So sehen Sie, wie viel Eigenverbrauch möglich ist und wo sich Ihr 
-            Balkonkraftwerk am meisten lohnt.
-          </p>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <p className="text-muted-foreground mb-4">
+                Ich analysiere, in welchen Stromkreisen in Ihrer Wohnung der Solarstrom tatsächlich 
+                genutzt wird. So sehen Sie, wie viel Eigenverbrauch möglich ist und wo sich Ihr 
+                Balkonkraftwerk am meisten lohnt.
+              </p>
+              <p className="text-muted-foreground text-sm">
+                Mit modernen Wechselrichtern und Monitoring-Apps behalten Sie jederzeit den Überblick 
+                über Ihre Stromproduktion und Ihren Eigenverbrauch.
+              </p>
+            </div>
+            <div className="relative">
+              <img
+                src={solarMonitoring}
+                alt="Solar Monitoring App zeigt Stromproduktion und Verbrauchsdaten"
+                className="rounded-lg shadow-lg w-full h-auto object-cover"
+              />
+            </div>
+          </div>
         </CardContent>
       </Card>
 

@@ -21,6 +21,8 @@ import {
   CheckCircle,
   ExternalLink
 } from "lucide-react";
+import smartHomeDashboard from "@/assets/smart-home-dashboard.jpg";
+import homematicDevices from "@/assets/homematic-devices.jpg";
 
 const SmartHome = () => {
   return (
@@ -32,14 +34,25 @@ const SmartHome = () => {
       
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold mb-4">Smart Home – mein Ansatz</h1>
-        
-        <p className="text-lg text-muted-foreground mb-6">
-          Viele Smart-Home-Systeme wirken auf den ersten Blick praktisch, haben aber Nachteile: 
-          sie hängen stark an Cloud-Diensten, sind abhängig von Internet und Herstellern und können 
-          dadurch unsicher oder teuer werden. Außerdem sind große Systeme wie KNX oder Loxone für 
-          Einfamilienhäuser oft überdimensioniert und mit hohen Kosten verbunden.
-        </p>
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div>
+            <h1 className="text-3xl font-bold mb-4">Smart Home – mein Ansatz</h1>
+            
+            <p className="text-lg text-muted-foreground mb-6">
+              Viele Smart-Home-Systeme wirken auf den ersten Blick praktisch, haben aber Nachteile: 
+              sie hängen stark an Cloud-Diensten, sind abhängig von Internet und Herstellern und können 
+              dadurch unsicher oder teuer werden. Außerdem sind große Systeme wie KNX oder Loxone für 
+              Einfamilienhäuser oft überdimensioniert und mit hohen Kosten verbunden.
+            </p>
+          </div>
+          <div className="relative">
+            <img
+              src={smartHomeDashboard}
+              alt="Smart Home Dashboard mit verschiedenen verbundenen Geräten"
+              className="rounded-lg shadow-lg w-full h-auto object-cover"
+            />
+          </div>
+        </div>
         
         {/* Meine Philosophie */}
         <Card className="mb-8 bg-primary/5 border-primary/20">
@@ -169,34 +182,43 @@ const SmartHome = () => {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground mb-4">
-              HomeMatic überzeugt durch seine Vielseitigkeit: Sie können es entweder lokal oder über die 
-              Cloud betreiben, je nach Anforderung und Komfortwunsch. Das System eignet sich hervorragend 
-              für klassische Automatisierungen in Wohnräumen:
-            </p>
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="space-y-3">
-                <div className="flex items-center gap-2">
-                  <Lightbulb className="w-5 h-5 text-primary" />
-                  <span>Steuerung von Rolläden und Beleuchtung</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Thermometer className="w-5 h-5 text-primary" />
-                  <span>Regelung der Raumtemperatur</span>
+            <div className="grid md:grid-cols-2 gap-6 mb-4">
+              <div>
+                <p className="text-muted-foreground mb-4">
+                  HomeMatic überzeugt durch seine Vielseitigkeit: Sie können es entweder lokal oder über die 
+                  Cloud betreiben, je nach Anforderung und Komfortwunsch. Das System eignet sich hervorragend 
+                  für klassische Automatisierungen in Wohnräumen:
+                </p>
+                <div className="grid gap-4">
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2">
+                      <Lightbulb className="w-5 h-5 text-primary" />
+                      <span>Steuerung von Rolläden und Beleuchtung</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Thermometer className="w-5 h-5 text-primary" />
+                      <span>Regelung der Raumtemperatur</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Lock className="w-5 h-5 text-primary" />
+                      <span>Keypads an Türen für sicheren Zutritt</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Settings className="w-5 h-5 text-primary" />
+                      <span>Umsetzung kleiner Programme wie Zeitpläne oder Szenarien</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="space-y-3">
-                <div className="flex items-center gap-2">
-                  <Lock className="w-5 h-5 text-primary" />
-                  <span>Keypads an Türen für sicheren Zutritt</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Settings className="w-5 h-5 text-primary" />
-                  <span>Umsetzung kleiner Programme wie Zeitpläne oder Szenarien</span>
-                </div>
+              <div className="relative">
+                <img
+                  src={homematicDevices}
+                  alt="HomeMatic Smart Home Geräte und Komponenten"
+                  className="rounded-lg shadow-lg w-full h-auto object-cover"
+                />
               </div>
             </div>
-            <p className="text-muted-foreground mt-4">
+            <p className="text-muted-foreground">
               HomeMatic bietet dabei eine robuste und leicht verständliche Lösung, die zuverlässig im Alltag funktioniert.
             </p>
           </CardContent>
