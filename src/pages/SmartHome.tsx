@@ -73,13 +73,13 @@ const SmartHome = () => {
         </Card>
 
         <p className="text-lg text-muted-foreground mb-6">
-          Darum biete ich bewusst eine einfache, unabhängige und bezahlbare Alternative an:
+          Darum biete ich bewusst eine einfache, unabhängige und bezahlbare Alternative an.
         </p>
       </div>
 
       {/* Smart-Home-Systeme */}
       <div className="mb-12">
-        <h2 className="text-2xl font-semibold mb-6">Meine Smart-Home-Systeme</h2>
+        <h2 className="text-2xl font-semibold mb-6">Smart-Home-Systeme</h2>
         
         <div className="grid md:grid-cols-2 gap-6">
           {/* HomeMatic */}
@@ -205,8 +205,7 @@ const SmartHome = () => {
             Servicevertrag an. So erhalten Sie regelmäßige Pflege, Sicherheit durch Backups und schnelle 
             Hilfe im Störungsfall. Die Leistungen umfassen:
           </p>
-          
-          <div className="grid md:grid-cols-2 gap-4 mb-6">
+          <div className="grid md:grid-cols-2 gap-4">
             <ul className="space-y-2">
               <li className="flex items-start gap-2">
                 <CheckCircle className="w-4 h-4 mt-0.5 text-green-600 shrink-0" />
@@ -232,28 +231,6 @@ const SmartHome = () => {
               </li>
             </ul>
           </div>
-
-          <div className="bg-muted/50 p-4 rounded-lg">
-            <p className="text-sm text-muted-foreground mb-2">
-              <strong>Vertragslaufzeit:</strong> Der Wartungsvertrag läuft 1 Jahr und verlängert sich automatisch 
-              um 1 weiteres Jahr, sofern beide Parteien nicht 3 Monate vor Ende widersprechen.
-            </p>
-            <p className="text-sm text-muted-foreground">
-              Bei der Remote-Hilfe kann ich aufgrund meiner Firmengröße keine standardisierten 
-              Reaktionsgeschwindigkeiten anbieten.
-            </p>
-          </div>
-
-          <Alert className="mt-4">
-            <AlertTriangle className="h-4 w-4" />
-            <AlertDescription>
-              <strong>Hinweis zu Home Assistant:</strong> Home Assistant ist ein Open-Source-Projekt, 
-              das von einer Community weiterentwickelt wird. Ein dauerhafter offizieller Support durch 
-              den Hersteller kann daher nicht garantiert werden. Ich stelle im Rahmen dieser Servicepakete 
-              sicher, dass Ihre Installation gepflegt, abgesichert und im Störungsfall bestmöglich 
-              wiederhergestellt wird.
-            </AlertDescription>
-          </Alert>
         </CardContent>
       </Card>
       
