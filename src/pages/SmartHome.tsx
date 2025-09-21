@@ -141,20 +141,10 @@ const SmartHome = () => {
               </div>
             </CardHeader>
             <CardContent>
-              <div className="mb-4">
-                <p className="text-muted-foreground mb-4">
-                  Lokales Open-Source-System, das verschiedene Geräte und Hersteller verbindet. 
-                  Ermöglicht individuelle und komplexe Automatisierungen.
-                </p>
-                
-                <div className="relative mb-4">
-                  <img
-                    src={smartHomeDashboard}
-                    alt="Home Assistant Dashboard mit verschiedenen Smart Home Steuerungen"
-                    className="rounded-lg shadow-lg w-full h-auto object-cover"
-                  />
-                </div>
-              </div>
+              <p className="text-muted-foreground mb-4">
+                Lokales Open-Source-System, das verschiedene Geräte und Hersteller verbindet. 
+                Ermöglicht individuelle und komplexe Automatisierungen.
+              </p>
               
               <div className="space-y-2 mb-4">
                 <div className="flex items-center gap-2">
