@@ -77,16 +77,17 @@ const SmartHome = () => {
         </p>
       </div>
 
-      {/* Hauptsysteme */}
+      {/* Smart-Home-Systeme */}
       <div className="mb-12">
         <h2 className="text-2xl font-semibold mb-6">Meine Smart-Home-Systeme</h2>
         
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <div className="grid md:grid-cols-2 gap-6">
+          {/* HomeMatic */}
           <Card className="border-primary">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Home className="text-primary" />
-                HomeMatic
+                HomeMatic – bewährt & zuverlässig
               </CardTitle>
               <div className="flex gap-2">
                 <Badge variant="secondary">Bewährt</Badge>
@@ -94,24 +95,30 @@ const SmartHome = () => {
               </div>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-2 text-sm mb-4">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 mt-0.5 text-green-600 shrink-0" />
-                  <span>Ein bewährtes Smart-Home-System, das lokal im Haus läuft</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 mt-0.5 text-green-600 shrink-0" />
-                  <span>Ideal für Licht, Heizung, Rollläden oder Sicherheit</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 mt-0.5 text-green-600 shrink-0" />
-                  <span>Großes Produktportfolio</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 mt-0.5 text-green-600 shrink-0" />
-                  <span>Auch für Einsteiger geeignet, ohne komplizierte Technik</span>
-                </li>
-              </ul>
+              <p className="text-muted-foreground mb-4">
+                Ein bewährtes Smart-Home-System, das lokal oder über die Cloud betrieben werden kann. 
+                Ideal für klassische Automatisierungen ohne komplizierte Technik.
+              </p>
+              
+              <div className="space-y-3 mb-4">
+                <div className="flex items-center gap-2">
+                  <Lightbulb className="w-4 h-4 text-primary" />
+                  <span className="text-sm">Steuerung von Rolläden und Beleuchtung</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Thermometer className="w-4 h-4 text-primary" />
+                  <span className="text-sm">Regelung der Raumtemperatur</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Lock className="w-4 h-4 text-primary" />
+                  <span className="text-sm">Keypads an Türen für sicheren Zutritt</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Settings className="w-4 h-4 text-primary" />
+                  <span className="text-sm">Zeitpläne und Szenarien</span>
+                </div>
+              </div>
+              
               <Button variant="outline" className="w-full" asChild>
                 <a href="https://homematic-ip.com/de" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                   Mehr auf homematic-ip.com
@@ -121,11 +128,12 @@ const SmartHome = () => {
             </CardContent>
           </Card>
 
+          {/* Home Assistant */}
           <Card className="border-primary">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Server className="text-primary" />
-                Home Assistant
+                Home Assistant – flexibel & offen
               </CardTitle>
               <div className="flex gap-2">
                 <Badge variant="secondary">Open Source</Badge>
@@ -133,163 +141,53 @@ const SmartHome = () => {
               </div>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-2 text-sm mb-4">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 mt-0.5 text-green-600 shrink-0" />
-                  <span>Eine offene Plattform, die verschiedene Geräte und Systeme verbindet</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 mt-0.5 text-green-600 shrink-0" />
-                  <span>Ermöglicht Steuerung unterschiedlicher Hersteller in einer Oberfläche</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 mt-0.5 text-green-600 shrink-0" />
-                  <span>Läuft ebenfalls lokal – Ihre Daten bleiben bei Ihnen zu Hause</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 mt-0.5 text-green-600 shrink-0" />
-                  <span>Für komplexere Anwendungsfälle</span>
-                </li>
-              </ul>
-              <Button variant="outline" className="w-full" asChild>
+              <div className="mb-4">
+                <p className="text-muted-foreground mb-4">
+                  Lokales Open-Source-System, das verschiedene Geräte und Hersteller verbindet. 
+                  Ermöglicht individuelle und komplexe Automatisierungen.
+                </p>
+                
+                <div className="relative mb-4">
+                  <img
+                    src={smartHomeDashboard}
+                    alt="Home Assistant Dashboard mit verschiedenen Smart Home Steuerungen"
+                    className="rounded-lg shadow-lg w-full h-auto object-cover"
+                  />
+                </div>
+              </div>
+              
+              <div className="space-y-2 mb-4">
+                <div className="flex items-center gap-2">
+                  <Sun className="w-4 h-4 text-primary" />
+                  <span className="text-sm">PV-Überstrom für Klimaanlage nutzen</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Music className="w-4 h-4 text-primary" />
+                  <span className="text-sm">Musik beim Betreten des Hauses</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Wifi className="w-4 h-4 text-primary" />
+                  <span className="text-sm">Integration verschiedenster Marken</span>
+                </div>
+              </div>
+              
+              <Button variant="outline" className="w-full mb-4" asChild>
                 <a href="https://www.home-assistant.io/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                   Mehr auf home-assistant.io
                   <ExternalLink className="w-4 h-4" />
                 </a>
               </Button>
+              
+              <Alert>
+                <AlertTriangle className="h-4 w-4" />
+                <AlertDescription className="text-xs">
+                  <strong>Hinweis:</strong> Als Open-Source-Projekt kann ich keinen dauerhaften offiziellen 
+                  Support garantieren, unterstütze Sie aber gerne bei Installation und Einrichtung.
+                </AlertDescription>
+              </Alert>
             </CardContent>
           </Card>
         </div>
-      </div>
-
-      {/* Detaillierte Systembeschreibung */}
-      <div className="mb-12">
-        <h2 className="text-2xl font-semibold mb-6">Warum ich HomeMatic und Home Assistant anbiete</h2>
-        
-        <p className="text-muted-foreground mb-8">
-          Als Elektriker im Nebengewerbe setze ich bewusst auf zwei leistungsstarke Smart-Home-Systeme: 
-          HomeMatic und Home Assistant. Beide Systeme bieten flexible Möglichkeiten, Ihr Zuhause 
-          komfortabler, effizienter und intelligenter zu machen – dabei lege ich besonderen Wert auf 
-          lokale Steuerung, Sicherheit und Erweiterbarkeit.
-        </p>
-
-        {/* HomeMatic Details */}
-        <Card className="mb-6">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Home className="text-primary" />
-              HomeMatic – zuverlässige Automatisierung für Ihr Zuhause
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="grid md:grid-cols-2 gap-6 mb-4">
-              <div>
-                <p className="text-muted-foreground mb-4">
-                  HomeMatic überzeugt durch seine Vielseitigkeit: Sie können es entweder lokal oder über die 
-                  Cloud betreiben, je nach Anforderung und Komfortwunsch. Das System eignet sich hervorragend 
-                  für klassische Automatisierungen in Wohnräumen:
-                </p>
-                <div className="grid gap-4">
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-2">
-                      <Lightbulb className="w-5 h-5 text-primary" />
-                      <span>Steuerung von Rolläden und Beleuchtung</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Thermometer className="w-5 h-5 text-primary" />
-                      <span>Regelung der Raumtemperatur</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Lock className="w-5 h-5 text-primary" />
-                      <span>Keypads an Türen für sicheren Zutritt</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Settings className="w-5 h-5 text-primary" />
-                      <span>Umsetzung kleiner Programme wie Zeitpläne oder Szenarien</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="relative">
-                <img
-                  src={homematicDevices}
-                  alt="HomeMatic Smart Home Geräte und Komponenten"
-                  className="rounded-lg shadow-lg w-full h-auto object-cover"
-                />
-              </div>
-            </div>
-            <p className="text-muted-foreground">
-              HomeMatic bietet dabei eine robuste und leicht verständliche Lösung, die zuverlässig im Alltag funktioniert.
-            </p>
-          </CardContent>
-        </Card>
-
-        {/* Home Assistant Details */}
-        <Card className="mb-6">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Server className="text-primary" />
-              Home Assistant – die offene Plattform für individuelle Lösungen
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="grid md:grid-cols-2 gap-6 mb-4">
-              <div>
-                <p className="text-muted-foreground mb-4">
-                  Home Assistant ist ein offenes Open-Source-System, das ebenfalls lokal betrieben werden kann. 
-                  Dadurch behalten Sie die Kontrolle über Ihre Daten und Ihre Automatisierungen. Manche 
-                  Schnittstellen erfordern zwar eine Cloud-Verbindung, doch viele Funktionen lassen sich 
-                  vollständig lokal realisieren. Auch lässt sich HomeMatic in das System einbinden.
-                </p>
-                
-                <p className="text-muted-foreground mb-4">
-                  Mit Home Assistant sind besonders individuelle und komplexe Automatisierungen möglich, 
-                  die über klassische Smart-Home-Szenarien hinausgehen:
-                </p>
-              </div>
-              <div className="relative">
-                <img
-                  src={smartHomeDashboard}
-                  alt="Home Assistant Dashboard mit verschiedenen Smart Home Steuerungen"
-                  className="rounded-lg shadow-lg w-full h-auto object-cover"
-                />
-              </div>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="space-y-3">
-                <div className="flex items-start gap-2">
-                  <Sun className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                  <span className="text-sm">Die Klimaanlage läuft nur, wenn ein PV-Überstrom vorhanden ist</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <Zap className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                  <span className="text-sm">Auswertung einzelner Strings einer PV-Anlage für bessere Einsicht</span>
-                </div>
-              </div>
-              <div className="space-y-3">
-                <div className="flex items-start gap-2">
-                  <Music className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                  <span className="text-sm">Der Lautsprecher spielt Lieblingsmusik beim Betreten des Hauses</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <Wifi className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                  <span className="text-sm">Integration verschiedenster Geräte und Marken in einem System</span>
-                </div>
-              </div>
-            </div>
-
-            <Alert className="mt-4">
-              <AlertTriangle className="h-4 w-4" />
-              <AlertDescription>
-                <strong>Wichtiger Hinweis:</strong> Home Assistant ist ein Open-Source-Projekt, das kontinuierlich 
-                von der Community weiterentwickelt wird. Aufgrund dieser Natur kann ich keinen dauerhaften 
-                offiziellen Support garantieren. Ich unterstütze Sie jedoch gerne bei Installation, 
-                Einrichtung und individuellen Automatisierungen.
-              </AlertDescription>
-            </Alert>
-          </CardContent>
-        </Card>
       </div>
 
 
