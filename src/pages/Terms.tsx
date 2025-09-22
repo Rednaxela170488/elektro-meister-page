@@ -26,8 +26,13 @@ const Terms = () => {
             Alle Angebote sind freibleibend und unverbindlich, sofern nicht ausdrücklich etwas anderes vereinbart wird. 
             Der Vertrag kommt durch schriftliche Auftragsbestätigung oder Beginn der Arbeiten zustande.
           </p>
+          <p className="text-muted-foreground mb-2">
+            Kostenvoranschläge sind unverbindlich. Unvorhergesehene Mehrarbeiten werden nach Aufwand berechnet. 
+            Bei Überschreitungen über 20% wird der Kunde informiert.
+          </p>
           <p className="text-muted-foreground">
-            Kostenvoranschläge sind unverbindlich. Überschreitungen von mehr als 15% werden dem Kunden vor Ausführung mitgeteilt.
+            <strong>Mehrarbeiten:</strong> Alle vom ursprünglichen Auftrag abweichenden Arbeiten gelten als 
+            Mehrarbeiten und werden gesondert nach den zum Zeitpunkt der Ausführung gültigen Preisen berechnet.
           </p>
         </section>
 
@@ -60,11 +65,19 @@ const Terms = () => {
             Bei Kleinunternehmerregelung (§ 19 UStG) erfolgt kein Mehrwertsteuerausweis.
           </p>
           <p className="text-muted-foreground mb-2">
-            Zahlungen sind binnen 14 Tagen nach Rechnungsstellung ohne Abzug fällig. 
-            Bei Zahlungsverzug werden Verzugszinsen in Höhe von 9% über dem Basiszinssatz berechnet.
+            <strong>Zahlungsbedingungen:</strong> Bei Aufträgen über 500 EUR ist eine Anzahlung von 50% 
+            vor Arbeitsbeginn fällig. Restzahlung binnen 7 Tagen nach Rechnungsstellung ohne Abzug.
+          </p>
+          <p className="text-muted-foreground mb-2">
+            <strong>Verzug:</strong> Bei Zahlungsverzug werden Verzugszinsen in Höhe von 9% über dem Basiszinssatz 
+            sowie Mahngebühren (1. Mahnung: 5 EUR, 2. Mahnung: 10 EUR, 3. Mahnung: 15 EUR) berechnet.
+          </p>
+          <p className="text-muted-foreground mb-2">
+            Aufrechnungsrechte bestehen nur bei unbestrittenen oder rechtskräftig festgestellten Forderungen.
           </p>
           <p className="text-muted-foreground">
-            Aufrechnungsrechte bestehen nur bei unbestrittenen oder rechtskräftig festgestellten Forderungen.
+            Bei Zahlungsverzug kann der Auftragnehmer weitere Arbeiten einstellen und gelieferte 
+            Materialien bis zur vollständigen Bezahlung zurückbehalten.
           </p>
         </section>
 
@@ -72,15 +85,20 @@ const Terms = () => {
           <h2 className="text-xl font-semibold mb-3">5. Termine und Fristen</h2>
           <p className="text-muted-foreground mb-2">
             Termine sind nur bei schriftlicher Bestätigung verbindlich. Bei Terminverzögerungen durch 
-            höhere Gewalt, Materialmangel oder Kundenverhalten verlängern sich die Fristen entsprechend.
+            höhere Gewalt, Materialmangel, Witterung oder Kundenverhalten verlängern sich die Fristen entsprechend.
           </p>
           <p className="text-muted-foreground mb-2">
-            Der Kunde ist verpflichtet, die Baustelle rechtzeitig bereitzustellen und erforderliche 
-            Genehmigungen einzuholen.
+            Der Kunde ist verpflichtet, die Baustelle rechtzeitig und vollständig bereitzustellen, 
+            erforderliche Genehmigungen einzuholen und bei Terminabsagen mindestens 48 Stunden vorher zu informieren.
+          </p>
+          <p className="text-muted-foreground mb-2">
+            <strong>Stornierung/Verschiebung:</strong> Bei Stornierung oder Verschiebung bereits bestätigter 
+            Termine weniger als 48 Stunden vorher werden 80% des vereinbarten Entgelts, 
+            mindestens jedoch 150 EUR Ausfallpauschale berechnet.
           </p>
           <p className="text-muted-foreground">
-            <strong>Stornierung:</strong> Bei Stornierung bereits bestätigter Termine werden angefallene 
-            Kosten und 50% des vereinbarten Entgelts berechnet, mindestens jedoch die Anfahrtskosten.
+            <strong>Wartezeiten:</strong> Wartezeiten durch nicht bereitgestellte Baustelle oder 
+            fehlende Mitwirkung des Kunden werden als Arbeitszeit berechnet.
           </p>
         </section>
 
@@ -102,35 +120,47 @@ const Terms = () => {
         <section>
           <h2 className="text-xl font-semibold mb-3">7. Gewährleistung und Garantie</h2>
           <p className="text-muted-foreground mb-2">
-            Es gelten die gesetzlichen Gewährleistungsbestimmungen. Die Gewährleistungsfrist beträgt 
-            bei Werkleistungen 5 Jahre, bei beweglichen Sachen 2 Jahre ab Abnahme.
+            Die Gewährleistung richtet sich nach den gesetzlichen Bestimmungen. 
+            Gewährleistungsansprüche bestehen nur bei fachgerechter Nutzung und ordnungsgemäßer Wartung.
+          </p>
+          <p className="text-muted-foreground mb-2">
+            <strong>Ausschluss:</strong> Die Gewährleistung entfällt bei Eingriffen durch Dritte, 
+            unsachgemäßer Behandlung, natürlichem Verschleiß oder Schäden durch höhere Gewalt.
+          </p>
+          <p className="text-muted-foreground mb-2">
+            Mängel sind unverzüglich, spätestens binnen 7 Tagen schriftlich mit Fotodokumentation anzuzeigen. 
+            Verspätete Anzeigen schließen Gewährleistungsansprüche aus.
           </p>
           <p className="text-muted-foreground mb-2">
             Herstellergarantien bleiben unberührt und werden an den Kunden weitergegeben.
           </p>
           <p className="text-muted-foreground">
-            Mängel sind unverzüglich schriftlich anzuzeigen. Bei berechtigten Mängelrügen wird zunächst 
-            Nachbesserung geleistet.
+            Bei berechtigten Mängelrügen wird zunächst Nachbesserung geleistet. 
+            Schlägt diese zweimalig fehl, kann der Kunde Minderung oder Rücktritt verlangen.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold mb-3">8. Haftung und Versicherung</h2>
           <p className="text-muted-foreground mb-2">
-            Für Schäden durch leichte Fahrlässigkeit haftet der Auftragnehmer nur bei Verletzung wesentlicher 
-            Vertragspflichten, beschränkt auf den vorhersehbaren, typischen Schaden.
+            Die Haftung des Auftragnehmers ist auf Vorsatz und grobe Fahrlässigkeit beschränkt. 
+            Bei leichter Fahrlässigkeit haftet er nur bei Verletzung wesentlicher Vertragspflichten, 
+            begrenzt auf den vertragstypischen, vorhersehbaren Schaden, maximal jedoch die Auftragssumme.
           </p>
           <p className="text-muted-foreground mb-2">
-            Die Haftung für Folgeschäden, entgangenen Gewinn und mittelbare Schäden ist ausgeschlossen, 
-            soweit gesetzlich zulässig.
+            <strong>Haftungsausschluss:</strong> Ausgeschlossen ist die Haftung für Folgeschäden, 
+            entgangenen Gewinn, Betriebsunterbrechung, Datenverlust und mittelbare Schäden aller Art.
           </p>
           <p className="text-muted-foreground mb-2">
-            Bei Vorsatz und grober Fahrlässigkeit sowie bei Schäden an Leben, Körper und Gesundheit 
-            haftet der Auftragnehmer uneingeschränkt.
+            <strong>Mitwirkungspflicht:</strong> Der Kunde ist zur Schadensminderung verpflichtet. 
+            Schäden durch mangelhafte Mitwirkung des Kunden gehen zu dessen Lasten.
+          </p>
+          <p className="text-muted-foreground mb-2">
+            Bei Schäden an Leben, Körper und Gesundheit haftet der Auftragnehmer uneingeschränkt.
           </p>
           <p className="text-muted-foreground">
-            Der Auftragnehmer verfügt über eine Betriebshaftpflichtversicherung. Die Versicherungssumme 
-            beträgt mindestens 1 Mio. EUR für Personen- und Sachschäden.
+            Der Auftragnehmer verfügt über eine Betriebshaftpflichtversicherung. 
+            Die Versicherungssumme beträgt 1 Mio. EUR für Personen- und Sachschäden.
           </p>
         </section>
 
