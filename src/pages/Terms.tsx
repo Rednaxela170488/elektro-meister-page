@@ -35,18 +35,25 @@ const Terms = () => {
           <h2 className="text-xl font-semibold mb-3">3. Leistungen und Ausführung</h2>
           <p className="text-muted-foreground mb-2">
             <strong>Elektroinstallationen:</strong> Alle Arbeiten werden nach den gültigen VDE-Bestimmungen, 
-            DIN-Normen und örtlichen Anschlussvorschriften ausgeführt.
+            DIN-Normen und örtlichen Anschlussvorschriften ausgeführt. Nach Abschluss wird ein 
+            Prüfprotokoll nach VDE 0100-600 erstellt.
           </p>
           <p className="text-muted-foreground mb-2">
             <strong>Smart Home Systeme:</strong> Installation und Konfiguration erfolgen nach Herstellervorgaben. 
-            Einweisung und Dokumentation sind im Leistungsumfang enthalten.
+            Einweisung und Dokumentation sind im Leistungsumfang enthalten. Wartungsintervalle richten 
+            sich nach Herstellerempfehlungen.
           </p>
           <p className="text-muted-foreground mb-2">
-            <strong>Balkonkraftwerke:</strong> Anmeldung beim Netzbetreiber und im Marktstammdatenregister 
-            erfolgt durch den Kunden oder nach gesonderter Vereinbarung.
+            <strong>Balkonkraftwerke:</strong> Installation erfolgt nach VDE-AR-N 4105. Anmeldung beim 
+            Netzbetreiber und im Marktstammdatenregister erfolgt durch den Kunden oder nach gesonderter Vereinbarung.
+          </p>
+          <p className="text-muted-foreground mb-2">
+            <strong>Wallboxen:</strong> Installation erfolgt nach VDE-AR-N 4100. Eine Anmeldung beim 
+            Netzbetreiber ist bei Leistungen über 11 kW erforderlich.
           </p>
           <p className="text-muted-foreground">
             Der Kunde stellt unentgeltlich die erforderlichen Hilfskräfte sowie Strom, Wasser und Heizung zur Verfügung.
+            Sicherheitsbestimmungen sind einzuhalten, Arbeitsplatz muss frei zugänglich sein.
           </p>
         </section>
 
@@ -71,14 +78,23 @@ const Terms = () => {
             Termine sind nur bei schriftlicher Bestätigung verbindlich. Bei Terminverzögerungen durch 
             höhere Gewalt, Materialmangel oder Kundenverhalten verlängern sich die Fristen entsprechend.
           </p>
-          <p className="text-muted-foreground">
+          <p className="text-muted-foreground mb-2">
             Der Kunde ist verpflichtet, die Baustelle rechtzeitig bereitzustellen und erforderliche 
             Genehmigungen einzuholen.
+          </p>
+          <p className="text-muted-foreground">
+            <strong>Stornierung:</strong> Bei Stornierung bereits bestätigter Termine werden angefallene 
+            Kosten und 50% des vereinbarten Entgelts berechnet, mindestens jedoch die Anfahrtskosten.
           </p>
         </section>
 
         <section>
-          <h2 className="text-xl font-semibold mb-3">6. Gefahrenübergang und Eigentumsvorbehalt</h2>
+          <h2 className="text-xl font-semibold mb-3">6. Abnahme, Gefahrenübergang und Eigentumsvorbehalt</h2>
+          <p className="text-muted-foreground mb-2">
+            <strong>Abnahme:</strong> Der Kunde ist zur Abnahme der Werkleistung verpflichtet. 
+            Die Abnahme gilt als erfolgt, wenn der Kunde die Leistung in Betrieb nimmt oder 
+            14 Tage nach Fertigstellungsanzeige verstreichen, ohne dass Mängel gerügt werden.
+          </p>
           <p className="text-muted-foreground mb-2">
             Die Gefahr geht mit der Übergabe der Arbeiten bzw. bei Teilleistungen mit deren Abnahme auf den Kunden über.
           </p>
@@ -103,7 +119,7 @@ const Terms = () => {
         </section>
 
         <section>
-          <h2 className="text-xl font-semibold mb-3">8. Haftung</h2>
+          <h2 className="text-xl font-semibold mb-3">8. Haftung und Versicherung</h2>
           <p className="text-muted-foreground mb-2">
             Für Schäden durch leichte Fahrlässigkeit haftet der Auftragnehmer nur bei Verletzung wesentlicher 
             Vertragspflichten, beschränkt auf den vorhersehbaren, typischen Schaden.
@@ -112,17 +128,26 @@ const Terms = () => {
             Die Haftung für Folgeschäden, entgangenen Gewinn und mittelbare Schäden ist ausgeschlossen, 
             soweit gesetzlich zulässig.
           </p>
-          <p className="text-muted-foreground">
+          <p className="text-muted-foreground mb-2">
             Bei Vorsatz und grober Fahrlässigkeit sowie bei Schäden an Leben, Körper und Gesundheit 
             haftet der Auftragnehmer uneingeschränkt.
+          </p>
+          <p className="text-muted-foreground">
+            Der Auftragnehmer verfügt über eine Betriebshaftpflichtversicherung. Die Versicherungssumme 
+            beträgt mindestens 1 Mio. EUR für Personen- und Sachschäden.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold mb-3">9. Widerrufsrecht</h2>
+          <p className="text-muted-foreground mb-2">
+            Bei Verbraucherverträgen, die außerhalb von Geschäftsräumen geschlossen werden, 
+            besteht ein Widerrufsrecht von 14 Tagen. Die Widerrufsbelehrung wird gesondert erteilt.
+          </p>
           <p className="text-muted-foreground">
-            Verbrauchern steht bei außerhalb von Geschäftsräumen geschlossenen Verträgen ein gesetzliches 
-            Widerrufsrecht von 14 Tagen zu. Die Widerrufsbelehrung wird gesondert erteilt.
+            <strong>Ausschluss:</strong> Das Widerrufsrecht erlischt bei Dienstleistungen, wenn der 
+            Unternehmer die Dienstleistung vollständig erbracht hat und mit der Ausführung erst 
+            begonnen hat, nachdem der Verbraucher dazu seine ausdrückliche Zustimmung gegeben hat.
           </p>
         </section>
 
