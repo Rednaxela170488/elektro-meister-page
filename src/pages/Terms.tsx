@@ -47,10 +47,6 @@ const Terms = () => {
             <strong>Balkonkraftwerke:</strong> Installation erfolgt nach VDE-AR-N 4105. Anmeldung beim 
             Netzbetreiber und im Marktstammdatenregister erfolgt durch den Kunden oder nach gesonderter Vereinbarung.
           </p>
-          <p className="text-muted-foreground mb-2">
-            <strong>Wallboxen:</strong> Installation erfolgt nach VDE-AR-N 4100. Eine Anmeldung beim 
-            Netzbetreiber ist bei Leistungen über 11 kW erforderlich.
-          </p>
           <p className="text-muted-foreground">
             Der Kunde stellt unentgeltlich die erforderlichen Hilfskräfte sowie Strom, Wasser und Heizung zur Verfügung.
             Sicherheitsbestimmungen sind einzuhalten, Arbeitsplatz muss frei zugänglich sein.
