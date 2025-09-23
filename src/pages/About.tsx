@@ -15,17 +15,35 @@ const About = () => {
       />
       {/* Hero Section */}
       <div className="grid md:grid-cols-2 gap-8 mb-12">
-        <div>
-          <h1 className="text-3xl font-bold mb-4">Über mich</h1>
-          <p className="text-lg text-muted-foreground mb-6">
-            Hallo! Ich bin Ihr persönlicher Elektrofachmann – mit Leidenschaft für Technik 
-            und dem Anspruch, Ihnen maßgeschneiderte Lösungen zu bieten.
-          </p>
-          <div className="flex flex-wrap gap-2 mb-6">
-            <Badge variant="secondary">Elektrofachkraft</Badge>
-            <Badge variant="secondary">Smart Home Spezialist</Badge>
-            <Badge variant="secondary">Produktmanager</Badge>
+        <div className="space-y-6">
+          <div>
+            <h1 className="text-3xl font-bold mb-4">Über mich</h1>
+            <p className="text-lg text-muted-foreground mb-6">
+              Hallo! Ich bin Ihr persönlicher Elektrofachmann – mit Leidenschaft für Technik 
+              und dem Anspruch, Ihnen maßgeschneiderte Lösungen zu bieten.
+            </p>
+            <div className="flex flex-wrap gap-2 mb-6">
+              <Badge variant="secondary">Elektrofachkraft</Badge>
+              <Badge variant="secondary">Smart Home Spezialist</Badge>
+              <Badge variant="secondary">Produktmanager</Badge>
+            </div>
           </div>
+          
+          {/* Persönlicher Ansatz - Desktop neben Bild */}
+          <Card className="bg-primary/5 border-primary/20 hidden md:block">
+            <CardContent className="pt-6">
+              <h3 className="text-xl font-semibold mb-4">Mein persönlicher Ansatz</h3>
+              <p className="text-muted-foreground mb-4">
+                Bei mir bekommen Sie keine Massenabfertigung, sondern individuelle Betreuung. 
+                Jeder Auftrag wird mit derselben Sorgfalt behandelt – egal ob einfache Steckdosenerweiterung 
+                oder komplexe Smart Home Installation.
+              </p>
+              <p className="text-muted-foreground">
+                Da ich dies als Nebentätigkeit ausübe, kann ich mir die Zeit nehmen, 
+                die für eine perfekte Lösung nötig ist. Qualität vor Quantität ist mein Motto.
+              </p>
+            </CardContent>
+          </Card>
         </div>
         <div className="relative">
           <img
@@ -34,6 +52,24 @@ const About = () => {
             className="rounded-lg shadow-lg w-full h-auto object-cover"
           />
         </div>
+      </div>
+
+      {/* Persönlicher Ansatz - Mobile unter Bild */}
+      <div className="mb-12 md:hidden">
+        <Card className="bg-primary/5 border-primary/20">
+          <CardContent className="pt-6">
+            <h3 className="text-xl font-semibold mb-4">Mein persönlicher Ansatz</h3>
+            <p className="text-muted-foreground mb-4">
+              Bei mir bekommen Sie keine Massenabfertigung, sondern individuelle Betreuung. 
+              Jeder Auftrag wird mit derselben Sorgfalt behandelt – egal ob einfache Steckdosenerweiterung 
+              oder komplexe Smart Home Installation.
+            </p>
+            <p className="text-muted-foreground">
+              Da ich dies als Nebentätigkeit ausübe, kann ich mir die Zeit nehmen, 
+              die für eine perfekte Lösung nötig ist. Qualität vor Quantität ist mein Motto.
+            </p>
+          </CardContent>
+        </Card>
       </div>
 
       {/* Motivation */}
@@ -151,22 +187,6 @@ const About = () => {
           </div>
         </div>
       </div>
-
-      {/* Persönlicher Ansatz */}
-      <Card className="bg-primary/5 border-primary/20">
-        <CardContent className="pt-6">
-          <h3 className="text-xl font-semibold mb-4">Mein persönlicher Ansatz</h3>
-          <p className="text-muted-foreground mb-4">
-            Bei mir bekommen Sie keine Massenabfertigung, sondern individuelle Betreuung. 
-            Jeder Auftrag wird mit derselben Sorgfalt behandelt – egal ob einfache Steckdosenerweiterung 
-            oder komplexe Smart Home Installation.
-          </p>
-          <p className="text-muted-foreground">
-            Da ich dies als Nebentätigkeit ausübe, kann ich mir die Zeit nehmen, 
-            die für eine perfekte Lösung nötig ist. Qualität vor Quantität ist mein Motto.
-          </p>
-        </CardContent>
-      </Card>
     </section>
   );
 };
