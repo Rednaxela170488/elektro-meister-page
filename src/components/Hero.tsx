@@ -1,5 +1,7 @@
 import heroImage from "@/assets/hero-electric.jpg";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import { Phone, ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const Hero = () => {
@@ -33,6 +35,20 @@ const Hero = () => {
           <p className="text-base sm:text-lg text-muted-foreground mb-6">
             Regional, zuverlässig und fachgerecht: Komplettlösungen für Wohnung und Haus – von der Planung bis zur Abnahme.
           </p>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <Button asChild size="lg" className="h-12">
+              <Link to="/kontakt">
+                <Phone className="w-4 h-4 mr-2" />
+                Jetzt Kontakt aufnehmen
+              </Link>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="h-12">
+              <Link to="/leistungen">
+                Leistungen ansehen
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Link>
+            </Button>
+          </div>
         </div>
         <div className="relative min-h-[200px] sm:min-h-[280px] order-1 lg:order-2">
           <img

@@ -27,8 +27,10 @@ const Services = () => {
       
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold mb-4">Leistungen Elektro</h1>
-        
+        <h1 className="text-3xl font-bold mb-2">Leistungen Elektro</h1>
+        <p className="text-muted-foreground">
+          Professionelle Elektroinstallationen für Ihr Zuhause – spezialisiert, zuverlässig und transparent.
+        </p>
       </div>
 
       {/* Hauptleistungen */}

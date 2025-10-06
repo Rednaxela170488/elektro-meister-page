@@ -126,10 +126,10 @@ const FAQ = () => {
         description="Antworten auf häufig gestellte Fragen zu Balkonkraftwerken, Smart Home und Installation. Erfahren Sie mehr über Nulleinspeisung, steuerliche Vorteile und HomeAssistant-Integration."
       />
       
-      <div className="py-12">
+      <div className="py-8 md:py-12">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold mb-2">Häufig gestellte Fragen</h1>
-          <p className="text-muted-foreground mb-12">
+          <h1 className="text-3xl md:text-4xl font-bold mb-2">Häufig gestellte Fragen</h1>
+          <p className="text-muted-foreground mb-8 md:mb-12">
             Hier finden Sie Antworten auf die wichtigsten Fragen rund um Balkonkraftwerke und Smart Home.
           </p>
 

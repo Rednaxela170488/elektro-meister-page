@@ -1,7 +1,8 @@
 import SEO from "@/components/SEO";
 import Hero from "@/components/Hero";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Zap, Home, Sun } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Zap, Home, Sun, ArrowRight } from "lucide-react";
 
 
 const Index = () => {
@@ -14,30 +15,54 @@ const Index = () => {
       <Hero />
 
       <section className="grid md:grid-cols-3 gap-6 mb-12">
-        <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2"><Home /> Wohnungselektro</CardTitle>
-          </CardHeader>
-          <CardContent>
-            Basis-Dienstleistungen und Installationen für Wohnungen – von Schalteraustausch bis komplette Renovierung.
-          </CardContent>
-        </Card>
-        <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2"><Zap /> Smart Home</CardTitle>
-          </CardHeader>
-          <CardContent>
-            HomeMatic und Home Assistant – lokale Smart-Home-Lösungen ohne Cloud-Zwang für mehr Komfort und Sicherheit.
-          </CardContent>
-        </Card>
-        <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2"><Sun /> Balkonkraftwerke</CardTitle>
-          </CardHeader>
-          <CardContent>
-            Beratung und Installation von Balkonkraftwerken bis 800W – inklusive Anmeldung und optionalem Speicher.
-          </CardContent>
-        </Card>
+        <Link to="/leistungen" className="group">
+          <Card className="h-full transition-all hover:shadow-lg hover:border-primary">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Home className="group-hover:text-primary transition-colors" /> 
+                Wohnungselektro
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="mb-4">Basis-Dienstleistungen und Installationen für Wohnungen – von Schalteraustausch bis komplette Renovierung.</p>
+              <span className="text-sm text-primary flex items-center gap-1">
+                Mehr erfahren <ArrowRight className="w-4 h-4" />
+              </span>
+            </CardContent>
+          </Card>
+        </Link>
+        <Link to="/smart-home" className="group">
+          <Card className="h-full transition-all hover:shadow-lg hover:border-primary">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Zap className="group-hover:text-primary transition-colors" /> 
+                Smart Home
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="mb-4">HomeMatic und Home Assistant – lokale Smart-Home-Lösungen ohne Cloud-Zwang für mehr Komfort und Sicherheit.</p>
+              <span className="text-sm text-primary flex items-center gap-1">
+                Mehr erfahren <ArrowRight className="w-4 h-4" />
+              </span>
+            </CardContent>
+          </Card>
+        </Link>
+        <Link to="/balkonkraftwerk" className="group">
+          <Card className="h-full transition-all hover:shadow-lg hover:border-primary">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Sun className="group-hover:text-primary transition-colors" /> 
+                Balkonkraftwerke
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="mb-4">Beratung und Installation von Balkonkraftwerken bis 800W – inklusive Anmeldung und optionalem Speicher.</p>
+              <span className="text-sm text-primary flex items-center gap-1">
+                Mehr erfahren <ArrowRight className="w-4 h-4" />
+              </span>
+            </CardContent>
+          </Card>
+        </Link>
       </section>
 
 
