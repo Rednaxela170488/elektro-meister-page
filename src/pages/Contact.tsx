@@ -94,7 +94,7 @@ const Contact = () => {
       {/* Kontakt-Buttons */}
       <div className="grid sm:grid-cols-2 gap-4 mb-8">
         <Button asChild size="lg" className="h-12">
-          <a href="tel:+4917596042880">
+          <a href="tel:+491759604280">
             <Phone className="w-4 h-4 mr-2" />
             Jetzt anrufen
           </a>
