@@ -19,7 +19,7 @@ const Index = () => {
           <Card className="h-full transition-all hover:shadow-lg hover:border-primary">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Home className="group-hover:text-primary transition-colors" /> 
+                <Home className="w-5 h-5 group-hover:text-primary transition-colors" /> 
                 Wohnungselektro
               </CardTitle>
             </CardHeader>
@@ -35,7 +35,7 @@ const Index = () => {
           <Card className="h-full transition-all hover:shadow-lg hover:border-primary">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Zap className="group-hover:text-primary transition-colors" /> 
+                <Zap className="w-5 h-5 group-hover:text-primary transition-colors" /> 
                 Smart Home
               </CardTitle>
             </CardHeader>
@@ -51,7 +51,7 @@ const Index = () => {
           <Card className="h-full transition-all hover:shadow-lg hover:border-primary">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Sun className="group-hover:text-primary transition-colors" /> 
+                <Sun className="w-5 h-5 group-hover:text-primary transition-colors" /> 
                 Balkonkraftwerke
               </CardTitle>
             </CardHeader>
