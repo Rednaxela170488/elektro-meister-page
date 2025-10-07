@@ -20,7 +20,7 @@ const Index = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Home className="w-5 h-5 shrink-0 group-hover:text-primary transition-colors" /> 
-                Wohnungselektro
+                <span className="hyphens-auto" lang="de">Wohnungselektro</span>
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -36,7 +36,7 @@ const Index = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Zap className="w-5 h-5 shrink-0 group-hover:text-primary transition-colors" /> 
-                Smart Home
+                <span className="hyphens-auto" lang="de">Smart Home</span>
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -52,7 +52,7 @@ const Index = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Sun className="w-5 h-5 shrink-0 group-hover:text-primary transition-colors" /> 
-                Balkonkraftwerke
+                <span className="hyphens-auto" lang="de">Balkonkraftwerke</span>
               </CardTitle>
             </CardHeader>
             <CardContent>

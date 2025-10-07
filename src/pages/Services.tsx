@@ -41,7 +41,7 @@ const Services = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Wrench className="w-5 h-5 shrink-0" />
-                Basis-Dienstleistungen
+                <span className="hyphens-auto" lang="de">Basis-Dienstleistungen</span>
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -59,7 +59,7 @@ const Services = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Home className="w-5 h-5 shrink-0" />
-                Installationen für Wohnungen
+                <span className="hyphens-auto" lang="de">Installationen für Wohnungen</span>
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -80,7 +80,7 @@ const Services = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Zap className="w-5 h-5 shrink-0" />
-                Smart Home
+                <span className="hyphens-auto" lang="de">Smart Home</span>
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -100,7 +100,7 @@ const Services = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Sun className="w-5 h-5 shrink-0" />
-                Balkonkraftwerke
+                <span className="hyphens-auto" lang="de">Balkonkraftwerke</span>
               </CardTitle>
             </CardHeader>
             <CardContent>
