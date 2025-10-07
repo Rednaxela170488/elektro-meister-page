@@ -40,7 +40,7 @@ const Services = () => {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Wrench className="w-5 h-5" />
+                <Wrench className="w-5 h-5 shrink-0" />
                 Basis-Dienstleistungen
               </CardTitle>
             </CardHeader>
@@ -58,7 +58,7 @@ const Services = () => {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Home className="w-5 h-5" />
+                <Home className="w-5 h-5 shrink-0" />
                 Installationen für Wohnungen
               </CardTitle>
             </CardHeader>
@@ -79,7 +79,7 @@ const Services = () => {
           <Card className="border-primary">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Zap className="w-5 h-5" />
+                <Zap className="w-5 h-5 shrink-0" />
                 Smart Home
               </CardTitle>
             </CardHeader>
@@ -99,7 +99,7 @@ const Services = () => {
           <Card className="border-primary">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Sun className="w-5 h-5" />
+                <Sun className="w-5 h-5 shrink-0" />
                 Balkonkraftwerke
               </CardTitle>
             </CardHeader>
@@ -121,7 +121,7 @@ const Services = () => {
       {/* Was ich nicht anbiete */}
       <div className="mb-8">
         <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2">
-          <XCircle className="w-6 h-6 text-red-600" />
+          <XCircle className="w-6 h-6 shrink-0 text-red-600" />
           Leistungen, die ich nicht anbiete
         </h2>
         <Card className="border-red-200">
