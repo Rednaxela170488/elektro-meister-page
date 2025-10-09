@@ -27,9 +27,7 @@ const Hero = () => {
     }} aria-hidden />
       <div className="relative flex flex-col lg:grid lg:grid-cols-2 gap-6">
         <div className="p-6 sm:p-8 md:p-12 flex flex-col justify-center order-2 lg:order-1">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-4">
-            Elektroinstallationen, Smart Home & Balkonkraftwerke - einfach und zuverlässig
-          </h1>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-4">Elektroinstallationen - einfach und zuverlässig</h1>
           <p className="text-base sm:text-lg text-muted-foreground mb-6">Regional und fachgerecht: Komplettlösungen von der Planung bis zur Abnahme.</p>
           <div className="flex flex-col sm:flex-row gap-3">
             <Button asChild size="lg" className="h-12">
