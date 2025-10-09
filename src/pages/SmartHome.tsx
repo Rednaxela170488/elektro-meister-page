@@ -22,7 +22,7 @@ const SmartHome = () => {
                 Viele Smart-Home-Systeme wirken auf den ersten Blick praktisch, haben aber Nachteile:
               </p>
               <ul className="list-disc list-inside space-y-2 text-muted-foreground ml-4">
-                <li>Sie hängen stark an Cloud-Diensten</li>
+                <li>Smart Home nur über die Cloud</li>
                 <li>Abhängigkeit von Internet und Herstellern (dadurch unsicher und teuer)</li>
                 <li>Große Systeme wie KNX oder Loxone sind für Einfamilienhäuser oft überdimensioniert und mit hohen Kosten verbunden</li>
               </ul>
