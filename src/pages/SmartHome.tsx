@@ -26,6 +26,9 @@ const SmartHome = () => {
                 <li>Abhängigkeit von Internet und Herstellern (dadurch unsicher und teuer)</li>
                 <li>Große Systeme wie KNX oder Loxone sind für Einfamilienhäuser oft überdimensioniert und mit hohen Kosten verbunden</li>
               </ul>
+              <p className="text-lg text-muted-foreground mt-4">
+                Darum biete ich bewusst eine einfache, unabhängige und bezahlbare Alternative an.
+              </p>
             </div>
           </div>
           <div className="relative">
@@ -39,9 +42,6 @@ const SmartHome = () => {
             <CardTitle>Meine Philosophie</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground mb-4">
-              Darum biete ich bewusst eine einfache, unabhängige und bezahlbare Alternative an.
-            </p>
             <p className="text-muted-foreground mb-4">
               Durch die Kombination aus HomeMatic und Home Assistant kann ich sowohl einfach bedienbare 
               Standardlösungen als auch hochgradig individuelle Automatisierungen anbieten. So profitieren 
