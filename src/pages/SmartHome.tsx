@@ -26,6 +26,9 @@ const SmartHome = () => {
                 <li>Abhängigkeit von Internet und Herstellern (dadurch unsicher und teuer)</li>
                 <li>Große Systeme wie KNX oder Loxone sind für Einfamilienhäuser oft überdimensioniert und mit hohen Kosten verbunden</li>
               </ul>
+              <p className="text-lg text-muted-foreground mt-4">
+                Darum biete ich bewusst eine einfache, unabhängige und bezahlbare Alternative an.
+              </p>
             </div>
           </div>
           <div className="relative">
@@ -51,9 +54,6 @@ const SmartHome = () => {
           </CardContent>
         </Card>
 
-        <p className="text-lg text-muted-foreground mb-6">
-          Darum biete ich bewusst eine einfache, unabhängige und bezahlbare Alternative an.
-        </p>
       </div>
 
       {/* Smart-Home-Systeme */}
