@@ -15,7 +15,7 @@ const Balkonkraftwerk = () => {
       <div className="mb-8">
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <div>
-            <h1 className="text-3xl font-bold mb-4">Mein Service für Ihr Balkonkraftwerk – einfach, sicher, persönlich</h1>
+            <h1 className="text-3xl font-bold mb-4">Mein Service für Ihr Balkonkraftwerk</h1>
             
             <p className="text-lg text-muted-foreground mb-6">
               Sie möchten Stromkosten sparen und mit einem Balkonkraftwerk bis 800 Watt eigenen Solarstrom erzeugen?
