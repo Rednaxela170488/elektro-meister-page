@@ -4,33 +4,12 @@ import { Badge } from "@/components/ui/badge";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { 
-  Home, 
-  Zap, 
-  Shield, 
-  Cloud, 
-  Server, 
-  Settings, 
-  Wifi, 
-  Lock,
-  Lightbulb,
-  Thermometer,
-  Music,
-  Sun,
-  AlertTriangle,
-  CheckCircle,
-  ExternalLink
-} from "lucide-react";
+import { Home, Zap, Shield, Cloud, Server, Settings, Wifi, Lock, Lightbulb, Thermometer, Music, Sun, AlertTriangle, CheckCircle, ExternalLink } from "lucide-react";
 import smartHomeDashboard from "@/assets/smart-home-dashboard.jpg";
 import homematicDevices from "@/assets/homematic-devices.jpg";
-
 const SmartHome = () => {
-  return (
-    <section className="pb-10">
-      <SEO
-        title="Smart Home – HomeMatic & Home Assistant ohne Cloud-Zwang"
-        description="Lokale Smart-Home-Lösungen mit HomeMatic und Home Assistant. Sicher, unabhängig und erweiterbar – ohne Cloud-Zwang und Herstellerabhängigkeit."
-      />
+  return <section className="pb-10">
+      <SEO title="Smart Home – HomeMatic & Home Assistant ohne Cloud-Zwang" description="Lokale Smart-Home-Lösungen mit HomeMatic und Home Assistant. Sicher, unabhängig und erweiterbar – ohne Cloud-Zwang und Herstellerabhängigkeit." />
       
       {/* Header */}
       <div className="mb-8">
@@ -38,19 +17,13 @@ const SmartHome = () => {
           <div>
             <h1 className="text-3xl font-bold mb-4">Smart Home – mein Ansatz</h1>
             
-            <p className="text-lg text-muted-foreground mb-6">
-              Viele Smart-Home-Systeme wirken auf den ersten Blick praktisch, haben aber Nachteile: 
-              sie hängen stark an Cloud-Diensten, sind abhängig von Internet und Herstellern und können 
-              dadurch unsicher oder teuer werden. Außerdem sind große Systeme wie KNX oder Loxone für 
-              Einfamilienhäuser oft überdimensioniert und mit hohen Kosten verbunden.
-            </p>
+            <p className="text-lg text-muted-foreground mb-6">Viele Smart-Home-Systeme wirken auf den ersten Blick praktisch, haben aber Nachteile:
+- Sie hängen stark an Cloud-Diensten
+- Abhängigkeit von Internet und Herstellern und können (dadurch unsicher und teuer)
+- unsicher oder teuer werden. Außerdem sind große Systeme wie KNX oder Loxone für Einfamilienhäuser oft überdimensioniert und mit hohen Kosten verbunden.</p>
           </div>
           <div className="relative">
-            <img
-              src={smartHomeDashboard}
-              alt="Smart Home Dashboard mit verschiedenen verbundenen Geräten"
-              className="rounded-lg shadow-lg w-full h-auto object-cover"
-            />
+            <img src={smartHomeDashboard} alt="Smart Home Dashboard mit verschiedenen verbundenen Geräten" className="rounded-lg shadow-lg w-full h-auto object-cover" />
           </div>
         </div>
         
@@ -229,8 +202,6 @@ const SmartHome = () => {
           <Link to="/leistungen">← Zurück zu den Leistungen</Link>
         </Button>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default SmartHome;
