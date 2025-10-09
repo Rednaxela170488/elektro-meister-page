@@ -17,10 +17,16 @@ const SmartHome = () => {
           <div>
             <h1 className="text-3xl font-bold mb-4">Smart Home – mein Ansatz</h1>
             
-            <p className="text-lg text-muted-foreground mb-6">Viele Smart-Home-Systeme wirken auf den ersten Blick praktisch, haben aber Nachteile:
-- Sie hängen stark an Cloud-Diensten
-- Abhängigkeit von Internet und Herstellern und können (dadurch unsicher und teuer)
-- unsicher oder teuer werden. Außerdem sind große Systeme wie KNX oder Loxone für Einfamilienhäuser oft überdimensioniert und mit hohen Kosten verbunden.</p>
+            <div className="mb-6">
+              <p className="text-lg text-muted-foreground mb-3">
+                Viele Smart-Home-Systeme wirken auf den ersten Blick praktisch, haben aber Nachteile:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-muted-foreground ml-4">
+                <li>Sie hängen stark an Cloud-Diensten</li>
+                <li>Abhängigkeit von Internet und Herstellern (dadurch unsicher und teuer)</li>
+                <li>Große Systeme wie KNX oder Loxone sind für Einfamilienhäuser oft überdimensioniert und mit hohen Kosten verbunden</li>
+              </ul>
+            </div>
           </div>
           <div className="relative">
             <img src={smartHomeDashboard} alt="Smart Home Dashboard mit verschiedenen verbundenen Geräten" className="rounded-lg shadow-lg w-full h-auto object-cover" />
