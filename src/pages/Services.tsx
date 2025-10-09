@@ -138,7 +138,7 @@ const Services = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <XCircle className="w-4 h-4 mt-0.5 text-red-600 shrink-0" />
-                  <span><strong>Wallbox-Installation</strong> mit Netzbetreiber-Anmeldung</span>
+                  <span><strong>Wallbox-Installation</strong>, da Netzbetreiber-Anmeldung</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <XCircle className="w-4 h-4 mt-0.5 text-red-600 shrink-0" />
