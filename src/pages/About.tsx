@@ -4,15 +4,9 @@ import { Badge } from "@/components/ui/badge";
 import { Briefcase, Heart, Lightbulb, Target, Calendar, User } from "lucide-react";
 import portraitTemplate from "@/assets/portrait-template.jpg";
 import workTemplate from "@/assets/work-template.jpg";
-
-
 const About = () => {
-  return (
-    <section className="pb-10">
-      <SEO
-        title="Über mich – Ihr Elektrofachmann mit Leidenschaft"
-        description="Erfahren Sie mehr über mich als Ihren Elektrofachmann: Meine Motivation, mein Werdegang und warum ich Elektroinstallation als Nebentätigkeit ausübe."
-      />
+  return <section className="pb-10">
+      <SEO title="Über mich – Ihr Elektrofachmann mit Leidenschaft" description="Erfahren Sie mehr über mich als Ihren Elektrofachmann: Meine Motivation, mein Werdegang und warum ich Elektroinstallation als Nebentätigkeit ausübe." />
       {/* Hero Section */}
       <div className="grid md:grid-cols-2 gap-8 mb-12">
         <div className="space-y-6">
@@ -25,7 +19,7 @@ const About = () => {
             <div className="flex flex-wrap gap-2 mb-6">
               <Badge variant="secondary">Elektrofachkraft</Badge>
               <Badge variant="secondary">Smart Home Spezialist</Badge>
-              <Badge variant="secondary">Produktmanager</Badge>
+              <Badge variant="secondary">Technologie-Enthusiast</Badge>
             </div>
           </div>
           
@@ -46,11 +40,7 @@ const About = () => {
           </Card>
         </div>
         <div className="relative">
-          <img
-            src={portraitTemplate}
-            alt="Porträt des Elektrofachmanns"
-            className="rounded-lg shadow-lg w-full h-auto object-cover"
-          />
+          <img src={portraitTemplate} alt="Porträt des Elektrofachmanns" className="rounded-lg shadow-lg w-full h-auto object-cover" />
         </div>
       </div>
 
@@ -87,11 +77,7 @@ const About = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground">
-                Nach einem Tag voller Büroarbeit ist die praktische Elektroarbeit 
-                der perfekte Ausgleich. Hier kann ich mit den Händen arbeiten und 
-                konkrete Ergebnisse schaffen.
-              </p>
+              <p className="text-muted-foreground">In meinem Beruf habe ich 100% Büroarbeit, somit ist die praktische Elektroarbeit der perfekte Ausgleich für mich. Hier kann ich mit den Händen arbeiten und konkrete Ergebnisse schaffen.</p>
             </CardContent>
           </Card>
 
@@ -135,11 +121,7 @@ const About = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground">
-                Als selbstständiger Elektrofachmann kann ich meine Visionen 
-                von perfekten Elektroinstallationen verwirklichen und Kunden 
-                individuell betreuen.
-              </p>
+              <p className="text-muted-foreground">Als selbstständiger Elektrofachmann kann ich meine Vorstellung von guten Elektroinstallationen verwirklichen und Kunden individuell betreuen.</p>
             </CardContent>
           </Card>
         </div>
@@ -156,9 +138,7 @@ const About = () => {
             <div className="border-l-2 border-primary pl-4">
               <h3 className="font-semibold text-lg">2025 - HEUTE</h3>
               <p className="text-primary font-medium">Selbständigkeit Elektrotechnik Stanzel</p>
-              <p className="text-sm text-muted-foreground">
-                Elektro-Dienstleistung
-              </p>
+              <p className="text-sm text-muted-foreground">Leitung und Operative Tätigkeit meines Elektrofachbetriebs</p>
             </div>
             
             <div className="border-l-2 border-muted pl-4">
@@ -179,16 +159,10 @@ const About = () => {
           </div>
           
           <div className="relative">
-            <img
-              src={workTemplate}
-              alt="Elektroarbeiten in der Praxis"
-              className="rounded-lg shadow-lg w-full h-auto object-cover"
-            />
+            <img src={workTemplate} alt="Elektroarbeiten in der Praxis" className="rounded-lg shadow-lg w-full h-auto object-cover" />
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
