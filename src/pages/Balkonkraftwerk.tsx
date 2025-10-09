@@ -4,35 +4,18 @@ import { Badge } from "@/components/ui/badge";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { 
-  Sun, 
-  Zap, 
-  Shield, 
-  CheckCircle, 
-  Home, 
-  Battery,
-  FileCheck,
-  Settings,
-  TrendingUp,
-  Wrench,
-  Info
-} from "lucide-react";
+import { Sun, Zap, Shield, CheckCircle, Home, Battery, FileCheck, Settings, TrendingUp, Wrench, Info } from "lucide-react";
 import balkonkraftwerkInstallation from "@/assets/balkonkraftwerk-installation.jpg";
 import solarMonitoring from "@/assets/solar-monitoring.jpg";
-
 const Balkonkraftwerk = () => {
-  return (
-    <section className="pb-10">
-      <SEO
-        title="Balkonkraftwerke bis 800W – Beratung, Installation & Anmeldung"
-        description="Professionelle Balkonkraftwerk-Installation bis 800W: Von der Beratung über die Montage bis zur Anmeldung. Optional mit Solarstromspeicher für maximale Effizienz."
-      />
+  return <section className="pb-10">
+      <SEO title="Balkonkraftwerke bis 800W – Beratung, Installation & Anmeldung" description="Professionelle Balkonkraftwerk-Installation bis 800W: Von der Beratung über die Montage bis zur Anmeldung. Optional mit Solarstromspeicher für maximale Effizienz." />
       
       {/* Header */}
       <div className="mb-8">
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <div>
-            <h1 className="text-3xl font-bold mb-4">🌞 Mein Service für Ihr Balkonkraftwerk – einfach, sicher, persönlich</h1>
+            <h1 className="text-3xl font-bold mb-4">Mein Service für Ihr Balkonkraftwerk – einfach, sicher, persönlich</h1>
             
             <p className="text-lg text-muted-foreground mb-6">
               Sie möchten Stromkosten sparen und mit einem Balkonkraftwerk bis 800 Watt eigenen Solarstrom erzeugen?
@@ -41,11 +24,7 @@ const Balkonkraftwerk = () => {
             </p>
           </div>
           <div className="relative">
-            <img
-              src={balkonkraftwerkInstallation}
-              alt="Balkonkraftwerk Installation mit Solarpanelen am Balkongeländer"
-              className="rounded-lg shadow-lg w-full h-auto object-cover"
-            />
+            <img src={balkonkraftwerkInstallation} alt="Balkonkraftwerk Installation mit Solarpanelen am Balkongeländer" className="rounded-lg shadow-lg w-full h-auto object-cover" />
           </div>
         </div>
       </div>
@@ -279,8 +258,6 @@ const Balkonkraftwerk = () => {
           <Link to="/leistungen">← Zurück zu den Leistungen</Link>
         </Button>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Balkonkraftwerk;
