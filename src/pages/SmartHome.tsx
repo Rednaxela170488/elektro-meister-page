@@ -21,14 +21,11 @@ const SmartHome = () => {
               <p className="text-lg text-muted-foreground mb-3">
                 Viele Smart-Home-Systeme wirken auf den ersten Blick praktisch, haben aber Nachteile:
               </p>
-              <ul className="list-disc list-inside space-y-2 text-muted-foreground ml-4">
+              <ul className="list-disc list-inside space-y-2 text-lg text-muted-foreground ml-4">
                 <li>Smart Home nur über die Cloud</li>
                 <li>Abhängigkeit von Internet und Herstellern (dadurch unsicher und teuer)</li>
                 <li>Große Systeme wie KNX oder Loxone sind für Einfamilienhäuser oft überdimensioniert und mit hohen Kosten verbunden</li>
               </ul>
-              <p className="text-lg text-muted-foreground mt-4">
-                Darum biete ich bewusst eine einfache, unabhängige und bezahlbare Alternative an.
-              </p>
             </div>
           </div>
           <div className="relative">
@@ -42,6 +39,9 @@ const SmartHome = () => {
             <CardTitle>Meine Philosophie</CardTitle>
           </CardHeader>
           <CardContent>
+            <p className="text-muted-foreground mb-4">
+              Darum biete ich bewusst eine einfache, unabhängige und bezahlbare Alternative an.
+            </p>
             <p className="text-muted-foreground mb-4">
               Durch die Kombination aus HomeMatic und Home Assistant kann ich sowohl einfach bedienbare 
               Standardlösungen als auch hochgradig individuelle Automatisierungen anbieten. So profitieren 
