@@ -15,15 +15,6 @@ const Index = () => {
       />
       <Hero />
 
-      {/* Logo Section */}
-      <section className="flex justify-center items-center my-12">
-        <img 
-          src={logoSquare} 
-          alt="Elektrotechnik Stanzel Logo" 
-          className="w-48 h-48 md:w-64 md:h-64 object-contain"
-        />
-      </section>
-
       <section className="grid md:grid-cols-3 gap-6 mb-12">
         <Link to="/leistungen" className="group">
           <Card className="h-full transition-all hover:shadow-lg hover:border-primary">
@@ -85,6 +76,15 @@ const Index = () => {
             Da ich den Betrieb eigenständig im Nebengewerbe führe, biete ich genau die Arbeiten an, die ich zuverlässig und mit hoher Qualität erledigen kann.
           </p>
         </div>
+      </section>
+
+      {/* Logo Section */}
+      <section className="flex justify-center items-center my-12">
+        <img 
+          src={logoSquare} 
+          alt="Elektrotechnik Stanzel Logo" 
+          className="w-48 h-48 md:w-64 md:h-64 object-contain"
+        />
       </section>
 
       {/* Structured Data for LocalBusiness */}
