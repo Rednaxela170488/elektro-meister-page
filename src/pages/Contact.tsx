@@ -2,6 +2,7 @@ import SEO from "@/components/SEO";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, Clock, MessageSquare } from "lucide-react";
+import logoSquare from "@/assets/logo-square.png";
 
 
 const Contact = () => {
@@ -127,6 +128,15 @@ const Contact = () => {
           </ul>
         </CardContent>
       </Card>
+
+      {/* Logo Section */}
+      <div className="flex justify-center items-center mt-12">
+        <img 
+          src={logoSquare} 
+          alt="Elektrotechnik Stanzel Logo" 
+          className="w-40 h-40 md:w-48 md:h-48 object-contain opacity-90"
+        />
+      </div>
     </section>
   );
 };
