@@ -130,12 +130,17 @@ const Contact = () => {
       </Card>
 
       {/* Logo Section */}
-      <div className="flex justify-center items-center mt-12">
-        <img 
-          src={logoSquare} 
-          alt="Elektrotechnik Stanzel Logo" 
-          className="w-40 h-40 md:w-48 md:h-48 object-contain opacity-90"
-        />
+      <div className="flex justify-center items-center mt-16 mb-8">
+        <div className="relative">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-2xl blur-xl"></div>
+          <div className="relative bg-card rounded-xl p-6 border shadow-sm">
+            <img 
+              src={logoSquare} 
+              alt="Elektrotechnik Stanzel Logo" 
+              className="w-32 h-32 md:w-40 md:h-40 object-contain opacity-85"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
