@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Zap, Home, Sun, ArrowRight } from "lucide-react";
+import logoSquare from "@/assets/logo-square.png";
 
 
 const Index = () => {
@@ -13,6 +14,15 @@ const Index = () => {
         description="Ihr regionaler Elektrofachbetrieb: Zimmer- & Wohnungselektroinstallation, Smart Home, Wallbox-Installation."
       />
       <Hero />
+
+      {/* Logo Section */}
+      <section className="flex justify-center items-center my-12">
+        <img 
+          src={logoSquare} 
+          alt="Elektrotechnik Stanzel Logo" 
+          className="w-48 h-48 md:w-64 md:h-64 object-contain"
+        />
+      </section>
 
       <section className="grid md:grid-cols-3 gap-6 mb-12">
         <Link to="/leistungen" className="group">
