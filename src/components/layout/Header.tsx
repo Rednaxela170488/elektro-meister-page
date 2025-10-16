@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import { useState } from "react";
-import logoTemplate from "@/assets/logo-rectangular.png";
+import logo from "@/assets/logo.png";
 
 
 const navLinkClass = ({ isActive }: { isActive: boolean }) =>
@@ -34,9 +34,9 @@ const Header = () => {
         <div className="hidden md:flex items-center gap-1">
           <Link to="/" className="flex items-center hover:opacity-80 transition-opacity mr-4">
             <img 
-              src={logoTemplate} 
-              alt="Elektrofachbetrieb Logo" 
-              className="h-12 w-auto object-contain scale-x-[2]"
+              src={logo} 
+              alt="Elektrotechnik Stanzel Logo" 
+              className="h-12 w-auto object-contain"
             />
           </Link>
           {navigationItems.map((item) => (
@@ -54,9 +54,9 @@ const Header = () => {
         {/* Mobile Logo (visible only on mobile) */}
         <Link to="/" className="flex items-center hover:opacity-80 transition-opacity md:hidden ml-4">
           <img 
-            src={logoTemplate} 
-            alt="Elektrofachbetrieb Logo" 
-            className="h-12 w-auto object-contain scale-x-[2]"
+            src={logo} 
+            alt="Elektrotechnik Stanzel Logo" 
+            className="h-12 w-auto object-contain"
           />
         </Link>
 
