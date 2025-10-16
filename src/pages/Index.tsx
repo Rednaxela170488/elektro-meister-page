@@ -15,7 +15,21 @@ const Index = () => {
       />
       <Hero />
 
-      <section className="grid md:grid-cols-3 gap-6 mb-12">
+      <section className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        {/* Logo Card */}
+        <div className="flex items-center justify-center">
+          <div className="relative group">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-primary/5 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+            <div className="relative bg-gradient-to-br from-background via-background to-muted/30 rounded-xl p-6 border shadow-lg h-full flex items-center justify-center">
+              <img 
+                src={logoSquare} 
+                alt="Elektrotechnik Stanzel Logo" 
+                className="w-32 h-32 md:w-40 md:h-40 object-contain opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+              />
+            </div>
+          </div>
+        </div>
+        
         <Link to="/leistungen" className="group">
           <Card className="h-full transition-all hover:shadow-lg hover:border-primary">
             <CardHeader>
@@ -75,20 +89,6 @@ const Index = () => {
             Mein Elektroservice ist bewusst überschaubar und spezialisiert.
             Da ich den Betrieb eigenständig im Nebengewerbe führe, biete ich genau die Arbeiten an, die ich zuverlässig und mit hoher Qualität erledigen kann.
           </p>
-        </div>
-      </section>
-
-      {/* Logo Section */}
-      <section className="flex justify-center items-center my-16">
-        <div className="relative group">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-primary/5 rounded-3xl blur-2xl group-hover:blur-3xl transition-all duration-500"></div>
-          <div className="relative bg-gradient-to-br from-background via-background to-muted/30 rounded-2xl p-8 border shadow-lg">
-            <img 
-              src={logoSquare} 
-              alt="Elektrotechnik Stanzel Logo" 
-              className="w-40 h-40 md:w-52 md:h-52 object-contain opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-            />
-          </div>
         </div>
       </section>
 

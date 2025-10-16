@@ -17,7 +17,21 @@ const Contact = () => {
         Haben Sie Fragen oder benötigen ein Angebot? Wir freuen uns auf Ihre Nachricht!
       </p>
 
-      <div className="grid md:grid-cols-2 gap-8 mb-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+        {/* Logo Card */}
+        <div className="flex items-center justify-center">
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-xl blur-lg"></div>
+            <div className="relative bg-card rounded-xl p-8 border shadow-sm h-full flex items-center justify-center">
+              <img 
+                src={logoSquare} 
+                alt="Elektrotechnik Stanzel Logo" 
+                className="w-32 h-32 object-contain opacity-85"
+              />
+            </div>
+          </div>
+        </div>
+
         {/* Kontaktdaten */}
         <Card>
           <CardHeader>
@@ -128,20 +142,6 @@ const Contact = () => {
           </ul>
         </CardContent>
       </Card>
-
-      {/* Logo Section */}
-      <div className="flex justify-center items-center mt-16 mb-8">
-        <div className="relative">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-2xl blur-xl"></div>
-          <div className="relative bg-card rounded-xl p-6 border shadow-sm">
-            <img 
-              src={logoSquare} 
-              alt="Elektrotechnik Stanzel Logo" 
-              className="w-32 h-32 md:w-40 md:h-40 object-contain opacity-85"
-            />
-          </div>
-        </div>
-      </div>
     </section>
   );
 };
