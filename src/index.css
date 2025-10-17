@@ -17,24 +17,24 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 73 38% 48%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 73 25% 90%;
+    --secondary-foreground: 73 38% 25%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 73 38% 48%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 73 38% 48%;
 
     --radius: 0.5rem;
 
@@ -65,24 +65,24 @@ All colors MUST be HSL.
   --popover: 222.2 84% 4.9%;
   --popover-foreground: 210 40% 98%;
 
-  --primary: 210 40% 98%;
-  --primary-foreground: 222.2 47.4% 11.2%;
+  --primary: 73 45% 60%;
+  --primary-foreground: 73 38% 15%;
 
-  --secondary: 217.2 32.6% 17.5%;
-  --secondary-foreground: 210 40% 98%;
+  --secondary: 73 20% 25%;
+  --secondary-foreground: 73 45% 85%;
 
   --muted: 217.2 32.6% 17.5%;
   --muted-foreground: 215 20.2% 65.1%;
 
-  --accent: 217.2 32.6% 17.5%;
-  --accent-foreground: 210 40% 98%;
+  --accent: 73 45% 60%;
+  --accent-foreground: 73 38% 15%;
 
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 210 40% 98%;
 
   --border: 217.2 32.6% 17.5%;
   --input: 217.2 32.6% 17.5%;
-  --ring: 212.7 26.8% 83.9%;
+  --ring: 73 45% 60%;
   --sidebar-background: 240 5.9% 10%;
   --sidebar-foreground: 240 4.8% 95.9%;
   --sidebar-primary: 224.3 76.3% 48%;
@@ -93,8 +93,8 @@ All colors MUST be HSL.
   --sidebar-ring: 217.2 91.2% 59.8%;
 
   /* Brand (dark-tuned) */
-  --brand: 217 92% 60%;
-  --brand-2: 190 95% 55%;
+  --brand: 73 45% 60%;
+  --brand-2: 73 50% 70%;
 
   --gradient-hero: linear-gradient(135deg, hsl(var(--brand)), hsl(var(--brand-2)));
   --shadow-elevate: 0 12px 30px -12px hsl(var(--brand) / 0.45);
@@ -132,8 +132,8 @@ All colors MUST be HSL.
 /* Additional design tokens */
 @layer base {
   :root {
-    --brand: 217 92% 50%;
-    --brand-2: 190 95% 45%;
+    --brand: 73 38% 48%;
+    --brand-2: 73 45% 58%;
     --gradient-hero: linear-gradient(135deg, hsl(var(--brand)), hsl(var(--brand-2)));
     --shadow-elevate: 0 12px 30px -12px hsl(var(--brand) / 0.35);
   }
