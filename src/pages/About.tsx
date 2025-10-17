@@ -121,7 +121,7 @@ const About = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground">Als selbstständiger Elektrofachmann kann ich meine Vorstellung von guten Elektroinstallationen verwirklichen und Kunden individuell betreuen.</p>
+              <p className="text-muted-foreground">Mit jeder Smart Home Installation werden Energieverbräuche gesenkt und Ressourcen geschont. Damit leiste ich meinen Beitrag für eine nachhaltigere Zukunft.</p>
             </CardContent>
           </Card>
         </div>
