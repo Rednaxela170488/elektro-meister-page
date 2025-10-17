@@ -152,8 +152,7 @@ const About = () => {
             <div className="border-l-2 border-muted pl-4">
               <h3 className="font-semibold text-lg">2004 - 2011</h3>
               <p className="font-medium">Ausbildung und Studium</p>
-              <p className="text-sm text-muted-foreground">Elektroniker für Geräte und Systeme 
-Diplom-Wirtschaftsingenieur Fachrichtung Elektrotechnik</p>
+              <p className="text-sm text-muted-foreground">Elektroniker für Geräte und Systeme & Diplom-Wirtschaftsingenieur Fachrichtung Elektrotechnik</p>
             </div>
           </div>
           
