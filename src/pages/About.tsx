@@ -138,7 +138,7 @@ const About = () => {
             <div className="border-l-2 border-primary pl-4">
               <h3 className="font-semibold text-lg">2025 - HEUTE</h3>
               <p className="text-primary font-medium">Selbständigkeit Elektrotechnik Stanzel</p>
-              <p className="text-sm text-muted-foreground">Leitung und Operative Tätigkeit meines Elektrofachbetriebs</p>
+              <p className="text-sm text-muted-foreground">Leitung des Unternehmens und Ausführung von Elektroarbeiten</p>
             </div>
             
             <div className="border-l-2 border-muted pl-4">
