@@ -2,7 +2,6 @@ import SEO from "@/components/SEO";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, Clock, MessageSquare } from "lucide-react";
-import logoSquare from "@/assets/logo-square.png";
 
 
 const Contact = () => {
@@ -17,21 +16,7 @@ const Contact = () => {
         Haben Sie Fragen oder benötigen ein Angebot? Wir freuen uns auf Ihre Nachricht!
       </p>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
-        {/* Logo Card */}
-        <div className="flex items-center justify-center">
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-xl blur-lg"></div>
-            <div className="relative bg-card rounded-xl p-8 border shadow-sm h-full flex items-center justify-center">
-              <img 
-                src={logoSquare} 
-                alt="Elektrotechnik Stanzel Logo" 
-                className="w-32 h-32 object-contain opacity-85"
-              />
-            </div>
-          </div>
-        </div>
-
+      <div className="grid md:grid-cols-2 gap-8 mb-8">
         {/* Kontaktdaten */}
         <Card>
           <CardHeader>
