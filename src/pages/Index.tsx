@@ -15,21 +15,7 @@ const Index = () => {
       />
       <Hero />
 
-      <section className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-        {/* Logo Card */}
-        <div className="flex items-center justify-center">
-          <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-primary/5 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-            <div className="relative bg-gradient-to-br from-background via-background to-muted/30 rounded-xl p-6 border shadow-lg h-full flex items-center justify-center">
-              <img 
-                src={logoSquare} 
-                alt="Elektrotechnik Stanzel Logo" 
-                className="w-32 h-32 md:w-40 md:h-40 object-contain opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-              />
-            </div>
-          </div>
-        </div>
-        
+      <section className="grid md:grid-cols-3 gap-6 mb-12">
         <Link to="/leistungen" className="group">
           <Card className="h-full transition-all hover:shadow-lg hover:border-primary">
             <CardHeader>

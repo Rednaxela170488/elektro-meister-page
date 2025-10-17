@@ -1,4 +1,4 @@
-import heroImage from "@/assets/hero-electric.jpg";
+import logoSquare from "@/assets/logo-square.png";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Phone, ArrowRight } from "lucide-react";
@@ -44,8 +44,8 @@ const Hero = () => {
             </Button>
           </div>
         </div>
-        <div className="relative min-h-[200px] sm:min-h-[280px] order-1 lg:order-2">
-          <img src={heroImage} alt="Elektriker montiert Smart-Home-Elektroverteilung" className="h-full w-full object-cover rounded-lg lg:rounded-none" loading="eager" />
+        <div className="relative min-h-[200px] sm:min-h-[280px] order-1 lg:order-2 flex items-center justify-center bg-gradient-to-br from-background via-background to-muted/30 p-8">
+          <img src={logoSquare} alt="Elektrotechnik Stanzel Logo" className="w-full max-w-xs object-contain opacity-90" loading="eager" />
         </div>
       </div>
     </section>;
