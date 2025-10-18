@@ -2,7 +2,7 @@ import SEO from "@/components/SEO";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Briefcase, Heart, Lightbulb, Target, Calendar, User } from "lucide-react";
-import portraitTemplate from "@/assets/portrait-template.jpg";
+import portrait from "@/assets/portrait.png";
 import workTemplate from "@/assets/work-template.jpg";
 const About = () => {
   return <section className="pb-10">
@@ -40,7 +40,7 @@ const About = () => {
           </Card>
         </div>
         <div className="relative">
-          <img src={portraitTemplate} alt="Porträt des Elektrofachmanns" className="rounded-lg shadow-lg w-full h-auto object-cover" />
+          <img src={portrait} alt="Porträt des Elektrofachmanns" className="rounded-lg shadow-lg w-full h-auto object-cover" />
         </div>
       </div>
 
