@@ -38,6 +38,33 @@ const About = () => {
               </p>
             </CardContent>
           </Card>
+
+          {/* Mein Werdegang - Desktop neben Bild */}
+          <div className="space-y-4 hidden md:block">
+            <h3 className="text-xl font-semibold flex items-center gap-2">
+              <Calendar className="w-5 h-5 text-primary" />
+              Mein Werdegang
+            </h3>
+            <div className="border-l-2 border-primary pl-4">
+              <h4 className="font-semibold">2025 - HEUTE</h4>
+              <p className="text-primary font-medium text-sm">Selbständigkeit Elektrotechnik Stanzel</p>
+              <p className="text-xs text-muted-foreground">Leitung des Unternehmens und Ausführung von Elektroarbeiten</p>
+            </div>
+            
+            <div className="border-l-2 border-muted pl-4">
+              <h4 className="font-semibold">2011 - HEUTE</h4>
+              <p className="font-medium text-sm">Angestellter bei SIEMENS AG</p>
+              <p className="text-xs text-muted-foreground">
+                Technischer Vertrieb für Industrielle Elektrotechnik und Gebäudetechnik
+              </p>
+            </div>
+            
+            <div className="border-l-2 border-muted pl-4">
+              <h4 className="font-semibold">2004 - 2011</h4>
+              <p className="font-medium text-sm">Ausbildung und Studium</p>
+              <p className="text-xs text-muted-foreground">Elektroniker für Geräte und Systeme & Diplom-Wirtschaftsingenieur Fachrichtung Elektrotechnik</p>
+            </div>
+          </div>
         </div>
         <div className="relative">
           <img src={portrait} alt="Porträt des Elektrofachmanns" className="rounded-lg shadow-lg w-full h-auto object-cover" />
@@ -127,8 +154,8 @@ const About = () => {
         </div>
       </div>
 
-      {/* Werdegang */}
-      <div className="mb-12">
+      {/* Werdegang - Mobile only */}
+      <div className="mb-12 md:hidden">
         <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2">
           <Calendar className="w-6 h-6 text-primary" />
           Mein Werdegang

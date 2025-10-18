@@ -15,12 +15,7 @@ const Index = () => {
       />
       <Hero />
 
-      {/* Services Overview - with smooth visual transition */}
-      <section className="relative -mt-6">
-        {/* Gradient overlay for smooth transition */}
-        <div className="absolute -top-24 left-0 right-0 h-32 bg-gradient-to-b from-transparent via-background/50 to-background pointer-events-none" />
-        
-        <div className="relative grid md:grid-cols-3 gap-6 mb-12">
+      <section className="grid md:grid-cols-3 gap-6 mb-12">
         <Link to="/leistungen" className="group">
           <Card className="h-full transition-all hover:shadow-lg hover:border-primary">
             <CardHeader>
@@ -69,7 +64,6 @@ const Index = () => {
             </CardContent>
           </Card>
         </Link>
-        </div>
       </section>
 
       {/* Structured Data for LocalBusiness */}

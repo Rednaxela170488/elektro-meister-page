@@ -3,33 +3,9 @@ import logoHorizontal from "@/assets/logo-horizontal.png";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Phone, ArrowRight } from "lucide-react";
-import { useEffect, useState } from "react";
+
 const Hero = () => {
-  const [pos, setPos] = useState({
-    x: 50,
-    y: 50
-  });
-  useEffect(() => {
-    const onMove = (e: MouseEvent) => {
-      const x = e.clientX / window.innerWidth * 100;
-      const y = e.clientY / window.innerHeight * 100;
-      setPos({
-        x,
-        y
-      });
-    };
-    window.addEventListener("mousemove", onMove);
-    return () => window.removeEventListener("mousemove", onMove);
-  }, []);
-  return <section className="relative overflow-hidden rounded-xl border mt-6 mb-20">
-      <div className="pointer-events-none absolute inset-0 opacity-30" style={{
-      background: `radial-gradient(800px circle at ${pos.x}% ${pos.y}%, hsl(var(--brand)/0.25), transparent 70%)`,
-      transition: "background 0.2s ease-out"
-    }} aria-hidden />
-      
-      {/* Subtle gradient overlay at bottom for transition */}
-      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background/80 to-transparent" aria-hidden />
-      
+  return <section className="relative overflow-hidden rounded-xl border bg-card mt-6 mb-12">
       <div className="relative flex flex-col lg:grid lg:grid-cols-2 gap-6">
         <div className="p-6 sm:p-8 md:p-12 flex flex-col justify-center order-2 lg:order-1">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-4">Elektrotechnik Dienstleistungen - einfach und zuverlässig</h1>
