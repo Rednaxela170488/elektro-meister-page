@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Briefcase, Heart, Lightbulb, Target, Calendar, User } from "lucide-react";
 import portrait from "@/assets/portrait.png";
-import workTemplate from "@/assets/work-template.jpg";
+
 const About = () => {
   return <section className="pb-10">
       <SEO title="Über mich – Ihr Elektrofachmann mit Leidenschaft" description="Erfahren Sie mehr über mich als Ihren Elektrofachmann: Meine Motivation, mein Werdegang und warum ich Elektroinstallation als Nebentätigkeit ausübe." />
@@ -133,31 +133,25 @@ const About = () => {
           <Calendar className="w-6 h-6 text-primary" />
           Mein Werdegang
         </h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="space-y-6">
-            <div className="border-l-2 border-primary pl-4">
-              <h3 className="font-semibold text-lg">2025 - HEUTE</h3>
-              <p className="text-primary font-medium">Selbständigkeit Elektrotechnik Stanzel</p>
-              <p className="text-sm text-muted-foreground">Leitung des Unternehmens und Ausführung von Elektroarbeiten</p>
-            </div>
-            
-            <div className="border-l-2 border-muted pl-4">
-              <h3 className="font-semibold text-lg">2011 - HEUTE</h3>
-              <p className="font-medium">Angestellter bei SIEMENS AG</p>
-              <p className="text-sm text-muted-foreground">
-                Technischer Vertrieb für Industrielle Elektrotechnik und Gebäudetechnik
-              </p>
-            </div>
-            
-            <div className="border-l-2 border-muted pl-4">
-              <h3 className="font-semibold text-lg">2004 - 2011</h3>
-              <p className="font-medium">Ausbildung und Studium</p>
-              <p className="text-sm text-muted-foreground">Elektroniker für Geräte und Systeme & Diplom-Wirtschaftsingenieur Fachrichtung Elektrotechnik</p>
-            </div>
+        <div className="space-y-6">
+          <div className="border-l-2 border-primary pl-4">
+            <h3 className="font-semibold text-lg">2025 - HEUTE</h3>
+            <p className="text-primary font-medium">Selbständigkeit Elektrotechnik Stanzel</p>
+            <p className="text-sm text-muted-foreground">Leitung des Unternehmens und Ausführung von Elektroarbeiten</p>
           </div>
           
-          <div className="relative">
-            <img src={workTemplate} alt="Elektroarbeiten in der Praxis" className="rounded-lg shadow-lg w-full h-auto object-cover" />
+          <div className="border-l-2 border-muted pl-4">
+            <h3 className="font-semibold text-lg">2011 - HEUTE</h3>
+            <p className="font-medium">Angestellter bei SIEMENS AG</p>
+            <p className="text-sm text-muted-foreground">
+              Technischer Vertrieb für Industrielle Elektrotechnik und Gebäudetechnik
+            </p>
+          </div>
+          
+          <div className="border-l-2 border-muted pl-4">
+            <h3 className="font-semibold text-lg">2004 - 2011</h3>
+            <p className="font-medium">Ausbildung und Studium</p>
+            <p className="text-sm text-muted-foreground">Elektroniker für Geräte und Systeme & Diplom-Wirtschaftsingenieur Fachrichtung Elektrotechnik</p>
           </div>
         </div>
       </div>
