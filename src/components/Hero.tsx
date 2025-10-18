@@ -25,7 +25,7 @@ const Hero = () => {
             </Button>
           </div>
         </div>
-        <div className="relative min-h-[200px] sm:min-h-[280px] order-1 lg:order-2 flex items-center justify-center bg-gradient-to-br from-background via-background to-muted/30 p-8">
+        <div className="relative min-h-[200px] sm:min-h-[280px] order-1 lg:order-2 flex items-center justify-center bg-card p-8">
           {/* Mobile & Tablet: Horizontal Logo */}
           <img 
             src={logoHorizontal} 
