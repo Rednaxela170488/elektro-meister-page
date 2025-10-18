@@ -172,6 +172,17 @@ const Services = () => {
         </Card>
       </div>
 
+      {/* Hinweis zu meinem Leistungsangebot */}
+      <div className="mt-8">
+        <div className="rounded-lg border border-amber-200 bg-amber-50 dark:border-amber-800 dark:bg-amber-950/20 p-6">
+          <h2 className="text-2xl font-semibold mb-4 text-amber-800 dark:text-amber-200">Hinweis zu meinem Leistungsangebot</h2>
+          <p className="text-amber-700 dark:text-amber-300">
+            Mein Elektroservice ist bewusst überschaubar und spezialisiert.
+            Da ich den Betrieb eigenständig im Nebengewerbe führe, biete ich genau die Arbeiten an, die ich zuverlässig und mit hoher Qualität erledigen kann.
+          </p>
+        </div>
+      </div>
+
     </section>
   );
 };
