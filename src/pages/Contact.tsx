@@ -110,7 +110,7 @@ const Contact = () => {
       {/* Zusätzliche Infos */}
       <Card className="bg-muted/30">
         <CardContent className="pt-6">
-          <h3 className="font-semibold mb-3">So erreichen Sie uns am besten:</h3>
+          <h3 className="font-semibold mb-3">So erreichen Sie mich am besten:</h3>
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li className="flex items-start gap-2">
               <span className="text-primary mt-0.5">•</span>
