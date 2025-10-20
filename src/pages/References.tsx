@@ -9,11 +9,11 @@ const referenceData = [
     mainImage: "/placeholder.svg",
     detailImages: ["/placeholder.svg", "/placeholder.svg"],
     specs: {
-      type: "Einfamilienhaus, Nachrüstung",
-      buildYear: "Baujahr 2000",
-      area: "150 m² Fläche",
-      property: "400 m² Grundstück",
-      devices: "80 Funk-Geräte"
+      location: "Frankfurt am Main, Europaviertel",
+      type: "Wohnung in Mehrfamilienhaus, Nachrüstung",
+      buildYear: "Baujahr 2010",
+      area: "120 m² Fläche",
+      devices: "22 Funk-Geräte"
     },
     productAreas: ["Heizung", "Beschattung", "Funksteckdosen", "Wassersensor"],
     description: "Komplette Smart-Home-Nachrüstung einer Wohnung eines Mehrfamilienhauses mit modernster Funktechnik. Alle Bereiche wurden intelligent vernetzt und können zentral über eine App gesteuert werden."
@@ -83,10 +83,11 @@ const References = () => {
                 <div>
                   <h4 className="font-semibold mb-3">Eckdaten:</h4>
                   <ul className="space-y-2 text-sm text-muted-foreground mb-4">
+                    {reference.specs.location && <li>• {reference.specs.location}</li>}
                     <li>• {reference.specs.type}</li>
                     <li>• {reference.specs.buildYear}</li>
                     <li>• {reference.specs.area}</li>
-                    <li>• {reference.specs.property}</li>
+                    {reference.specs.property && <li>• {reference.specs.property}</li>}
                     <li>• {reference.specs.devices}</li>
                   </ul>
                   
