@@ -2,12 +2,15 @@ import SEO from "@/components/SEO";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import referenceMainImage from "@/assets/reference-aule-main.jpeg";
+import referenceDetail1 from "@/assets/reference-aule-detail1.jpeg";
+import referenceDetail2 from "@/assets/reference-aule-detail2.png";
 
 const referenceData = [
   {
     title: "Smart-Home-Umrüstung",
-    mainImage: "/placeholder.svg",
-    detailImages: ["/placeholder.svg", "/placeholder.svg"],
+    mainImage: referenceMainImage,
+    detailImages: [referenceDetail1, referenceDetail2],
     specs: {
       location: "Frankfurt am Main, Europaviertel",
       type: "Wohnung in Mehrfamilienhaus, Nachrüstung",
