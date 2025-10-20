@@ -72,7 +72,7 @@ const Header = () => {
             to="/"
             className={({ isActive }) =>
               `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+                isActive ? "text-primary bg-primary/10" : "text-foreground hover:text-primary hover:bg-primary/5"
               }`
             }
             end={true}
@@ -83,7 +83,7 @@ const Header = () => {
             to="/ueber-mich"
             className={({ isActive }) =>
               `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+                isActive ? "text-primary bg-primary/10" : "text-foreground hover:text-primary hover:bg-primary/5"
               }`
             }
           >
@@ -93,7 +93,7 @@ const Header = () => {
             to="/referenzen"
             className={({ isActive }) =>
               `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+                isActive ? "text-primary bg-primary/10" : "text-foreground hover:text-primary hover:bg-primary/5"
               }`
             }
           >
@@ -110,8 +110,8 @@ const Header = () => {
                     location.pathname.startsWith('/wohnungselektro') || 
                     location.pathname.startsWith('/smart-home') || 
                     location.pathname.startsWith('/balkonkraftwerk')
-                      ? 'text-foreground bg-muted' 
-                      : 'text-muted-foreground hover:text-foreground'
+                      ? 'text-primary bg-primary/10' 
+                      : 'text-foreground hover:text-primary hover:bg-primary/5'
                   }`}
                 >
                   Leistungen
@@ -146,7 +146,7 @@ const Header = () => {
             to="/faq"
             className={({ isActive }) =>
               `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+                isActive ? "text-primary bg-primary/10" : "text-foreground hover:text-primary hover:bg-primary/5"
               }`
             }
           >
@@ -156,7 +156,7 @@ const Header = () => {
             to="/kontakt"
             className={({ isActive }) =>
               `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+                isActive ? "text-primary bg-primary/10" : "text-foreground hover:text-primary hover:bg-primary/5"
               }`
             }
           >
@@ -166,7 +166,7 @@ const Header = () => {
             to="/impressum"
             className={({ isActive }) =>
               `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+                isActive ? "text-primary bg-primary/10" : "text-foreground hover:text-primary hover:bg-primary/5"
               }`
             }
           >
@@ -176,7 +176,7 @@ const Header = () => {
             to="/agb"
             className={({ isActive }) =>
               `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+                isActive ? "text-primary bg-primary/10" : "text-foreground hover:text-primary hover:bg-primary/5"
               }`
             }
           >
