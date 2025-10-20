@@ -114,10 +114,10 @@ const Header = () => {
                           <NavLink
                             to={item.to}
                             className={({ isActive }) =>
-                              `block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors ${
+                              `block w-full select-none rounded-md p-3 leading-none no-underline outline-none transition-colors ${
                                 isActive 
-                                  ? "bg-primary/10 text-primary" 
-                                  : "text-foreground hover:bg-muted hover:text-foreground"
+                                  ? "bg-primary/10 text-primary font-medium" 
+                                  : "text-popover-foreground hover:bg-accent hover:text-accent-foreground"
                               }`
                             }
                           >
