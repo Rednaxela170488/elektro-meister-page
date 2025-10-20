@@ -16,7 +16,7 @@ const Index = () => {
       <Hero />
 
       <section className="grid md:grid-cols-3 gap-6 mb-12">
-        <Link to="/leistungen" className="group">
+        <Link to="/wohnungselektro" className="group">
           <Card className="h-full transition-all hover:shadow-lg hover:border-primary">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
