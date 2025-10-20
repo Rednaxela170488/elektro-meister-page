@@ -49,7 +49,7 @@ const Services = () => {
               <ul className="space-y-1 text-sm mb-4">
                 <li>• Austausch alter Schalter & Steckdosen</li>
                 <li>• Erneuerung Unterverteiler (FI/LS)</li>
-                <li>• Installation Innen- und Außenbeleuchtung</li>
+                <li>• Planung & Leitungsverlegung bei Renovierung</li>
                 <li>• Aufbau & Verdrahtung von Unterverteilern</li>
               </ul>
               <Button asChild className="w-full">
