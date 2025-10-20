@@ -1,5 +1,5 @@
 
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import {
@@ -22,6 +22,7 @@ const navLinkClass = ({ isActive }: { isActive: boolean }) =>
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const navigationItems = [
     { to: "/", label: "Start", end: true },
@@ -103,7 +104,16 @@ const Header = () => {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground data-[state=open]:text-foreground">
+                <NavigationMenuTrigger 
+                  className={`px-3 py-2 text-sm font-medium transition-colors ${
+                    location.pathname.startsWith('/leistungen') || 
+                    location.pathname.startsWith('/wohnungselektro') || 
+                    location.pathname.startsWith('/smart-home') || 
+                    location.pathname.startsWith('/balkonkraftwerk')
+                      ? 'text-foreground bg-muted' 
+                      : 'text-muted-foreground hover:text-foreground'
+                  }`}
+                >
                   Leistungen
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -117,7 +127,7 @@ const Header = () => {
                               `block w-full select-none rounded-md p-3 leading-none no-underline outline-none transition-colors ${
                                 isActive 
                                   ? "bg-primary/10 text-primary font-medium" 
-                                  : "text-popover-foreground hover:bg-accent hover:text-accent-foreground"
+                                  : "text-popover-foreground"
                               }`
                             }
                           >
