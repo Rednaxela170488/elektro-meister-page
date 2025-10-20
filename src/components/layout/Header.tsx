@@ -67,20 +67,37 @@ const Header = () => {
               className="h-12 w-auto object-contain"
             />
           </Link>
-          {navigationItems.map((item) => (
-            <NavLink
-              key={item.to}
-              to={item.to}
-              className={({ isActive }) =>
-                `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                  isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
-                }`
-              }
-              end={item.end}
-            >
-              {item.label}
-            </NavLink>
-          ))}
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+              }`
+            }
+            end={true}
+          >
+            Start
+          </NavLink>
+          <NavLink
+            to="/ueber-mich"
+            className={({ isActive }) =>
+              `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+              }`
+            }
+          >
+            Über mich
+          </NavLink>
+          <NavLink
+            to="/referenzen"
+            className={({ isActive }) =>
+              `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+              }`
+            }
+          >
+            Referenzen
+          </NavLink>
           
           {/* Leistungen Dropdown */}
           <NavigationMenu>
@@ -90,15 +107,17 @@ const Header = () => {
                   Leistungen
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid w-[200px] gap-1 p-2">
+                  <ul className="grid w-[200px] gap-1 p-2 bg-popover">
                     {leistungenItems.map((item) => (
                       <li key={item.to}>
                         <NavigationMenuLink asChild>
                           <NavLink
                             to={item.to}
                             className={({ isActive }) =>
-                              `block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground ${
-                                isActive ? "bg-accent text-accent-foreground" : ""
+                              `block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors ${
+                                isActive 
+                                  ? "bg-primary/10 text-primary" 
+                                  : "text-foreground hover:bg-muted hover:text-foreground"
                               }`
                             }
                           >
@@ -112,6 +131,47 @@ const Header = () => {
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
+          
+          <NavLink
+            to="/faq"
+            className={({ isActive }) =>
+              `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+              }`
+            }
+          >
+            FAQ
+          </NavLink>
+          <NavLink
+            to="/kontakt"
+            className={({ isActive }) =>
+              `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+              }`
+            }
+          >
+            Kontakt
+          </NavLink>
+          <NavLink
+            to="/impressum"
+            className={({ isActive }) =>
+              `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+              }`
+            }
+          >
+            Impressum
+          </NavLink>
+          <NavLink
+            to="/agb"
+            className={({ isActive }) =>
+              `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+              }`
+            }
+          >
+            AGB
+          </NavLink>
         </div>
 
         {/* Mobile Logo (visible only on mobile) */}
