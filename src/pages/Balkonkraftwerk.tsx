@@ -5,7 +5,7 @@ import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Sun, Zap, Shield, CheckCircle, Home, Battery, FileCheck, Settings, TrendingUp, Wrench, Info } from "lucide-react";
-import balkonkraftwerkInstallation from "@/assets/balkonkraftwerk-installation.jpg";
+import balkonkraftwerkInstallation from "@/assets/balkonkraftwerk-hero.png";
 import solarMonitoring from "@/assets/solar-monitoring.jpg";
 const Balkonkraftwerk = () => {
   return <section className="pb-10">
