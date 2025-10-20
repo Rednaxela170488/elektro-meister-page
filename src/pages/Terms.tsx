@@ -45,16 +45,25 @@ const Terms = () => {
           </p>
           <p className="text-muted-foreground mb-2">
             <strong>Smart Home Systeme:</strong> Installation und Konfiguration erfolgen nach Herstellervorgaben. 
-            Einweisung und Dokumentation sind im Leistungsumfang enthalten. Wartungsintervalle richten 
-            sich nach Herstellerempfehlungen.
+            Einweisung und Dokumentation sind im Leistungsumfang enthalten. Die Wartung und regelmäßige Inspektion 
+            des Smart Home Systems ist nicht im Angebotspreis enthalten. Wartungs- und Serviceleistungen können bei 
+            Bedarf zusätzlich und gesondert vereinbart werden. Für die Betriebsbereitschaft und Funktionsfähigkeit 
+            gelten die vom Hersteller empfohlenen Wartungsintervalle. Die Einhaltung dieser Intervalle liegt in der 
+            Verantwortung des Kunden.
           </p>
           <p className="text-muted-foreground mb-2">
-            <strong>Balkonkraftwerke:</strong> Installation erfolgt nach VDE-AR-N 4105. Anmeldung beim 
-            Netzbetreiber und im Marktstammdatenregister erfolgt durch den Kunden oder nach gesonderter Vereinbarung.
+            <strong>Balkonkraftwerke:</strong> Steckerfertige PV-Anlagen entsprechen den gesetzlichen Anforderungen 
+            für Geräte bis 800 Watt Einspeiseleistung. Die Installation und Inbetriebnahme erfolgt unter 
+            Berücksichtigung der geltenden Vorschriften, insbesondere der Produktnorm für steckerfertige PV-Anlagen 
+            sowie den vereinfachten Anforderungen der VDE-AR-N-4105 für Anlagen dieser Leistungsklasse. Durch den 
+            Hersteller des Wechselrichters ist die Einhaltung der Konformitätserklärung (CE/Konformität zu 
+            VDE-AR-N-4105) sichergestellt. Eine zusätzliche Schutztechnik oder ein umfangreicher Netzanschlussantrag 
+            ist bei Balkonkraftwerken unter 800 Watt nicht erforderlich. Anmeldung beim Netzbetreiber und im 
+            Marktstammdatenregister erfolgt durch den Kunden oder nach gesonderter Vereinbarung.
           </p>
           <p className="text-muted-foreground">
-            Der Kunde stellt unentgeltlich die erforderlichen Hilfskräfte sowie Strom, Wasser und Heizung zur Verfügung.
-            Sicherheitsbestimmungen sind einzuhalten, Arbeitsplatz muss frei zugänglich sein.
+            Der Kunde stellt, soweit zumutbar, unentgeltlich die erforderlichen Hilfskräfte sowie Strom, Wasser und 
+            Heizung zur Verfügung. Sicherheitsbestimmungen sind einzuhalten, Arbeitsplatz muss frei zugänglich sein.
           </p>
         </section>
 
@@ -65,12 +74,12 @@ const Terms = () => {
             Bei Kleinunternehmerregelung (§ 19 UStG) erfolgt kein Mehrwertsteuerausweis.
           </p>
           <p className="text-muted-foreground mb-2">
-            <strong>Zahlungsbedingungen:</strong> Bei Aufträgen über 500 EUR ist eine Anzahlung von 50% 
-            vor Arbeitsbeginn fällig. Restzahlung binnen 7 Tagen nach Rechnungsstellung ohne Abzug.
+            <strong>Zahlungsbedingungen:</strong> Bei Aufträgen über 5.000 EUR ist eine Anzahlung von 50% 
+            vor Arbeitsbeginn fällig. Restzahlung binnen 14 Tagen nach Rechnungsstellung ohne Abzug.
           </p>
           <p className="text-muted-foreground mb-2">
-            <strong>Verzug:</strong> Bei Zahlungsverzug werden Verzugszinsen in Höhe von 9% über dem Basiszinssatz 
-            sowie Mahngebühren (1. Mahnung: 5 EUR, 2. Mahnung: 10 EUR, 3. Mahnung: 15 EUR) berechnet.
+            <strong>Verzug:</strong> Bei Zahlungsverzug werden Verzugszinsen in Höhe von 5% über dem Basiszinssatz 
+            sowie Mahngebühren (je Mahnung: 5 EUR, insgesamt max. 3 Mahnungen) berechnet.
           </p>
           <p className="text-muted-foreground mb-2">
             Aufrechnungsrechte bestehen nur bei unbestrittenen oder rechtskräftig festgestellten Forderungen.
@@ -84,30 +93,31 @@ const Terms = () => {
         <section>
           <h2 className="text-xl font-semibold mb-3">5. Termine und Fristen</h2>
           <p className="text-muted-foreground mb-2">
-            Termine sind nur bei schriftlicher Bestätigung verbindlich. Bei Terminverzögerungen durch 
-            höhere Gewalt, Materialmangel, Witterung oder Kundenverhalten verlängern sich die Fristen entsprechend.
+            Termine sind nur in Textform verbindlich. Bei Terminverzögerungen, welche durch unvorhersehbare und 
+            vom Auftragnehmer nicht zu vertretende Umstände entstehen, verlängern sich die Fristen entsprechend.
           </p>
           <p className="text-muted-foreground mb-2">
             Der Kunde ist verpflichtet, die Baustelle rechtzeitig und vollständig bereitzustellen, 
-            erforderliche Genehmigungen einzuholen und bei Terminabsagen mindestens 48 Stunden vorher zu informieren.
+            erforderliche Genehmigungen einzuholen und bei Terminabsagen mindestens 48 Stunden vorher zu informieren. 
+            Die bei Missachtung entstandenen Kosten werden in angemessener Form in Rechnung gestellt.
           </p>
           <p className="text-muted-foreground mb-2">
             <strong>Stornierung/Verschiebung:</strong> Bei Stornierung oder Verschiebung bereits bestätigter 
-            Termine weniger als 48 Stunden vorher werden 80% des vereinbarten Entgelts, 
-            mindestens jedoch 150 EUR Ausfallpauschale berechnet.
+            Termine weniger als 48 Stunden können transparente, angemessen begrenzte Ausfallpauschalen berechnet 
+            werden, sofern nicht anders vereinbart.
           </p>
           <p className="text-muted-foreground">
             <strong>Wartezeiten:</strong> Wartezeiten durch nicht bereitgestellte Baustelle oder 
-            fehlende Mitwirkung des Kunden werden als Arbeitszeit berechnet.
+            fehlende Mitwirkung des Kunden werden als Arbeitszeit und gemäß des Stundensatzes des Angebots berechnet.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold mb-3">6. Abnahme, Gefahrenübergang und Eigentumsvorbehalt</h2>
           <p className="text-muted-foreground mb-2">
-            <strong>Abnahme:</strong> Der Kunde ist zur Abnahme der Werkleistung verpflichtet. 
-            Die Abnahme gilt als erfolgt, wenn der Kunde die Leistung in Betrieb nimmt oder 
-            14 Tage nach Fertigstellungsanzeige verstreichen, ohne dass Mängel gerügt werden.
+            <strong>Abnahme:</strong> Der Kunde ist mit Beendigung der Tätigkeit am letzten Leistungserbringungstag 
+            automatisch zur Abnahme aufgefordert. Die Abnahme gilt als erfolgt, wenn der Kunde die Leistung in Betrieb 
+            nimmt oder 14 Tage nach Fertigstellungsanzeige verstreichen, ohne dass Mängel gerügt werden.
           </p>
           <p className="text-muted-foreground mb-2">
             Die Gefahr geht mit der Übergabe der Arbeiten bzw. bei Teilleistungen mit deren Abnahme auf den Kunden über.
@@ -128,8 +138,7 @@ const Terms = () => {
             unsachgemäßer Behandlung, natürlichem Verschleiß oder Schäden durch höhere Gewalt.
           </p>
           <p className="text-muted-foreground mb-2">
-            Mängel sind unverzüglich, spätestens binnen 7 Tagen schriftlich mit Fotodokumentation anzuzeigen. 
-            Verspätete Anzeigen schließen Gewährleistungsansprüche aus.
+            Grundsätzlich besteht die Obliegenheit zur zeitnahen Mängelanzeige.
           </p>
           <p className="text-muted-foreground mb-2">
             Herstellergarantien bleiben unberührt und werden an den Kunden weitergegeben.
@@ -143,24 +152,30 @@ const Terms = () => {
         <section>
           <h2 className="text-xl font-semibold mb-3">8. Haftung und Versicherung</h2>
           <p className="text-muted-foreground mb-2">
-            Die Haftung des Auftragnehmers ist auf Vorsatz und grobe Fahrlässigkeit beschränkt. 
-            Bei leichter Fahrlässigkeit haftet er nur bei Verletzung wesentlicher Vertragspflichten, 
-            begrenzt auf den vertragstypischen, vorhersehbaren Schaden, maximal jedoch die Auftragssumme.
+            Der Auftragnehmer haftet uneingeschränkt für Schäden, die auf einer vorsätzlichen oder fahrlässigen 
+            Verletzung des Lebens, des Körpers oder der Gesundheit beruhen.
           </p>
           <p className="text-muted-foreground mb-2">
-            <strong>Haftungsausschluss:</strong> Ausgeschlossen ist die Haftung für Folgeschäden, 
-            entgangenen Gewinn, Betriebsunterbrechung, Datenverlust und mittelbare Schäden aller Art.
+            Für sonstige Schäden haftet der Auftragnehmer nur bei Vorsatz oder grober Fahrlässigkeit. 
+            Bei einfacher Fahrlässigkeit haftet der Auftragnehmer lediglich bei Verletzung wesentlicher 
+            Vertragspflichten (Kardinalpflichten). In diesem Fall ist die Haftung auf den vertragstypischen, 
+            vorhersehbaren Schaden und maximal auf die Auftragssumme begrenzt.
           </p>
           <p className="text-muted-foreground mb-2">
-            <strong>Mitwirkungspflicht:</strong> Der Kunde ist zur Schadensminderung verpflichtet. 
-            Schäden durch mangelhafte Mitwirkung des Kunden gehen zu dessen Lasten.
+            Die Haftung für entgangenen Gewinn, mittelbare und Folgeschäden sowie für Datenverlust ist – 
+            soweit gesetzlich zulässig – ausgeschlossen.
           </p>
           <p className="text-muted-foreground mb-2">
-            Bei Schäden an Leben, Körper und Gesundheit haftet der Auftragnehmer uneingeschränkt.
+            Die Haftung nach dem Produkthaftungsgesetz bleibt unberührt.
+          </p>
+          <p className="text-muted-foreground mb-2">
+            Der Auftraggeber (Kunde) ist verpflichtet, zur Schadensvermeidung und -minderung beizutragen. 
+            Schäden, die durch eine unterlassene oder mangelhafte Mitwirkung des Auftraggebers entstehen, 
+            sind von diesem selbst zu tragen.
           </p>
           <p className="text-muted-foreground">
-            Der Auftragnehmer verfügt über eine Betriebshaftpflichtversicherung. 
-            Die Versicherungssumme beträgt 1 Mio. EUR für Personen- und Sachschäden.
+            Der Auftragnehmer verfügt über eine ausreichend bemessene Betriebshaftpflichtversicherung für 
+            Personen-, Sach- und Vermögensschäden.
           </p>
         </section>
 
@@ -180,8 +195,8 @@ const Terms = () => {
         <section>
           <h2 className="text-xl font-semibold mb-3">10. Datenschutz</h2>
           <p className="text-muted-foreground">
-            Die Verarbeitung personenbezogener Daten erfolgt entsprechend der DSGVO. 
-            Einzelheiten regelt die Datenschutzerklärung.
+            Die Verarbeitung personenbezogener Daten erfolgt entsprechend der DSGVO. Personenbezogene Daten werden 
+            nur im Rahmen der Kontaktaufnahme erhoben und ausschließlich zur Bearbeitung Ihrer Anfrage verwendet.
           </p>
         </section>
 
@@ -190,12 +205,10 @@ const Terms = () => {
           <p className="text-muted-foreground mb-2">
             Sollten einzelne Bestimmungen unwirksam sein, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.
           </p>
-          <p className="text-muted-foreground mb-2">
-            Es gilt deutsches Recht unter Ausschluss des UN-Kaufrechts.
-          </p>
           <p className="text-muted-foreground">
-            Gerichtsstand ist bei Vollkaufleuten, juristischen Personen des öffentlichen Rechts oder 
-            öffentlich-rechtlichen Sondervermögen der Sitz des Unternehmens.
+            Zwischen Kaufleuten findet ausschließlich das Recht der Bundesrepublik Deutschland Anwendung; 
+            das UN-Kaufrecht (CISG) wird ausgeschlossen. Gerichtsstand für alle Streitigkeiten aus dem 
+            Vertragsverhältnis ist – soweit gesetzlich zulässig – der Sitz des Auftragnehmers.
           </p>
         </section>
       </div>
