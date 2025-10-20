@@ -13,7 +13,7 @@ const Contact = () => {
       />
       <h1 className="text-3xl font-bold mb-2">Kontakt</h1>
       <p className="text-muted-foreground mb-8">
-        Haben Sie Fragen oder benötigen ein Angebot? Wir freuen uns auf Ihre Nachricht!
+        Haben Sie Fragen oder benötigen ein Angebot? Ich freue mich auf Ihre Nachricht!
       </p>
 
       <div className="grid md:grid-cols-2 gap-8 mb-8">
