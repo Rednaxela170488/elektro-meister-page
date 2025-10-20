@@ -16,7 +16,7 @@ const referenceData = [
       devices: "80 Funk-Geräte"
     },
     productAreas: ["Heizung und Klima", "Licht", "Zutritt", "Sicherheit und Überwachung"],
-    description: "Komplette Smart-Home-Nachrüstung eines Einfamilienhauses mit modernster Funktechnik. Alle Bereiche wurden intelligent vernetzt und können zentral über eine App gesteuert werden."
+    description: "Komplette Smart-Home-Nachrüstung einer Wohnung eines Mehrfamilienhauses mit modernster Funktechnik. Alle Bereiche wurden intelligent vernetzt und können zentral über eine App gesteuert werden."
   },
   {
     title: "Wohnung Kernsanierung",
