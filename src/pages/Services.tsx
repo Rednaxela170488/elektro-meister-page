@@ -38,15 +38,15 @@ const Services = () => {
         <h2 className="text-2xl font-semibold mb-6">Meine Leistungen im Überblick</h2>
         
         <div className="grid md:grid-cols-3 gap-6">
-          <Card className="border-primary">
+          <Card className="border-primary flex flex-col">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Home className="w-5 h-5 shrink-0" />
                 <span className="hyphens-auto" lang="de">Wohnungselektro</span>
               </CardTitle>
             </CardHeader>
-            <CardContent>
-              <ul className="space-y-1 text-sm mb-4">
+            <CardContent className="flex-1 flex flex-col">
+              <ul className="space-y-1 text-sm mb-4 flex-1">
                 <li>• Austausch alter Schalter & Steckdosen</li>
                 <li>• Erneuerung Unterverteiler (FI/LS)</li>
                 <li>• Planung & Leitungsverlegung bei Renovierung</li>
@@ -58,15 +58,15 @@ const Services = () => {
             </CardContent>
           </Card>
 
-          <Card className="border-primary">
+          <Card className="border-primary flex flex-col">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Zap className="w-5 h-5 shrink-0" />
                 <span className="hyphens-auto" lang="de">Smart Home</span>
               </CardTitle>
             </CardHeader>
-            <CardContent>
-              <ul className="space-y-1 text-sm mb-4">
+            <CardContent className="flex-1 flex flex-col">
+              <ul className="space-y-1 text-sm mb-4 flex-1">
                 <li>• Beratung & Installation mit HomeMatic</li>
                 <li>• Smart Home ohne Cloud-Zwang</li>
                 <li>• Grundkonfiguration & Integration über HomeAssistant</li>
@@ -78,15 +78,15 @@ const Services = () => {
             </CardContent>
           </Card>
 
-          <Card className="border-primary">
+          <Card className="border-primary flex flex-col">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Sun className="w-5 h-5 shrink-0" />
                 <span className="hyphens-auto" lang="de">Balkonkraftwerke</span>
               </CardTitle>
             </CardHeader>
-            <CardContent>
-              <ul className="space-y-1 text-sm mb-4">
+            <CardContent className="flex-1 flex flex-col">
+              <ul className="space-y-1 text-sm mb-4 flex-1">
                 <li>• Beratung & Installation bis 800W</li>
                 <li>• Anmeldung beim Netzbetreiber</li>
                 <li>• Zukunftssichere Wechselrichter</li>
