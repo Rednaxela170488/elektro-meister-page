@@ -20,6 +20,9 @@ const Header = () => {
     { to: "/ueber-mich", label: "Über mich" },
     { to: "/referenzen", label: "Referenzen" },
     { to: "/leistungen", label: "Leistungen" },
+    { to: "/wohnungselektro", label: "Wohnungselektro", indent: true },
+    { to: "/smart-home", label: "Smart Home", indent: true },
+    { to: "/balkonkraftwerk", label: "Balkonkraftwerk", indent: true },
     { to: "/faq", label: "FAQ" },
     { to: "/kontakt", label: "Kontakt" },
     { to: "/impressum", label: "Impressum" },
@@ -43,7 +46,13 @@ const Header = () => {
             <NavLink
               key={item.to}
               to={item.to}
-              className={navLinkClass}
+              className={({ isActive }) =>
+                `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                  item.indent ? 'text-xs' : ''
+                } ${
+                  isActive ? "text-foreground" : "text-muted-foreground hover:text-foreground"
+                }`
+              }
               end={item.end}
             >
               {item.label}
@@ -83,6 +92,8 @@ const Header = () => {
                     to={item.to}
                     className={({ isActive }) =>
                       `block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                        item.indent ? 'pl-6 text-sm' : ''
+                      } ${
                         isActive
                           ? "text-primary bg-primary/10"
                           : "text-foreground hover:text-primary hover:bg-primary/5"
