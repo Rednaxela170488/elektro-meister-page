@@ -40,9 +40,9 @@ const References = () => {
             </CardHeader>
             <CardContent className="space-y-6">
               {/* Images Section */}
-              <div className="grid md:grid-cols-3 gap-4">
-                {/* Large main image */}
-                <div className="md:col-span-2">
+              <div className="grid md:grid-cols-2 gap-4">
+                {/* Left column: Large main image */}
+                <div>
                   <AspectRatio ratio={16 / 10}>
                     <img 
                       src={reference.mainImage} 
@@ -52,17 +52,25 @@ const References = () => {
                   </AspectRatio>
                 </div>
                 
-                {/* Two smaller detail images */}
-                <div className="space-y-4">
-                  {reference.detailImages.map((image, idx) => (
-                    <AspectRatio key={idx} ratio={4 / 3}>
-                      <img 
-                        src={image} 
-                        alt={`${reference.title} - Detail ${idx + 1}`}
-                        className="w-full h-full object-cover rounded-lg"
-                      />
-                    </AspectRatio>
-                  ))}
+                {/* Right column: Two detail images stacked */}
+                <div className="grid grid-rows-2 gap-4">
+                  {/* Top: Landscape detail image */}
+                  <AspectRatio ratio={16 / 10}>
+                    <img 
+                      src={reference.detailImages[0]} 
+                      alt={`${reference.title} - Thermostat Detail`}
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  </AspectRatio>
+                  
+                  {/* Bottom: Portrait smartphone screenshot */}
+                  <AspectRatio ratio={9 / 16}>
+                    <img 
+                      src={reference.detailImages[1]} 
+                      alt={`${reference.title} - Smart Home App`}
+                      className="w-full h-full object-contain rounded-lg bg-muted"
+                    />
+                  </AspectRatio>
                 </div>
               </div>
 
