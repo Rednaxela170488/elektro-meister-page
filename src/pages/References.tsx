@@ -41,8 +41,9 @@ const References = () => {
             <CardContent className="space-y-6">
               {/* Images Section */}
               <div className="grid md:grid-cols-2 gap-4">
-                {/* Left column: Large main image */}
-                <div>
+                {/* Left column: Two landscape images stacked */}
+                <div className="space-y-4">
+                  {/* Building image */}
                   <AspectRatio ratio={16 / 10}>
                     <img 
                       src={reference.mainImage} 
@@ -50,11 +51,8 @@ const References = () => {
                       className="w-full h-full object-cover rounded-lg"
                     />
                   </AspectRatio>
-                </div>
-                
-                {/* Right column: Two detail images stacked */}
-                <div className="grid grid-rows-2 gap-4">
-                  {/* Top: Landscape detail image */}
+                  
+                  {/* Thermostat detail image */}
                   <AspectRatio ratio={16 / 10}>
                     <img 
                       src={reference.detailImages[0]} 
@@ -62,15 +60,19 @@ const References = () => {
                       className="w-full h-full object-cover rounded-lg"
                     />
                   </AspectRatio>
-                  
-                  {/* Bottom: Portrait smartphone screenshot */}
-                  <AspectRatio ratio={9 / 16}>
-                    <img 
-                      src={reference.detailImages[1]} 
-                      alt={`${reference.title} - Smart Home App`}
-                      className="w-full h-full object-contain rounded-lg bg-muted"
-                    />
-                  </AspectRatio>
+                </div>
+                
+                {/* Right column: Portrait smartphone screenshot */}
+                <div className="flex items-center justify-center">
+                  <div className="w-3/4">
+                    <AspectRatio ratio={9 / 16}>
+                      <img 
+                        src={reference.detailImages[1]} 
+                        alt={`${reference.title} - Smart Home App`}
+                        className="w-full h-full object-contain rounded-lg bg-muted"
+                      />
+                    </AspectRatio>
+                  </div>
                 </div>
               </div>
 
