@@ -36,46 +36,28 @@ const Services = () => {
       {/* Hauptleistungen */}
       <div className="mb-8">
         <h2 className="text-2xl font-semibold mb-6">Meine Leistungen im Überblick</h2>
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Wrench className="w-5 h-5 shrink-0" />
-                <span className="hyphens-auto" lang="de">Basis-Dienstleistungen</span>
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <ul className="space-y-1 text-sm">
-                <li>• Austausch alter Schalter, Thermostate und Steckdosen</li>
-                <li>• Erneuerung Unterverteiler (FI/LS, Überspannungsschutz)</li>
-                <li>• Automatische Lichtsteuerungen</li>
-                <li>• Installation von Innen- und Außenbeleuchtung</li>
-                <li>• Nachrüstung zusätzlicher Steckdosen und Schalter</li>
-              </ul>
-            </CardContent>
-          </Card>
-
-          <Card>
+        
+        <div className="grid md:grid-cols-3 gap-6">
+          <Card className="border-primary">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Home className="w-5 h-5 shrink-0" />
-                <span className="hyphens-auto" lang="de">Installationen für Wohnungen</span>
+                <span className="hyphens-auto" lang="de">Wohnungselektro</span>
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-1 text-sm">
+              <ul className="space-y-1 text-sm mb-4">
+                <li>• Austausch alter Schalter & Steckdosen</li>
+                <li>• Erneuerung Unterverteiler (FI/LS)</li>
+                <li>• Installation Innen- und Außenbeleuchtung</li>
                 <li>• Planung & Leitungsverlegung bei Renovierung</li>
-                <li>• Nachrüstung zusätzlicher Stromkreise</li>
-                <li>• Aufbau & Verdrahtung von Unterverteilern</li>
               </ul>
-              <div className="mt-4">
-                <Badge variant="secondary">Wohnungen & kleine Gewerbe</Badge>
-              </div>
+              <Button asChild className="w-full">
+                <Link to="/wohnungselektro">Mehr zu Wohnungselektro</Link>
+              </Button>
             </CardContent>
           </Card>
-        </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
           <Card className="border-primary">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">

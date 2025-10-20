@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import About from "./pages/About";
 import References from "./pages/References";
 import Services from "./pages/Services";
+import Wohnungselektro from "./pages/Wohnungselektro";
 import SmartHome from "./pages/SmartHome";
 import Balkonkraftwerk from "./pages/Balkonkraftwerk";
 import Contact from "./pages/Contact";
@@ -34,6 +35,7 @@ const App = () => (
               <Route path="/ueber-mich" element={<About />} />
               <Route path="/referenzen" element={<References />} />
               <Route path="/leistungen" element={<Services />} />
+              <Route path="/wohnungselektro" element={<Wohnungselektro />} />
               <Route path="/smart-home" element={<SmartHome />} />
               <Route path="/balkonkraftwerk" element={<Balkonkraftwerk />} />
               <Route path="/faq" element={<FAQ />} />
