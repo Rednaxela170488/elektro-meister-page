@@ -15,7 +15,7 @@ const referenceData = [
       property: "400 m² Grundstück",
       devices: "80 Funk-Geräte"
     },
-    productAreas: ["Heizung und Klima", "Licht", "Zutritt", "Sicherheit und Überwachung"],
+    productAreas: ["Heizung", "Beschattung", "Funksteckdosen", "Wassersensor"],
     description: "Komplette Smart-Home-Nachrüstung einer Wohnung eines Mehrfamilienhauses mit modernster Funktechnik. Alle Bereiche wurden intelligent vernetzt und können zentral über eine App gesteuert werden."
   },
   {
