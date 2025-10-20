@@ -17,20 +17,6 @@ const referenceData = [
     },
     productAreas: ["Heizung", "Beschattung", "Funksteckdosen", "Wassersensor"],
     description: "Komplette Smart-Home-Nachrüstung einer Wohnung eines Mehrfamilienhauses mit modernster Funktechnik. Alle Bereiche wurden intelligent vernetzt und können zentral über eine App gesteuert werden."
-  },
-  {
-    title: "Wohnung Kernsanierung",
-    mainImage: "/placeholder.svg",
-    detailImages: ["/placeholder.svg", "/placeholder.svg"],
-    specs: {
-      type: "Wohnung, Kernsanierung",
-      buildYear: "Baujahr 1985",
-      area: "85 m² Fläche",
-      property: "3. OG",
-      devices: "45 Funk-Geräte"
-    },
-    productAreas: ["Licht", "Heizung und Klima", "Sicherheit"],
-    description: "Vollständige elektrische Neuinstallation mit integrierter Smart-Home-Technologie. Moderne Beleuchtungssteuerung und intelligente Heizungsregelung für optimalen Komfort."
   }
 ];
 
@@ -87,7 +73,6 @@ const References = () => {
                     <li>• {reference.specs.type}</li>
                     <li>• {reference.specs.buildYear}</li>
                     <li>• {reference.specs.area}</li>
-                    {reference.specs.property && <li>• {reference.specs.property}</li>}
                     <li>• {reference.specs.devices}</li>
                   </ul>
                   
