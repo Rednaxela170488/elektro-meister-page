@@ -28,7 +28,6 @@ const Header = () => {
     { to: "/", label: "Start", end: true },
     { to: "/ueber-mich", label: "Über mich" },
     { to: "/referenzen", label: "Referenzen" },
-    { to: "/faq", label: "FAQ" },
     { to: "/kontakt", label: "Kontakt" },
     { to: "/impressum", label: "Impressum" },
     { to: "/agb", label: "AGB" },
@@ -49,7 +48,6 @@ const Header = () => {
     { to: "/wohnungselektro", label: "Wohnungselektro", indent: true },
     { to: "/smart-home", label: "Smart Home", indent: true },
     { to: "/balkonkraftwerk", label: "Balkonkraftwerk", indent: true },
-    { to: "/faq", label: "FAQ" },
     { to: "/kontakt", label: "Kontakt" },
     { to: "/impressum", label: "Impressum" },
     { to: "/agb", label: "AGB" },
@@ -142,16 +140,6 @@ const Header = () => {
             </NavigationMenuList>
           </NavigationMenu>
           
-          <NavLink
-            to="/faq"
-            className={({ isActive }) =>
-              `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                isActive ? "text-primary bg-primary/10" : "text-foreground hover:text-primary hover:bg-primary/5"
-              }`
-            }
-          >
-            FAQ
-          </NavLink>
           <NavLink
             to="/kontakt"
             className={({ isActive }) =>

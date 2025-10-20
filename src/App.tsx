@@ -13,7 +13,6 @@ import Wohnungselektro from "./pages/Wohnungselektro";
 import SmartHome from "./pages/SmartHome";
 import Balkonkraftwerk from "./pages/Balkonkraftwerk";
 import Contact from "./pages/Contact";
-import FAQ from "./pages/FAQ";
 import Impressum from "./pages/Impressum";
 import Terms from "./pages/Terms";
 import ScrollToTop from "./components/ScrollToTop";
@@ -38,7 +37,6 @@ const App = () => (
               <Route path="/wohnungselektro" element={<Wohnungselektro />} />
               <Route path="/smart-home" element={<SmartHome />} />
               <Route path="/balkonkraftwerk" element={<Balkonkraftwerk />} />
-              <Route path="/faq" element={<FAQ />} />
               <Route path="/kontakt" element={<Contact />} />
               <Route path="/impressum" element={<Impressum />} />
               <Route path="/agb" element={<Terms />} />
