@@ -118,7 +118,7 @@ const Contact = () => {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-primary mt-0.5">•</span>
-              <span><strong>Für Kostenvoranschläge:</strong> E-Mail mit Beschreibung und Fotos</span>
+              <span><strong>Für Kostenvoranschläge:</strong> E-Mail mit Beschreibung und Fotos oder Vor-Ort Termin</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-primary mt-0.5">•</span>
