@@ -5,7 +5,7 @@ import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Home, Zap, Shield, Cloud, Server, Settings, Wifi, Lock, Lightbulb, Thermometer, Music, Sun, AlertTriangle, CheckCircle, ExternalLink } from "lucide-react";
-import smartHomeDashboard from "@/assets/smart-home-dashboard.jpg";
+import smartHomeHero from "@/assets/smart-home-hero.png";
 import homematicDevices from "@/assets/homematic-devices.jpg";
 const SmartHome = () => {
   return <section className="pb-10">
@@ -32,7 +32,7 @@ const SmartHome = () => {
             </div>
           </div>
           <div className="relative">
-            <img src={smartHomeDashboard} alt="Smart Home Dashboard mit verschiedenen verbundenen Geräten" className="rounded-lg shadow-lg w-full h-auto object-cover" />
+            <img src={smartHomeHero} alt="Smart Home Dashboard mit verschiedenen verbundenen Geräten" className="rounded-lg shadow-lg w-full h-auto object-cover" />
           </div>
         </div>
         
