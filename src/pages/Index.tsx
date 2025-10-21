@@ -86,12 +86,29 @@ const Index = () => {
       __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "ElectricalContractor",
-        name: "Elektrofachbetrieb",
+        name: "Elektrotechnik Stanzel",
         url: typeof window !== 'undefined' ? window.location.origin : undefined,
-        areaServed: "Region",
-        email: "kontakt@elektrofachbetrieb.de",
-        telephone: "+49 1234 567890",
-        sameAs: []
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Höhenweg 2",
+          addressLocality: "Hilpoltstein",
+          postalCode: "91161",
+          addressCountry: "DE"
+        },
+        areaServed: {
+          "@type": "GeoCircle",
+          geoMidpoint: {
+            "@type": "GeoCoordinates",
+            latitude: "49.1914",
+            longitude: "11.1923"
+          },
+          geoRadius: "30000"
+        },
+        email: "info@elektrotechnik-stanzel.de",
+        telephone: "+491759604280",
+        priceRange: "€€",
+        openingHours: "Mo-Su",
+        description: "Elektrotechnik Stanzel: Ihr regionaler Elektrofachbetrieb für Wohnungselektro, Smart Home Lösungen und Balkonkraftwerke in Hilpoltstein und Umgebung."
       })
     }} />
     </div>;
