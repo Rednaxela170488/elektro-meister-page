@@ -35,4 +35,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }} # Dein GitHub-Token für die Authentifizierung
           publish_dir: ./dist # Der Ordner, der die gebauten Dateien enthält (der 'dist'-Ordner)
-          # cname: elektrotechnik-stanzel.de # Optional: Kann hier gesetzt werden, aber wir haben es schon in den Repo-Einstellungen
