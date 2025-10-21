@@ -2,42 +2,21 @@ import SEO from "@/components/SEO";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { 
-  Home, 
-  Lightbulb, 
-  Wrench,
-  Shield,
-  CheckCircle,
-  Settings,
-  Power,
-  Zap
-} from "lucide-react";
+import { Home, Lightbulb, Wrench, Shield, CheckCircle, Settings, Power, Zap } from "lucide-react";
 import wohnungselektroTools from "@/assets/wohnungselektro-tools.png";
-
 const Wohnungselektro = () => {
-  return (
-    <section className="pb-10">
-      <SEO
-        title="Wohnungselektro – Elektroinstallationen für Wohnungen"
-        description="Professionelle Elektroinstallationen für Wohnungen: Schalter- und Steckdosentausch, Unterverteiler-Erneuerung, Lichtsteuerungen und Renovierungsarbeiten."
-      />
+  return <section className="pb-10">
+      <SEO title="Wohnungselektro – Elektroinstallationen für Wohnungen" description="Professionelle Elektroinstallationen für Wohnungen: Schalter- und Steckdosentausch, Unterverteiler-Erneuerung, Lichtsteuerungen und Renovierungsarbeiten." />
       
       {/* Header */}
       <div className="mb-8">
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <div>
             <h1 className="text-3xl font-bold mb-4">Wohnungselektro</h1>
-            <p className="text-lg text-muted-foreground">
-              Elektroinstallationen für Wohnungen und kleine Gewerbe – 
-              von einfachen Austauscharbeiten bis zur kompletten Renovierung.
-            </p>
+            <p className="text-lg text-muted-foreground">Als Ihr erfahrener Elektriker biete ich umfassende Lösungen: von Austauscharbeiten bis zu kompletten Renovierungen. Ich sorge für moderne, sichere Elektrik in Ihrem Zuhause. Meine Priorität sind fachgerechte Ausführung, höchste Sicherheitsstandards und individuelle Beratung für optimal funktionierende Elektrik.</p>
           </div>
           <div className="relative">
-            <img 
-              src={wohnungselektroTools} 
-              alt="Elektrowerkzeuge und Baupläne für professionelle Wohnungsinstallationen" 
-              className="rounded-lg shadow-lg w-full h-auto object-cover"
-            />
+            <img src={wohnungselektroTools} alt="Elektrowerkzeuge und Baupläne für professionelle Wohnungsinstallationen" className="rounded-lg shadow-lg w-full h-auto object-cover" />
           </div>
         </div>
       </div>
@@ -243,8 +222,6 @@ const Wohnungselektro = () => {
           <Link to="/leistungen">← Zurück zu den Leistungen</Link>
         </Button>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Wohnungselektro;
