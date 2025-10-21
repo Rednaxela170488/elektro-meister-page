@@ -22,6 +22,7 @@ const navLinkClass = ({ isActive }: { isActive: boolean }) =>
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [leistungenOpen, setLeistungenOpen] = useState(false);
   const location = useLocation();
 
   const navigationItems = [
@@ -74,6 +75,7 @@ const Header = () => {
               }`
             }
             end={true}
+            onClick={() => setLeistungenOpen(false)}
           >
             Start
           </NavLink>
@@ -84,6 +86,7 @@ const Header = () => {
                 isActive ? "text-primary bg-primary/10" : "text-foreground hover:text-primary hover:bg-primary/5"
               }`
             }
+            onClick={() => setLeistungenOpen(false)}
           >
             Über mich
           </NavLink>
@@ -94,19 +97,13 @@ const Header = () => {
                 isActive ? "text-primary bg-primary/10" : "text-foreground hover:text-primary hover:bg-primary/5"
               }`
             }
+            onClick={() => setLeistungenOpen(false)}
           >
             Referenzen
           </NavLink>
           
           {/* Leistungen Dropdown */}
-          <NavigationMenu value={
-            location.pathname.startsWith('/leistungen') || 
-            location.pathname.startsWith('/wohnungselektro') || 
-            location.pathname.startsWith('/smart-home') || 
-            location.pathname.startsWith('/balkonkraftwerk')
-              ? 'leistungen' 
-              : undefined
-          }>
+          <NavigationMenu value={leistungenOpen ? 'leistungen' : undefined}>
             <NavigationMenuList>
               <NavigationMenuItem value="leistungen">
                 <NavigationMenuTrigger 
@@ -118,6 +115,7 @@ const Header = () => {
                       ? 'text-primary bg-primary/10' 
                       : 'text-foreground hover:text-primary hover:bg-primary/5'
                   }`}
+                  onClick={() => setLeistungenOpen(!leistungenOpen)}
                 >
                   Leistungen
                 </NavigationMenuTrigger>
@@ -154,6 +152,7 @@ const Header = () => {
                 isActive ? "text-primary bg-primary/10" : "text-foreground hover:text-primary hover:bg-primary/5"
               }`
             }
+            onClick={() => setLeistungenOpen(false)}
           >
             Kontakt
           </NavLink>
@@ -164,6 +163,7 @@ const Header = () => {
                 isActive ? "text-primary bg-primary/10" : "text-foreground hover:text-primary hover:bg-primary/5"
               }`
             }
+            onClick={() => setLeistungenOpen(false)}
           >
             Impressum
           </NavLink>
@@ -174,6 +174,7 @@ const Header = () => {
                 isActive ? "text-primary bg-primary/10" : "text-foreground hover:text-primary hover:bg-primary/5"
               }`
             }
+            onClick={() => setLeistungenOpen(false)}
           >
             AGB
           </NavLink>
