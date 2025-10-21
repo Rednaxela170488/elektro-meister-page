@@ -165,7 +165,7 @@ const SmartHome = () => {
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <Settings className="text-primary" />
-            🔧 Service-Paket für Ihr Smart Home
+            Service-Paket für Ihr Smart Home
           </CardTitle>
         </CardHeader>
         <CardContent>
