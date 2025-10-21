@@ -13,7 +13,7 @@ const Impressum = () => {
       <p className="mt-4"><strong>Rechtsform:</strong> Einzelunternehmer</p>
       <p className="mt-2"><strong>Handwerksrolleneintrag:</strong> Elektrotechniker</p>
       <p className="mt-2"><strong>Zuständige Handwerkskammer:</strong> Handwerkskammer für Mittelfranken</p>
-      <p className="mt-2"><strong>Verantwortliche Elektrofachkraft:</strong> Max Mustermann</p>
+      <p className="mt-2"><strong>Verantwortliche Elektrofachkraft:</strong> Alexander Stanzel</p>
       
       <p className="mt-4 text-muted-foreground">USt-IdNr.: DE123456789</p>
       <p className="mt-2 text-muted-foreground">
