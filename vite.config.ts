@@ -9,6 +9,8 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  // Hier fügen wir die base-Option hinzu
+  base: '/', // <-- Diese Zeile ist neu!
   plugins: [
     react(),
     mode === 'development' &&
