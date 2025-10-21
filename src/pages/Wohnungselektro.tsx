@@ -12,6 +12,7 @@ import {
   Power,
   Zap
 } from "lucide-react";
+import wohnungselektroTools from "@/assets/wohnungselektro-tools.png";
 
 const Wohnungselektro = () => {
   return (
@@ -23,11 +24,22 @@ const Wohnungselektro = () => {
       
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold mb-4">Wohnungselektro</h1>
-        <p className="text-lg text-muted-foreground">
-          Elektroinstallationen für Wohnungen und kleine Gewerbe – 
-          von einfachen Austauscharbeiten bis zur kompletten Renovierung.
-        </p>
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div>
+            <h1 className="text-3xl font-bold mb-4">Wohnungselektro</h1>
+            <p className="text-lg text-muted-foreground">
+              Elektroinstallationen für Wohnungen und kleine Gewerbe – 
+              von einfachen Austauscharbeiten bis zur kompletten Renovierung.
+            </p>
+          </div>
+          <div className="relative">
+            <img 
+              src={wohnungselektroTools} 
+              alt="Elektrowerkzeuge und Baupläne für professionelle Wohnungsinstallationen" 
+              className="rounded-lg shadow-lg w-full h-auto object-cover"
+            />
+          </div>
+        </div>
       </div>
 
       {/* Basis-Dienstleistungen */}
