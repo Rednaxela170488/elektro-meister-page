@@ -21,7 +21,7 @@ const Index = () => {
             <h2 className="text-2xl font-semibold">Ihr persönlicher Ansprechpartner</h2>
             <p className="text-muted-foreground">Mit Leidenschaft für Technik und dem Anspruch, maßgeschneiderte Lösungen zu bieten. Ich gebe mir größte Mühe Ihnen eine individuelle Betreuung zu ermöglichen und die Aufgaben mit Sorgfalt zu erledigen.</p>
             <p className="text-muted-foreground">Meine Kenntnisse stützen sich auf eine fundierte Ausbildung und langjährige Berufserfahrung in der Gebäudetechnik. Mit meinem Nebengewerbe und dem Fokus auf smarten Lösungen möchte ich einen Beitrag zu einer nachhaltigeren Zukunft leisten.</p>
-            <Link to="/about">
+            <Link to="/ueber-mich">
               <Button variant="outline" className="gap-2">
                 Mehr über mich erfahren <ArrowRight className="w-4 h-4" />
               </Button>

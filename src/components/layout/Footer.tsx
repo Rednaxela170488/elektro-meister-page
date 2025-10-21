@@ -15,9 +15,6 @@ const Footer = () => {
             <Link to="/agb" className="text-muted-foreground hover:text-foreground transition-colors">
               AGB
             </Link>
-            <Link to="/faq" className="text-muted-foreground hover:text-foreground transition-colors">
-              FAQ
-            </Link>
             <Link to="/kontakt" className="text-muted-foreground hover:text-foreground transition-colors">
               Kontakt
             </Link>
