@@ -8,7 +8,7 @@ const Impressum = () => {
       <h1 className="text-3xl font-bold mb-4">Impressum</h1>
       <p className="text-muted-foreground mb-2">Angaben gemäß § 5 TMG</p>
       <p>Elektrotechnik Stanzel<br />Höhenweg 2<br />91161 Hilpoltstein</p>
-      <p className="mt-4">Telefon: +49 1234 567890<br />E-Mail: kontakt@elektrofachbetrieb.de</p>
+      <p className="mt-4">Telefon: +49 175 9604280<br />E-Mail: info@elektrotechnik-stanzel.de</p>
       
       <p className="mt-4"><strong>Rechtsform:</strong> Einzelunternehmer</p>
       <p className="mt-2"><strong>Handwerksrolleneintrag:</strong> Elektrotechniker</p>
