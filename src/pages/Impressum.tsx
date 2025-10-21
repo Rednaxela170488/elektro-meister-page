@@ -7,7 +7,7 @@ const Impressum = () => {
       <SEO title="Impressum – Elektrofachbetrieb" description="Impressum des Elektrofachbetriebs." />
       <h1 className="text-3xl font-bold mb-4">Impressum</h1>
       <p className="text-muted-foreground mb-2">Angaben gemäß § 5 TMG</p>
-      <p>Elektrofachbetrieb<br />Musterstraße 1<br />12345 Musterstadt</p>
+      <p>Elektrotechnik Stanzel<br />Höhenweg 2<br />91161 Hilpoltstein</p>
       <p className="mt-4">Telefon: +49 1234 567890<br />E-Mail: kontakt@elektrofachbetrieb.de</p>
       
       <p className="mt-4"><strong>Rechtsform:</strong> Einzelunternehmer</p>
