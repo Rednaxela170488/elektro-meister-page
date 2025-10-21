@@ -6,37 +6,21 @@ import { Zap, Home, Sun, ArrowRight } from "lucide-react";
 import logoSquare from "@/assets/logo-square.png";
 import portrait from "@/assets/portrait.png";
 import { Button } from "@/components/ui/button";
-
-
 const Index = () => {
-  return (
-    <div className="pb-6">
-      <SEO
-        title="Elektrofachbetrieb – Elektroinstallation, Smart Home, Wallbox"
-        description="Ihr regionaler Elektrofachbetrieb: Zimmer- & Wohnungselektroinstallation, Smart Home, Wallbox-Installation."
-      />
+  return <div className="pb-6">
+      <SEO title="Elektrofachbetrieb – Elektroinstallation, Smart Home, Wallbox" description="Ihr regionaler Elektrofachbetrieb: Zimmer- & Wohnungselektroinstallation, Smart Home, Wallbox-Installation." />
       <Hero />
 
       {/* About Me Section */}
       <section className="my-12 bg-card border rounded-lg p-6 md:p-8">
         <div className="grid md:grid-cols-[200px_1fr] gap-6 items-center">
           <div className="mx-auto md:mx-0">
-            <img 
-              src={portrait} 
-              alt="Porträt des Elektrofachmanns" 
-              className="rounded-lg shadow-md w-48 h-48 md:w-full md:h-auto object-cover"
-            />
+            <img src={portrait} alt="Porträt des Elektrofachmanns" className="rounded-lg shadow-md w-48 h-48 md:w-full md:h-auto object-cover" />
           </div>
           <div className="space-y-4">
-            <h2 className="text-2xl font-semibold">Ihr persönlicher Elektrofachmann</h2>
-            <p className="text-muted-foreground">
-              Mit Leidenschaft für Technik und dem Anspruch, maßgeschneiderte Lösungen zu bieten. 
-              Bei mir bekommen Sie keine Massenabfertigung, sondern individuelle Betreuung mit Sorgfalt.
-            </p>
-            <p className="text-muted-foreground">
-              Als Elektrofachkraft und Smart Home Spezialist bringe ich tiefes Verständnis für 
-              moderne Gebäudetechnik mit – von der Theorie in die Praxis.
-            </p>
+            <h2 className="text-2xl font-semibold">Ihr persönlicher Ansprechpartner</h2>
+            <p className="text-muted-foreground">Mit Leidenschaft für Technik und dem Anspruch, maßgeschneiderte Lösungen zu bieten. Ich gebe mir größte Mühe Ihnen eine individuelle Betreuung zu ermöglichen und die Aufgaben mit Sorgfalt zu erledigen.</p>
+            <p className="text-muted-foreground">Meine Kenntnisse stützen sich auf eine fundierte Ausbildung und langjährige Berufserfahrung in der Gebäudetechnik. Mit meinem Nebengewerbe und dem Fokus auf smarten Lösungen möchte ich einen Beitrag zu einer nachhaltigeren Zukunft leisten.</p>
             <Link to="/about">
               <Button variant="outline" className="gap-2">
                 Mehr über mich erfahren <ArrowRight className="w-4 h-4" />
@@ -99,19 +83,17 @@ const Index = () => {
 
       {/* Structured Data for LocalBusiness */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "ElectricalContractor",
-          name: "Elektrofachbetrieb",
-          url: typeof window !== 'undefined' ? window.location.origin : undefined,
-          areaServed: "Region",
-          email: "kontakt@elektrofachbetrieb.de",
-          telephone: "+49 1234 567890",
-          sameAs: []
-        })
-      }} />
-    </div>
-  );
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "ElectricalContractor",
+        name: "Elektrofachbetrieb",
+        url: typeof window !== 'undefined' ? window.location.origin : undefined,
+        areaServed: "Region",
+        email: "kontakt@elektrofachbetrieb.de",
+        telephone: "+49 1234 567890",
+        sameAs: []
+      })
+    }} />
+    </div>;
 };
-
 export default Index;
