@@ -4,6 +4,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Zap, Home, Sun, ArrowRight } from "lucide-react";
 import logoSquare from "@/assets/logo-square.png";
+import portrait from "@/assets/portrait.png";
+import { Button } from "@/components/ui/button";
 
 
 const Index = () => {
@@ -14,6 +16,35 @@ const Index = () => {
         description="Ihr regionaler Elektrofachbetrieb: Zimmer- & Wohnungselektroinstallation, Smart Home, Wallbox-Installation."
       />
       <Hero />
+
+      {/* About Me Section */}
+      <section className="my-12 bg-card border rounded-lg p-6 md:p-8">
+        <div className="grid md:grid-cols-[200px_1fr] gap-6 items-center">
+          <div className="mx-auto md:mx-0">
+            <img 
+              src={portrait} 
+              alt="Porträt des Elektrofachmanns" 
+              className="rounded-lg shadow-md w-48 h-48 md:w-full md:h-auto object-cover"
+            />
+          </div>
+          <div className="space-y-4">
+            <h2 className="text-2xl font-semibold">Ihr persönlicher Elektrofachmann</h2>
+            <p className="text-muted-foreground">
+              Mit Leidenschaft für Technik und dem Anspruch, maßgeschneiderte Lösungen zu bieten. 
+              Bei mir bekommen Sie keine Massenabfertigung, sondern individuelle Betreuung mit Sorgfalt.
+            </p>
+            <p className="text-muted-foreground">
+              Als Elektrofachkraft und Smart Home Spezialist bringe ich tiefes Verständnis für 
+              moderne Gebäudetechnik mit – von der Theorie in die Praxis.
+            </p>
+            <Link to="/about">
+              <Button variant="outline" className="gap-2">
+                Mehr über mich erfahren <ArrowRight className="w-4 h-4" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       <section className="grid md:grid-cols-3 gap-6 mb-12">
         <Link to="/wohnungselektro" className="group">
