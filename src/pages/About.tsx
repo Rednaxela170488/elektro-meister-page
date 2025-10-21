@@ -1,7 +1,7 @@
 import SEO from "@/components/SEO";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Briefcase, Heart, Lightbulb, Target, Calendar, User } from "lucide-react";
+import { Briefcase, Heart, Lightbulb, Target, Calendar, Leaf } from "lucide-react";
 import portrait from "@/assets/portrait.png";
 
 const About = () => {
@@ -143,7 +143,7 @@ const About = () => {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-lg">
-                <User className="w-5 h-5" />
+                <Leaf className="w-5 h-5" />
                 Nachhaltigkeit
               </CardTitle>
             </CardHeader>
