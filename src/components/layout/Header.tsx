@@ -133,6 +133,7 @@ const Header = () => {
                                   : "text-popover-foreground"
                               }`
                             }
+                            onClick={() => setLeistungenOpen(false)}
                           >
                             <div className="text-sm font-medium leading-none">{item.label}</div>
                           </NavLink>
