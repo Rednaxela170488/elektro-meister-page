@@ -99,9 +99,16 @@ const Header = () => {
           </NavLink>
           
           {/* Leistungen Dropdown */}
-          <NavigationMenu>
+          <NavigationMenu value={
+            location.pathname.startsWith('/leistungen') || 
+            location.pathname.startsWith('/wohnungselektro') || 
+            location.pathname.startsWith('/smart-home') || 
+            location.pathname.startsWith('/balkonkraftwerk')
+              ? 'leistungen' 
+              : undefined
+          }>
             <NavigationMenuList>
-              <NavigationMenuItem>
+              <NavigationMenuItem value="leistungen">
                 <NavigationMenuTrigger 
                   className={`px-3 py-2 text-sm font-medium transition-colors ${
                     location.pathname.startsWith('/leistungen') || 
