@@ -1,21 +1,18 @@
-
 import SEO from "@/components/SEO";
-
 const Impressum = () => {
-  return (
-    <section className="pb-10">
+  return <section className="pb-10">
       <SEO title="Impressum – Elektrofachbetrieb" description="Impressum des Elektrofachbetriebs." />
       <h1 className="text-3xl font-bold mb-4">Impressum</h1>
       <p className="text-muted-foreground mb-2">Angaben gemäß § 5 TMG</p>
-      <p>Elektrotechnik Stanzel<br />Höhenweg 2<br />91161 Hilpoltstein</p>
-      <p className="mt-4">Telefon: +49 175 9604280<br />E-Mail: info@elektrotechnik-stanzel.de</p>
+      <p>Elektrofachbetrieb<br />Musterstraße 1<br />12345 Musterstadt</p>
+      <p className="mt-4">Telefon: +49 1234 567890<br />E-Mail: kontakt@elektrofachbetrieb.de</p>
       
       <p className="mt-4"><strong>Rechtsform:</strong> Einzelunternehmer</p>
       <p className="mt-2"><strong>Handwerksrolleneintrag:</strong> Elektrotechniker</p>
       <p className="mt-2"><strong>Zuständige Handwerkskammer:</strong> Handwerkskammer für Mittelfranken</p>
-      <p className="mt-2"><strong>Verantwortliche Elektrofachkraft:</strong> Alexander Stanzel</p>
+      <p className="mt-2"><strong>Verantwortliche Elektrofachkraft:</strong> Max Mustermann</p>
       
-      <p className="mt-4 text-muted-foreground">USt-IdNr.: DE123456789</p>
+      <p className="mt-4 text-muted-foreground"></p>
       <p className="mt-2 text-muted-foreground">
         <strong>Kleinunternehmerregelung:</strong> Gemäß § 19 UStG wird keine Umsatzsteuer ausgewiesen.
       </p>
@@ -35,8 +32,6 @@ const Impressum = () => {
         12345 Musterstadt<br />
         E-Mail: kontakt@elektrofachbetrieb.de
       </p>
-    </section>
-  );
+    </section>;
 };
-
 export default Impressum;
