@@ -12,10 +12,10 @@ const Index = () => {
       <Hero />
 
       {/* About Me Section */}
-      <section className="my-12 bg-card border rounded-lg p-6 md:p-8">
-        <div className="grid md:grid-cols-[200px_1fr] gap-6 items-center">
-          <div className="mx-auto md:mx-0">
-            <img src={portrait} alt="Porträt des Elektrofachmanns" className="rounded-lg shadow-md w-48 h-48 md:w-full md:h-auto object-cover" />
+      <section className="my-12 bg-card border rounded-lg p-6 sm:p-8">
+        <div className="grid sm:grid-cols-[200px_1fr] gap-6 items-center">
+          <div className="mx-auto sm:mx-0">
+            <img src={portrait} alt="Porträt des Elektrofachmanns" className="rounded-lg shadow-md w-48 h-48 sm:w-full sm:h-auto object-cover" />
           </div>
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold">Ihr persönlicher Ansprechpartner</h2>
