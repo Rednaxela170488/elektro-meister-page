@@ -1,0 +1,172 @@
+import SEO from "@/components/SEO";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Link } from "react-router-dom";
+import { 
+  Home, 
+  Zap, 
+  Sun, 
+  CheckCircle, 
+  XCircle, 
+  Info, 
+  Wrench,
+  Lightbulb,
+  Settings,
+  Battery
+} from "lucide-react";
+
+const Services = () => {
+  return (
+    <section className="pb-10">
+      <SEO
+        title="Leistungen – Elektroinstallation, Smart Home, Balkonkraftwerke"
+        description="Spezialisierter Elektroservice: Wohnungselektro, Smart-Home-Lösungen mit HomeMatic/HomeAssistant und Balkonkraftwerke bis 800W."
+      />
+      
+      {/* Header */}
+      <div className="mb-8">
+        <h1 className="text-3xl font-bold mb-2">Leistungen Elektro</h1>
+        <p className="text-muted-foreground">
+          Professionelle Elektroinstallationen für Ihr Zuhause – spezialisiert, zuverlässig und transparent.
+        </p>
+      </div>
+
+      {/* Hauptleistungen */}
+      <div className="mb-8">
+        <h2 className="text-2xl font-semibold mb-6">Meine Leistungen im Überblick</h2>
+        
+        <div className="grid md:grid-cols-3 gap-6">
+          <Card className="border-primary flex flex-col">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Home className="w-5 h-5 shrink-0" />
+                <span className="hyphens-auto" lang="de">Wohnungselektro</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="flex-1 flex flex-col">
+              <ul className="space-y-1 text-sm mb-4 flex-1">
+                <li>• Austausch alter Schalter & Steckdosen</li>
+                <li>• Erneuerung Unterverteiler (FI/LS)</li>
+                <li>• Planung & Leitungsverlegung bei Renovierung</li>
+                <li>• Aufbau & Verdrahtung von Unterverteilern</li>
+              </ul>
+              <Button asChild className="w-full">
+                <Link to="/wohnungselektro">Mehr zu Wohnungselektro</Link>
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card className="border-primary flex flex-col">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Zap className="w-5 h-5 shrink-0" />
+                <span className="hyphens-auto" lang="de">Smart Home</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="flex-1 flex flex-col">
+              <ul className="space-y-1 text-sm mb-4 flex-1">
+                <li>• Beratung & Installation mit HomeMatic</li>
+                <li>• Smart Home ohne Cloud-Zwang</li>
+                <li>• Grundkonfiguration & Integration über HomeAssistant</li>
+                <li>• Dokumentation & Einweisung für Kunden</li>
+              </ul>
+              <Button asChild className="w-full">
+                <Link to="/smart-home">Mehr zu Smart Home</Link>
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card className="border-primary flex flex-col">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Sun className="w-5 h-5 shrink-0" />
+                <span className="hyphens-auto" lang="de">Balkonkraftwerke</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="flex-1 flex flex-col">
+              <ul className="space-y-1 text-sm mb-4 flex-1">
+                <li>• Beratung & Installation bis 800W</li>
+                <li>• Anmeldung beim Netzbetreiber</li>
+                <li>• Zukunftssichere Wechselrichter</li>
+                <li>• Optional mit Speicher</li>
+              </ul>
+              <Button asChild className="w-full">
+                <Link to="/balkonkraftwerk">Mehr zu Balkonkraftwerken</Link>
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+
+      {/* Was ich nicht anbiete */}
+      <div className="mb-8">
+        <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2">
+          <XCircle className="w-6 h-6 shrink-0 text-red-600" />
+          Leistungen, die ich nicht anbiete
+        </h2>
+        <Card className="border-red-200">
+          <CardContent className="pt-4">
+            <div className="grid md:grid-cols-2 gap-4">
+              <ul className="space-y-2 text-sm">
+                <li className="flex items-start gap-2">
+                  <XCircle className="w-4 h-4 mt-0.5 text-red-600 shrink-0" />
+                  <span><strong>Arbeiten am Netzanschluss</strong> (Zählerplatz, Hausanschlusskasten)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <XCircle className="w-4 h-4 mt-0.5 text-red-600 shrink-0" />
+                  <span><strong>PV-Anlagen und Batteriespeicher</strong> (Ausnahme: Balkonkraftwerke)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <XCircle className="w-4 h-4 mt-0.5 text-red-600 shrink-0" />
+                  <span><strong>Wallbox-Installation</strong>, da Netzbetreiber-Anmeldung</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <XCircle className="w-4 h-4 mt-0.5 text-red-600 shrink-0" />
+                  <span><strong>Satellitenanlagen und Antennentechnik</strong></span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <XCircle className="w-4 h-4 mt-0.5 text-red-600 shrink-0" />
+                  <span><strong>Klassische IT-/Netzwerkinstallation</strong></span>
+                </li>
+              </ul>
+              <ul className="space-y-2 text-sm">
+                <li className="flex items-start gap-2">
+                  <XCircle className="w-4 h-4 mt-0.5 text-red-600 shrink-0" />
+                  <span><strong>Reparatur von Elektrogeräten</strong> (Waschmaschinen, Trockner, etc.)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <XCircle className="w-4 h-4 mt-0.5 text-red-600 shrink-0" />
+                  <span><strong>24h-Notdienst / Störungsdienst</strong></span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <XCircle className="w-4 h-4 mt-0.5 text-red-600 shrink-0" />
+                  <span><strong>Industrielle Anlagen und Maschinen</strong></span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <XCircle className="w-4 h-4 mt-0.5 text-red-600 shrink-0" />
+                  <span><strong>Größere Gewerbebetriebe</strong> mit KNX oder BACnet</span>
+                </li>
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Hinweis zu meinem Leistungsangebot */}
+      <div className="mt-8">
+        <div className="rounded-lg border border-amber-200 bg-amber-50 dark:border-amber-800 dark:bg-amber-950/20 p-6">
+          <h2 className="text-2xl font-semibold mb-4 text-amber-800 dark:text-amber-200">Hinweis zu meinem Leistungsangebot</h2>
+          <p className="text-amber-700 dark:text-amber-300">
+            Mein Elektroservice ist bewusst überschaubar und spezialisiert.
+            Da ich den Betrieb eigenständig im Nebengewerbe führe, biete ich genau die Arbeiten an, die ich zuverlässig und mit hoher Qualität erledigen kann.
+          </p>
+        </div>
+      </div>
+
+    </section>
+  );
+};
+
+export default Services;
