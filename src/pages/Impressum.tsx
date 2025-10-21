@@ -27,10 +27,10 @@ const Impressum = () => {
       </p>
       <p className="text-muted-foreground">
         <strong>Verantwortlicher für die Datenverarbeitung:</strong><br />
-        Max Mustermann<br />
-        Musterstraße 1<br />
-        12345 Musterstadt<br />
-        E-Mail: kontakt@elektrofachbetrieb.de
+        Alexander Stanzel<br />
+        Höhenweg 2<br />
+        91161 Hilpoltstein<br />
+        E-Mail: alexander@elektrotechnik-stanzel.de
       </p>
     </section>;
 };
